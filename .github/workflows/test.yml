@@ -87,13 +87,17 @@ jobs:
   test-oca:
     # spec 9.9 "Matrix OCA-Abgleich": the reconciliation variants of the OCA
     # modules (account_reconcile_oca edit/keep, account_in_payment,
-    # account_payment_order); without them these tests are skipped
+    # account_payment_order); without them these tests are skipped.
+    # Switched off on 20.0: the OCA modules have no release for Odoo 20 yet
+    # (open pull requests OCA/account-reconcile#1049 and OCA/bank-payment#1636).
+    # Switch it on again, with test-requirements.txt, as soon as they have.
+    if: ${{ false }}
     runs-on: ubuntu-22.04
-    container: ghcr.io/oca/oca-ci/py3.10-odoo19.0:latest
+    container: ghcr.io/oca/oca-ci/py3.12-odoo20.0:latest
     name: test with OCA reconciliation modules
     services:
       postgres:
-        image: postgres:13
+        image: postgres:16
         env:
           POSTGRES_USER: odoo
           POSTGRES_PASSWORD: odoo
@@ -138,15 +142,15 @@ jobs:
         run: pytest
   test-perf:
     # spec B-15 and 9.9: UT-PERF-1 on the reference runner (GitHub-hosted
-    # ubuntu-24.04, container py3.10-odoo19.0, PostgreSQL 13); the run times
-    # of the last five runs on 19.0 are kept as history for the relative
+    # ubuntu-24.04, container py3.12-odoo20.0, PostgreSQL 16); the run times
+    # of the last five runs on 20.0 are kept as history for the relative
     # limit (at most 150 % of their median)
     runs-on: ubuntu-24.04
-    container: ghcr.io/oca/oca-ci/py3.10-odoo19.0:latest
+    container: ghcr.io/oca/oca-ci/py3.12-odoo20.0:latest
     name: performance UT-PERF-1
     services:
       postgres:
-        image: postgres:13
+        image: postgres:16
         env:
           POSTGRES_USER: odoo
           POSTGRES_PASSWORD: odoo
@@ -198,12 +202,12 @@ jobs:
                   f"last runs: {current['second']} s, median "
                   f"{statistics.median(seconds)} s"
               )
-          if os.environ.get("GITHUB_REF") == "refs/heads/19.0":
+          if os.environ.get("GITHUB_REF") == "refs/heads/20.0":
               path.parent.mkdir(exist_ok=True)
               path.write_text(json.dumps((history + [current])[-5:], indent=1))
           EOF
       - name: Keep the history
-        if: ${{ github.ref == 'refs/heads/19.0' }}
+        if: ${{ github.ref == 'refs/heads/20.0' }}
         uses: actions/cache/save@v4
         with:
           path: perf-history

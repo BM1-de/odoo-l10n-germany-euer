@@ -1,5 +1,9 @@
 # OCA modules of the reconciliation matrix (B-13, ST-B14); installed into the
-# test database only by the job "test with OCA reconciliation modules"
-odoo-addon-account_in_payment==19.0.*
-odoo-addon-account_payment_order==19.0.*
-odoo-addon-account_reconcile_oca==19.0.*
+# test database only by the job "test with OCA reconciliation modules".
+# They have no release for Odoo 20 yet (open pull requests
+# OCA/account-reconcile#1049 and OCA/bank-payment#1636), so the job is switched
+# off on this branch (.github/workflows/test.yml). Activate both again as soon
+# as the modules are released:
+# odoo-addon-account_in_payment==20.0.*
+# odoo-addon-account_payment_order==20.0.*
+# odoo-addon-account_reconcile_oca==20.0.*
