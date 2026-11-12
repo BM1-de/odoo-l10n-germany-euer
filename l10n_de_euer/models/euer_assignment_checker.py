@@ -159,7 +159,7 @@ class L10nDeEuerAssignmentChecker(models.AbstractModel):
         """Proposals for all accounts without assignment, once per run (K-03)."""
         if "proposals" not in context:
             accounts = self.env["account.account"].concat(
-                *(account for account, _usage in self._unassigned(context["segments"]))
+                account for account, _usage in self._unassigned(context["segments"])
             )
             context["proposals"] = self.env[
                 "l10n_de_euer.account.assignment"
@@ -603,7 +603,7 @@ class L10nDeEuerAssignmentChecker(models.AbstractModel):
         results = []
         for account in self._general_accounts(context) & self.env[
             "account.account"
-        ].concat(*kinds):
+        ].concat(kinds):
             account = account.with_company(context["root"])
             message = self.env._(
                 "%(account)s is an account for gifts or entertainment and at the same "

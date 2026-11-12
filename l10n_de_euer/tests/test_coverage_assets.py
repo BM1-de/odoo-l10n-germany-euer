@@ -85,7 +85,7 @@ class AssetCoverageCase(AssetCase):
             {
                 "company_id": self.company.id,
                 "opening_date": opening_date,
-                "file": base64.b64encode(content.encode()),
+                "file": base64.b64encode(content.encode()).decode(),
                 "filename": "anlagen.csv",
             }
         )
@@ -152,7 +152,7 @@ class TestAssetImportRows(AssetCoverageCase):
     def test_defaults_of_the_takeover(self):
         """The business of the user and 31 December of the last year."""
         wizard = self.env["l10n_de_euer.asset.import"].create(
-            {"file": base64.b64encode(HEADER.encode())}
+            {"file": base64.b64encode(HEADER.encode()).decode()}
         )
         self.assertEqual(wizard.company_id, self.company)
         today = datetime.date.today()

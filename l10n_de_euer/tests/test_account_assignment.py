@@ -622,7 +622,7 @@ class AssignmentCases:
             "name": "phone",
             "account_id": self.acc("telecom").id,
             "price_unit": 100.0,
-            "deductible_amount": 60.0,
+            "deductible_percentage": 0.6,
             "tax_ids": [Command.set(self.tax("tax_vst_19").ids)],
         }
         fallback = self.invoice("in_invoice", [line])
@@ -876,7 +876,7 @@ class AssignmentCases:
 class TestAssignmentSkr03(AssignmentCases, AccountTestInvoicingCommon):
     allow_inherited_tests_method = True
     CHART = "de_skr03"
-    TEMPLATE_COUNT = 1274
+    TEMPLATE_COUNT = 1304
     DATEV_KU_CODE = "8192"
     # suspense, outstanding receipts/payments, transfer, cash differences,
     # undistributed profits
@@ -947,7 +947,7 @@ class TestAssignmentSkr03(AssignmentCases, AccountTestInvoicingCommon):
 class TestAssignmentSkr04(AssignmentCases, AccountTestInvoicingCommon):
     allow_inherited_tests_method = True
     CHART = "de_skr04"
-    TEMPLATE_COUNT = 1192
+    TEMPLATE_COUNT = 1222
     DATEV_KU_CODE = "4184"
     # cash differences are template accounts 9991/9994 in SKR04
     UTILITY_COUNT = 5

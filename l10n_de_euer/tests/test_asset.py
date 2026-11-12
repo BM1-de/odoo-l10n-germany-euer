@@ -652,7 +652,7 @@ class TestAssetRegister(AssetCase):
             {
                 "company_id": self.company.id,
                 "opening_date": "2026-12-31",
-                "file": base64.b64encode(content.encode()),
+                "file": base64.b64encode(content.encode()).decode(),
                 "filename": "anlagen.csv",
             }
         )

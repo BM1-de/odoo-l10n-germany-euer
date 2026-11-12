@@ -316,7 +316,7 @@ class TestAssetProtection(AssetCase):
             {
                 "company_id": self.company.id,
                 "opening_date": "2026-12-31",
-                "file": base64.b64encode(content.encode(encoding)),
+                "file": base64.b64encode(content.encode(encoding)).decode(),
                 "filename": "anlagen.csv",
                 **values,
             }
@@ -399,7 +399,7 @@ class TestAssetProtection(AssetCase):
             self.env["l10n_de_euer.asset.import"].with_user(self.user).create(
                 {
                     "company_id": self.company.id,
-                    "file": base64.b64encode(HEADER.encode()),
+                    "file": base64.b64encode(HEADER.encode()).decode(),
                 }
             )
         taken = self.Asset.with_user(self.user).create(

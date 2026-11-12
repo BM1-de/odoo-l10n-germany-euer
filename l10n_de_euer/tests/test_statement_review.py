@@ -742,7 +742,7 @@ class TestFinalisationReview(ReviewCommon, AccountTestInvoicingCommon):
     def test_gt04_changed_receipt_is_found(self):
         """GT-04: a statement of account replaced in the database after the
         finalisation (same stored checksum) is found by Check Integrity."""
-        self.env["ir.config_parameter"].sudo().set_param("ir_attachment.location", "db")
+        self.env["ir.config_parameter"].sudo().set_str("ir_attachment.location", "db")
         self.year()
         statement = self.statement()
         statement.action_compute()

@@ -881,7 +881,7 @@ class L10nDeEuerStatement(models.Model):
         attachment = self.sudo().payload_attachment_id.exists()
         if not attachment:
             return None, None
-        raw = attachment.raw or b""
+        raw = attachment.raw.content if attachment.raw else b""
         try:
             return raw, integrity.load(raw)
         except ValueError:
@@ -998,7 +998,9 @@ class L10nDeEuerStatement(models.Model):
             for row in payload.get(section) or []:
                 for item in row.get("attachments") or []:
                     attachment = Attachment.browse(item.get("id")).exists()
-                    raw = attachment.raw if attachment else None
+                    raw = None
+                    if attachment:
+                        raw = attachment.raw.content if attachment.raw else b""
                     if raw is None or attachment._compute_checksum(raw) != item.get(
                         "checksum"
                     ):

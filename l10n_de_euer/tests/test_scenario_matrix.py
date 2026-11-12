@@ -105,14 +105,14 @@ class MatrixScenarios(ScenarioCommon):
         if variant == "standard":
             return self.bank(date, sign * bank_amount, matches=items)
         if variant == "payment":
-            documents = self.env["account.move"].concat(*(doc for doc, _a in items))
+            documents = self.env["account.move"].concat((doc for doc, _a in items))
             values = {"group_payment": True} if len(items) > 1 else {}
             if len(items) == 1:
                 values["amount"] = items[0][1]
             payments = self.pay(documents, date, **values)
             return self.bank_for_payment(date, payments, amount=bank_amount)
         if variant == "in_payment":
-            documents = self.env["account.move"].concat(*(doc for doc, _a in items))
+            documents = self.env["account.move"].concat((doc for doc, _a in items))
             with self._in_payment():
                 payments = self.pay(
                     documents,

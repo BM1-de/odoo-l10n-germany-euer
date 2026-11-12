@@ -87,7 +87,7 @@ class TestAssetReview(AssetCase):
             {
                 "company_id": self.company.id,
                 "opening_date": opening_date,
-                "file": base64.b64encode(content),
+                "file": base64.b64encode(content).decode(),
                 "filename": "anlagen.csv",
             }
         )

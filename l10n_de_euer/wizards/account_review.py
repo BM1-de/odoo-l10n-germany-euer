@@ -33,14 +33,14 @@ class L10nDeEuerAccountReview(models.TransientModel):
         self.ensure_one()
         checker = self.env["l10n_de_euer.assignment.checker"]
         context = checker._prepare(self.company_id, self.year)
-        accounts = self.env["account.account"].concat(*context["segments"])
+        accounts = self.env["account.account"].concat(context["segments"])
         proposals = self.env["l10n_de_euer.account.assignment"]._get_proposals(
             self.company_id, accounts
         )
         empty = self.env["l10n_de_euer.account.assignment"]
         vals_list = []
         for account, usages in context["segments"].items():
-            assignments = empty.concat(*(item for item in usages if item))
+            assignments = empty.concat(item for item in usages if item)
             current = assignments.sorted(
                 lambda item: item.date_from or fields.Date.to_date("1900-01-01")
             )[-1:]

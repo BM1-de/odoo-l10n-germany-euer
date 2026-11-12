@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- Copyright 2026 Baumgärtner Marketing GmbH
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <!-- EÜR categories (spec 4.2).
@@ -8,14 +8,14 @@
         <field name="code">CASH</field>
         <field name="name">Cash and bank</field>
         <field name="name@de">Kasse und Bank</field>
-        <field name="sequence">10</field>
+        <field name="sequence" eval="10" />
         <field name="role">geld</field>
     </record>
     <record id="category_suspense" model="l10n_de_euer.category">
         <field name="code">SUSPENSE</field>
         <field name="name">Bank suspense account</field>
         <field name="name@de">Bank-Zwischenkonto (ungeklärt)</field>
-        <field name="sequence">20</field>
+        <field name="sequence" eval="20" />
         <field name="role">ungeklaert</field>
         <field name="interim">True</field>
     </record>
@@ -23,35 +23,35 @@
         <field name="code">OPEN_ITEM</field>
         <field name="name">Receivables and payables</field>
         <field name="name@de">Forderungen und Verbindlichkeiten</field>
-        <field name="sequence">30</field>
+        <field name="sequence" eval="30" />
         <field name="role">op</field>
     </record>
     <record id="category_opening" model="l10n_de_euer.category">
         <field name="code">OPENING</field>
         <field name="name">Opening balance</field>
         <field name="name@de">Saldenvortrag (Eröffnung)</field>
-        <field name="sequence">40</field>
+        <field name="sequence" eval="40" />
         <field name="role">eroeffnung</field>
     </record>
     <record id="category_private_withdrawal" model="l10n_de_euer.category">
         <field name="code">PRIVATE_WITHDRAWAL</field>
         <field name="name">Private withdrawals</field>
         <field name="name@de">Privatentnahmen</field>
-        <field name="sequence">50</field>
+        <field name="sequence" eval="50" />
         <field name="role">privat</field>
     </record>
     <record id="category_private_contribution" model="l10n_de_euer.category">
         <field name="code">PRIVATE_CONTRIBUTION</field>
         <field name="name">Private contributions</field>
         <field name="name@de">Privateinlagen</field>
-        <field name="sequence">60</field>
+        <field name="sequence" eval="60" />
         <field name="role">privat</field>
     </record>
     <record id="category_vat_output" model="l10n_de_euer.category">
         <field name="code">VAT_OUTPUT</field>
         <field name="name">Output VAT</field>
         <field name="name@de">Umsatzsteuer</field>
-        <field name="sequence">70</field>
+        <field name="sequence" eval="70" />
         <field name="role">steuer</field>
         <field name="vat_kind">output</field>
     </record>
@@ -59,7 +59,7 @@
         <field name="code">VAT_INPUT</field>
         <field name="name">Deductible input VAT</field>
         <field name="name@de">Abziehbare Vorsteuer</field>
-        <field name="sequence">80</field>
+        <field name="sequence" eval="80" />
         <field name="role">steuer</field>
         <field name="vat_kind">input</field>
     </record>
@@ -67,7 +67,7 @@
         <field name="code">VAT_INPUT_NON_DEDUCTIBLE</field>
         <field name="name">Input VAT to be split or not deductible</field>
         <field name="name@de">Aufzuteilende oder nicht abziehbare Vorsteuer</field>
-        <field name="sequence">90</field>
+        <field name="sequence" eval="90" />
         <field name="role">steuer</field>
         <field name="confidence">m</field>
         <field name="vat_kind">input_non_deductible</field>
@@ -78,7 +78,7 @@
         <field
             name="name@de"
         >Umsatz- und Vorsteuer aus Reverse Charge und innergemeinschaftlichem Erwerb</field>
-        <field name="sequence">100</field>
+        <field name="sequence" eval="100" />
         <field name="role">steuer</field>
         <field name="confidence">m</field>
         <field name="vat_kind">reverse_charge</field>
@@ -87,7 +87,7 @@
         <field name="code">VAT_IMPORT</field>
         <field name="name">Import VAT</field>
         <field name="name@de">Einfuhrumsatzsteuer</field>
-        <field name="sequence">110</field>
+        <field name="sequence" eval="110" />
         <field name="role">steuer</field>
         <field name="confidence">m</field>
         <field name="vat_kind">import</field>
@@ -96,7 +96,7 @@
         <field name="code">VAT_SETTLEMENT</field>
         <field name="name">VAT payments and refunds</field>
         <field name="name@de">Umsatzsteuer-Zahlungen und -Erstattungen</field>
-        <field name="sequence">120</field>
+        <field name="sequence" eval="120" />
         <field name="role">steuer</field>
         <field name="vat_kind">settlement</field>
         <field name="recurring_candidate">True</field>
@@ -105,7 +105,7 @@
         <field name="code">REV_TAX</field>
         <field name="name">Revenue by tax of the line</field>
         <field name="name@de">Erlöse nach Steuer der Buchungszeile</field>
-        <field name="sequence">130</field>
+        <field name="sequence" eval="130" />
         <field name="role">be</field>
         <field name="be_art">tax</field>
     </record>
@@ -113,7 +113,7 @@
         <field name="code">REV_TAX_NONCASH</field>
         <field name="name">Benefits in kind (by tax of the line)</field>
         <field name="name@de">Sachbezüge (nach Steuer der Buchungszeile)</field>
-        <field name="sequence">140</field>
+        <field name="sequence" eval="140" />
         <field name="role">be</field>
         <field name="erfassung">B</field>
         <field name="confidence">n</field>
@@ -123,7 +123,7 @@
         <field name="code">REV_ADVANCE_RECEIVED</field>
         <field name="name">Advance payments received</field>
         <field name="name@de">Erhaltene Anzahlungen</field>
-        <field name="sequence">150</field>
+        <field name="sequence" eval="150" />
         <field name="role">be</field>
         <field name="confidence">m</field>
         <field name="be_art">tax</field>
@@ -133,7 +133,7 @@
         <field name="code">REV_TAXABLE</field>
         <field name="name">Taxable revenue</field>
         <field name="name@de">Umsatzsteuerpflichtige Erlöse</field>
-        <field name="sequence">160</field>
+        <field name="sequence" eval="160" />
         <field name="role">be</field>
         <field name="be_art">stpfl</field>
     </record>
@@ -141,7 +141,7 @@
         <field name="code">REV_EXEMPT</field>
         <field name="name">Tax-exempt revenue</field>
         <field name="name@de">Steuerfreie Erlöse</field>
-        <field name="sequence">170</field>
+        <field name="sequence" eval="170" />
         <field name="role">be</field>
         <field name="be_art">frei</field>
     </record>
@@ -149,7 +149,7 @@
         <field name="code">REV_EXEMPT_19_2</field>
         <field name="name">Tax-exempt revenue under § 19 (2) UStG</field>
         <field name="name@de">Steuerfreie Umsätze nach § 19 Abs. 2 UStG</field>
-        <field name="sequence">180</field>
+        <field name="sequence" eval="180" />
         <field name="role">be</field>
         <field name="be_art">frei192</field>
     </record>
@@ -157,7 +157,7 @@
         <field name="code">REV_NOT_TAXABLE</field>
         <field name="name">Non-taxable income</field>
         <field name="name@de">Nicht steuerbare Einnahmen</field>
-        <field name="sequence">190</field>
+        <field name="sequence" eval="190" />
         <field name="role">be</field>
         <field name="be_art">nstb</field>
     </record>
@@ -165,7 +165,7 @@
         <field name="code">REV_INTEREST</field>
         <field name="name">Interest income (ancillary transaction)</field>
         <field name="name@de">Zinserträge (Hilfsumsatz)</field>
-        <field name="sequence">200</field>
+        <field name="sequence" eval="200" />
         <field name="role">be</field>
         <field name="be_art">hilfs</field>
     </record>
@@ -173,7 +173,7 @@
         <field name="code">REV_ANCILLARY_REFUND</field>
         <field name="name">Refunded ancillary tax payments</field>
         <field name="name@de">Erstattete steuerliche Nebenleistungen</field>
-        <field name="sequence">210</field>
+        <field name="sequence" eval="210" />
         <field name="role">be</field>
         <field name="be_art">nstb</field>
     </record>
@@ -183,7 +183,7 @@
         <field
             name="name@de"
         >Umsätze nach § 19a UStG (EU-Kleinunternehmerregelung)</field>
-        <field name="sequence">220</field>
+        <field name="sequence" eval="220" />
         <field name="role">be</field>
         <field name="be_art">s19a</field>
     </record>
@@ -191,7 +191,7 @@
         <field name="code">REV_TAX_FREE_3</field>
         <field name="name">Tax-free income under § 3 EStG</field>
         <field name="name@de">Steuerfreie Einnahmen nach § 3 EStG</field>
-        <field name="sequence">230</field>
+        <field name="sequence" eval="230" />
         <field name="role">be</field>
         <field name="confidence">n</field>
         <field name="be_art">nstb</field>
@@ -201,7 +201,7 @@
         <field name="code">REV_PARTIAL_INCOME</field>
         <field name="name">Income under the partial income method</field>
         <field name="name@de">Erträge im Teileinkünfteverfahren</field>
-        <field name="sequence">240</field>
+        <field name="sequence" eval="240" />
         <field name="role">be</field>
         <field name="confidence">n</field>
         <field name="be_art">nstb</field>
@@ -212,7 +212,7 @@
         <field name="code">REV_KU</field>
         <field name="name">Revenue as small business (§ 19 UStG)</field>
         <field name="name@de">Erlöse als Kleinunternehmer (§ 19 UStG)</field>
-        <field name="sequence">250</field>
+        <field name="sequence" eval="250" />
         <field name="role">be</field>
         <field name="be_art">ku</field>
     </record>
@@ -220,7 +220,7 @@
         <field name="code">REV_LUF</field>
         <field name="name">Revenue under § 24 UStG (agriculture and forestry)</field>
         <field name="name@de">Umsätze nach § 24 UStG (Land- und Forstwirtschaft)</field>
-        <field name="sequence">260</field>
+        <field name="sequence" eval="260" />
         <field name="role">be</field>
         <field name="be_art">luf24</field>
         <field name="scope_reason">luf</field>
@@ -230,7 +230,7 @@
         <field name="code">REV_ASSET_DISPOSAL</field>
         <field name="name">Sale or withdrawal of fixed assets</field>
         <field name="name@de">Veräußerung oder Entnahme von Anlagevermögen</field>
-        <field name="sequence">270</field>
+        <field name="sequence" eval="270" />
         <field name="role">be</field>
         <field name="be_art">fixed</field>
     </record>
@@ -241,7 +241,7 @@
         <field name="code">REV_ASSET_DISPOSAL_PARTIAL_INCOME</field>
         <field name="name">Sale of shares under the partial income method</field>
         <field name="name@de">Veräußerung von Anteilen im Teileinkünfteverfahren</field>
-        <field name="sequence">280</field>
+        <field name="sequence" eval="280" />
         <field name="role">be</field>
         <field name="confidence">n</field>
         <field name="be_art">fixed</field>
@@ -252,7 +252,7 @@
         <field name="code">REV_PRIVATE_CAR</field>
         <field name="name">Private use of business vehicles</field>
         <field name="name@de">Private Kfz-Nutzung</field>
-        <field name="sequence">290</field>
+        <field name="sequence" eval="290" />
         <field name="role">be</field>
         <field name="erfassung">B</field>
         <field name="be_art">fixed</field>
@@ -261,7 +261,7 @@
         <field name="code">REV_WITHDRAWAL_OTHER</field>
         <field name="name">Other withdrawals in kind, of use and of services</field>
         <field name="name@de">Sonstige Sach-, Nutzungs- und Leistungsentnahmen</field>
-        <field name="sequence">300</field>
+        <field name="sequence" eval="300" />
         <field name="role">be</field>
         <field name="erfassung">B</field>
         <field name="be_art">fixed</field>
@@ -270,7 +270,7 @@
         <field name="code">RESERVE_RELEASE</field>
         <field name="name">Release of reserves</field>
         <field name="name@de">Auflösung von Rücklagen</field>
-        <field name="sequence">310</field>
+        <field name="sequence" eval="310" />
         <field name="role">be</field>
         <field name="erfassung">M</field>
         <field name="be_art">fixed</field>
@@ -281,7 +281,7 @@
         <field name="code">RESERVE_RELEASE_COMPENSATION</field>
         <field name="name">Release of compensating items (§ 4g EStG)</field>
         <field name="name@de">Auflösung von Ausgleichsposten (§ 4g EStG)</field>
-        <field name="sequence">320</field>
+        <field name="sequence" eval="320" />
         <field name="role">be</field>
         <field name="erfassung">M</field>
         <field name="be_art">fixed</field>
@@ -292,7 +292,7 @@
         <field name="code">EXP_GOODS</field>
         <field name="name">Goods, raw materials and supplies</field>
         <field name="name@de">Waren, Roh- und Hilfsstoffe</field>
-        <field name="sequence">330</field>
+        <field name="sequence" eval="330" />
         <field name="role">ba</field>
     </record>
     <record id="category_exp_goods_on_sale" model="l10n_de_euer.category">
@@ -301,7 +301,7 @@
         <field
             name="name@de"
         >Umlaufvermögen nach § 4 Abs. 3 Satz 4 EStG, bei Veräußerung</field>
-        <field name="sequence">340</field>
+        <field name="sequence" eval="340" />
         <!-- the cost becomes an expense from the asset register at the receipt
              of the proceeds (Kz 605 → 100), not from the booking (spec 6.5) -->
         <field name="role">afa</field>
@@ -318,7 +318,7 @@
         <field
             name="name@de"
         >Umlaufvermögen im Teileinkünfteverfahren, bei Veräußerung</field>
-        <field name="sequence">350</field>
+        <field name="sequence" eval="350" />
         <field name="role">afa</field>
         <field name="erfassung">B</field>
         <field name="confidence">n</field>
@@ -329,7 +329,7 @@
         <field name="code">EXP_ADVANCE_PAID</field>
         <field name="name">Advance payments on inventories</field>
         <field name="name@de">Geleistete Anzahlungen auf Vorräte</field>
-        <field name="sequence">360</field>
+        <field name="sequence" eval="360" />
         <field name="role">ba</field>
         <field name="confidence">m</field>
         <field name="on_payment">True</field>
@@ -338,14 +338,14 @@
         <field name="code">EXP_SERVICES</field>
         <field name="name">Services purchased</field>
         <field name="name@de">Bezogene Fremdleistungen</field>
-        <field name="sequence">370</field>
+        <field name="sequence" eval="370" />
         <field name="role">ba</field>
     </record>
     <record id="category_exp_construction_withholding" model="l10n_de_euer.category">
         <field name="code">EXP_CONSTRUCTION_WITHHOLDING</field>
         <field name="name">Construction withholding tax</field>
         <field name="name@de">Bauabzugsteuer</field>
-        <field name="sequence">380</field>
+        <field name="sequence" eval="380" />
         <field name="role">ba</field>
         <field name="confidence">n</field>
         <field name="on_payment">True</field>
@@ -354,7 +354,7 @@
         <field name="code">EXP_PERSONNEL</field>
         <field name="name">Personnel expenses</field>
         <field name="name@de">Ausgaben für eigenes Personal</field>
-        <field name="sequence">390</field>
+        <field name="sequence" eval="390" />
         <field name="role">ba</field>
         <field name="recurring_candidate">True</field>
     </record>
@@ -362,7 +362,7 @@
         <field name="code">EXP_PAYROLL_LIABILITY</field>
         <field name="name">Payroll liabilities</field>
         <field name="name@de">Verbindlichkeiten aus Lohn und Gehalt</field>
-        <field name="sequence">400</field>
+        <field name="sequence" eval="400" />
         <field name="role">ba</field>
         <field name="confidence">m</field>
         <field name="recurring_candidate">True</field>
@@ -372,7 +372,7 @@
         <field name="code">EXP_RENT</field>
         <field name="name">Rent and lease of business premises</field>
         <field name="name@de">Miete und Pacht für Geschäftsräume</field>
-        <field name="sequence">410</field>
+        <field name="sequence" eval="410" />
         <field name="role">ba</field>
         <field name="recurring_candidate">True</field>
     </record>
@@ -380,7 +380,7 @@
         <field name="code">EXP_DOUBLE_HOUSEHOLD</field>
         <field name="name">Double household (business)</field>
         <field name="name@de">Doppelte Haushaltsführung</field>
-        <field name="sequence">420</field>
+        <field name="sequence" eval="420" />
         <field name="role">ba</field>
     </record>
     <record id="category_exp_property" model="l10n_de_euer.category">
@@ -389,21 +389,21 @@
         <field
             name="name@de"
         >Sonstige Aufwendungen für betrieblich genutzte Grundstücke</field>
-        <field name="sequence">430</field>
+        <field name="sequence" eval="430" />
         <field name="role">ba</field>
     </record>
     <record id="category_exp_property_maintenance" model="l10n_de_euer.category">
         <field name="code">EXP_PROPERTY_MAINTENANCE</field>
         <field name="name">Maintenance of business property</field>
         <field name="name@de">Erhaltungsaufwendungen für Grundstücke</field>
-        <field name="sequence">440</field>
+        <field name="sequence" eval="440" />
         <field name="role">ba</field>
     </record>
     <record id="category_exp_telecom" model="l10n_de_euer.category">
         <field name="code">EXP_TELECOM</field>
         <field name="name">Telecommunication</field>
         <field name="name@de">Telekommunikation</field>
-        <field name="sequence">450</field>
+        <field name="sequence" eval="450" />
         <field name="role">ba</field>
         <field name="recurring_candidate">True</field>
     </record>
@@ -411,14 +411,14 @@
         <field name="code">EXP_TRAVEL</field>
         <field name="name">Accommodation and incidental travel costs</field>
         <field name="name@de">Übernachtungs- und Reisenebenkosten</field>
-        <field name="sequence">460</field>
+        <field name="sequence" eval="460" />
         <field name="role">ba</field>
     </record>
     <record id="category_exp_travel_collective" model="l10n_de_euer.category">
         <field name="code">EXP_TRAVEL_COLLECTIVE</field>
         <field name="name">Travel costs on a DATEV collective account</field>
         <field name="name@de">Reisekosten auf DATEV-Sammelkonto</field>
-        <field name="sequence">470</field>
+        <field name="sequence" eval="470" />
         <field name="role">ba</field>
         <field name="confidence">n</field>
         <field name="warning">collective</field>
@@ -427,21 +427,21 @@
         <field name="code">EXP_TRAINING</field>
         <field name="name">Further training</field>
         <field name="name@de">Fortbildungskosten</field>
-        <field name="sequence">480</field>
+        <field name="sequence" eval="480" />
         <field name="role">ba</field>
     </record>
     <record id="category_exp_advice" model="l10n_de_euer.category">
         <field name="code">EXP_ADVICE</field>
         <field name="name">Legal and tax advice, bookkeeping</field>
         <field name="name@de">Rechts- und Steuerberatung, Buchführung</field>
-        <field name="sequence">490</field>
+        <field name="sequence" eval="490" />
         <field name="role">ba</field>
     </record>
     <record id="category_exp_leasing" model="l10n_de_euer.category">
         <field name="code">EXP_LEASING</field>
         <field name="name">Rent and leasing of movable assets</field>
         <field name="name@de">Miete und Leasing beweglicher Wirtschaftsgüter</field>
-        <field name="sequence">500</field>
+        <field name="sequence" eval="500" />
         <field name="role">ba</field>
         <field name="recurring_candidate">True</field>
     </record>
@@ -449,14 +449,14 @@
         <field name="code">EXP_MAINTENANCE</field>
         <field name="name">Repairs and maintenance</field>
         <field name="name@de">Erhaltungsaufwendungen</field>
-        <field name="sequence">510</field>
+        <field name="sequence" eval="510" />
         <field name="role">ba</field>
     </record>
     <record id="category_exp_fees_insurance" model="l10n_de_euer.category">
         <field name="code">EXP_FEES_INSURANCE</field>
         <field name="name">Contributions, fees, levies and insurance</field>
         <field name="name@de">Beiträge, Gebühren, Abgaben und Versicherungen</field>
-        <field name="sequence">520</field>
+        <field name="sequence" eval="520" />
         <field name="role">ba</field>
         <field name="recurring_candidate">True</field>
     </record>
@@ -464,7 +464,7 @@
         <field name="code">EXP_IT</field>
         <field name="name">Current IT costs</field>
         <field name="name@de">Laufende EDV-Kosten</field>
-        <field name="sequence">530</field>
+        <field name="sequence" eval="530" />
         <field name="role">ba</field>
         <field name="recurring_candidate">True</field>
     </record>
@@ -472,35 +472,35 @@
         <field name="code">EXP_WORK_EQUIPMENT</field>
         <field name="name">Work equipment, office supplies and postage</field>
         <field name="name@de">Arbeitsmittel, Büromaterial und Porto</field>
-        <field name="sequence">540</field>
+        <field name="sequence" eval="540" />
         <field name="role">ba</field>
     </record>
     <record id="category_exp_disposal" model="l10n_de_euer.category">
         <field name="code">EXP_DISPOSAL</field>
         <field name="name">Waste disposal</field>
         <field name="name@de">Abfallbeseitigung</field>
-        <field name="sequence">550</field>
+        <field name="sequence" eval="550" />
         <field name="role">ba</field>
     </record>
     <record id="category_exp_packaging" model="l10n_de_euer.category">
         <field name="code">EXP_PACKAGING</field>
         <field name="name">Packaging and transport</field>
         <field name="name@de">Verpackung und Transport</field>
-        <field name="sequence">560</field>
+        <field name="sequence" eval="560" />
         <field name="role">ba</field>
     </record>
     <record id="category_exp_advertising" model="l10n_de_euer.category">
         <field name="code">EXP_ADVERTISING</field>
         <field name="name">Advertising</field>
         <field name="name@de">Werbekosten</field>
-        <field name="sequence">570</field>
+        <field name="sequence" eval="570" />
         <field name="role">ba</field>
     </record>
     <record id="category_exp_interest_fixed_assets" model="l10n_de_euer.category">
         <field name="code">EXP_INTEREST_FIXED_ASSETS</field>
         <field name="name">Interest on loans for fixed assets</field>
         <field name="name@de">Schuldzinsen für Anlagevermögen</field>
-        <field name="sequence">580</field>
+        <field name="sequence" eval="580" />
         <field name="role">ba</field>
         <field name="recurring_candidate">True</field>
     </record>
@@ -508,7 +508,7 @@
         <field name="code">EXP_INTEREST_OTHER</field>
         <field name="name">Other interest on debt</field>
         <field name="name@de">Übrige Schuldzinsen</field>
-        <field name="sequence">590</field>
+        <field name="sequence" eval="590" />
         <field name="role">ba</field>
         <field name="recurring_candidate">True</field>
     </record>
@@ -516,7 +516,7 @@
         <field name="code">EXP_INTEREST_PARTIAL_INCOME</field>
         <field name="name">Interest under the partial income method</field>
         <field name="name@de">Schuldzinsen im Teileinkünfteverfahren</field>
-        <field name="sequence">600</field>
+        <field name="sequence" eval="600" />
         <field name="role">ba</field>
         <field name="confidence">n</field>
         <field name="scope_reason">partial_income</field>
@@ -526,14 +526,14 @@
         <field name="code">EXP_OTHER</field>
         <field name="name">Other unrestricted business expenses</field>
         <field name="name@de">Übrige unbeschränkt abziehbare Betriebsausgaben</field>
-        <field name="sequence">610</field>
+        <field name="sequence" eval="610" />
         <field name="role">ba</field>
     </record>
     <record id="category_exp_other_partial_income" model="l10n_de_euer.category">
         <field name="code">EXP_OTHER_PARTIAL_INCOME</field>
         <field name="name">Expenses under the partial income method</field>
         <field name="name@de">Aufwendungen im Teileinkünfteverfahren</field>
-        <field name="sequence">620</field>
+        <field name="sequence" eval="620" />
         <field name="role">ba</field>
         <field name="confidence">n</field>
         <field name="scope_reason">partial_income</field>
@@ -543,7 +543,7 @@
         <field name="code">EXP_EXCISE_LIABILITY</field>
         <field name="name">Excise duty liabilities</field>
         <field name="name@de">Verbindlichkeiten für Verbrauchsteuern</field>
-        <field name="sequence">630</field>
+        <field name="sequence" eval="630" />
         <field name="role">ba</field>
         <field name="confidence">n</field>
         <field name="on_payment">True</field>
@@ -552,7 +552,7 @@
         <field name="code">EXP_GIFTS</field>
         <field name="name">Gifts (deductible)</field>
         <field name="name@de">Geschenke (abziehbar)</field>
-        <field name="sequence">640</field>
+        <field name="sequence" eval="640" />
         <field name="role">ba</field>
         <field name="restricted_column">deductible</field>
         <field name="separate_record">gift</field>
@@ -562,7 +562,7 @@
         <field name="code">EXP_GIFTS_NON_DEDUCTIBLE</field>
         <field name="name">Gifts (not deductible)</field>
         <field name="name@de">Geschenke (nicht abziehbar)</field>
-        <field name="sequence">650</field>
+        <field name="sequence" eval="650" />
         <field name="role">ba</field>
         <field name="restricted_column">non_deductible</field>
         <field name="separate_record">gift</field>
@@ -571,7 +571,7 @@
         <field name="code">EXP_ENTERTAINMENT</field>
         <field name="name">Business entertainment (deductible part)</field>
         <field name="name@de">Bewirtungskosten (abziehbarer Teil)</field>
-        <field name="sequence">660</field>
+        <field name="sequence" eval="660" />
         <field name="role">ba</field>
         <field name="restricted_column">deductible</field>
         <field name="separate_record">entertainment</field>
@@ -583,7 +583,7 @@
         <field name="code">EXP_ENTERTAINMENT_NON_DEDUCTIBLE</field>
         <field name="name">Business entertainment (not deductible)</field>
         <field name="name@de">Bewirtungskosten (nicht abziehbar)</field>
-        <field name="sequence">670</field>
+        <field name="sequence" eval="670" />
         <field name="role">ba</field>
         <field name="restricted_column">non_deductible</field>
         <field name="separate_record">entertainment</field>
@@ -592,14 +592,14 @@
         <field name="code">EXP_MEALS</field>
         <field name="name">Additional meal expenses</field>
         <field name="name@de">Verpflegungsmehraufwendungen</field>
-        <field name="sequence">680</field>
+        <field name="sequence" eval="680" />
         <field name="role">ba</field>
     </record>
     <record id="category_exp_home_office" model="l10n_de_euer.category">
         <field name="code">EXP_HOME_OFFICE</field>
         <field name="name">Home office (deductible)</field>
         <field name="name@de">Häusliches Arbeitszimmer (abziehbar)</field>
-        <field name="sequence">690</field>
+        <field name="sequence" eval="690" />
         <field name="role">ba</field>
         <field name="restricted_column">deductible</field>
     </record>
@@ -607,7 +607,7 @@
         <field name="code">EXP_HOME_OFFICE_NON_DEDUCTIBLE</field>
         <field name="name">Home office (not deductible)</field>
         <field name="name@de">Häusliches Arbeitszimmer (nicht abziehbar)</field>
-        <field name="sequence">700</field>
+        <field name="sequence" eval="700" />
         <field name="role">ba</field>
         <field name="restricted_column">non_deductible</field>
     </record>
@@ -617,7 +617,7 @@
         <field
             name="name@de"
         >Sonstige beschränkt abziehbare Betriebsausgaben (abziehbar)</field>
-        <field name="sequence">710</field>
+        <field name="sequence" eval="710" />
         <field name="role">ba</field>
         <field name="restricted_column">deductible</field>
     </record>
@@ -627,7 +627,7 @@
         <field
             name="name@de"
         >Nicht abziehbare Betriebsausgaben (Gewerbesteuer, Geldbußen)</field>
-        <field name="sequence">720</field>
+        <field name="sequence" eval="720" />
         <field name="role">ba</field>
         <field name="restricted_column">non_deductible</field>
     </record>
@@ -635,7 +635,7 @@
         <field name="code">EXP_CAR_LEASING</field>
         <field name="name">Vehicle leasing</field>
         <field name="name@de">Leasingkosten Kfz</field>
-        <field name="sequence">730</field>
+        <field name="sequence" eval="730" />
         <field name="role">ba</field>
         <field name="recurring_candidate">True</field>
     </record>
@@ -643,7 +643,7 @@
         <field name="code">EXP_CAR_TAX_INSURANCE</field>
         <field name="name">Vehicle tax, insurance and tolls</field>
         <field name="name@de">Kfz-Steuer, -Versicherung und Maut</field>
-        <field name="sequence">740</field>
+        <field name="sequence" eval="740" />
         <field name="role">ba</field>
         <field name="recurring_candidate">True</field>
     </record>
@@ -651,14 +651,14 @@
         <field name="code">EXP_CAR_OTHER</field>
         <field name="name">Other vehicle and travel costs</field>
         <field name="name@de">Sonstige Fahrtkosten</field>
-        <field name="sequence">750</field>
+        <field name="sequence" eval="750" />
         <field name="role">ba</field>
     </record>
     <record id="category_exp_car_collective" model="l10n_de_euer.category">
         <field name="code">EXP_CAR_COLLECTIVE</field>
         <field name="name">Vehicle costs on a DATEV collective account</field>
         <field name="name@de">Fahrzeugkosten auf DATEV-Sammelkonto</field>
-        <field name="sequence">760</field>
+        <field name="sequence" eval="760" />
         <field name="role">ba</field>
         <field name="confidence">n</field>
         <field name="warning">collective</field>
@@ -667,7 +667,7 @@
         <field name="code">EXP_CAR_PRIVATE_USE</field>
         <field name="name">Business use of a private vehicle</field>
         <field name="name@de">Nutzungseinlage Privatfahrzeug</field>
-        <field name="sequence">770</field>
+        <field name="sequence" eval="770" />
         <field name="role">ba</field>
         <field name="erfassung">B</field>
     </record>
@@ -677,7 +677,7 @@
         <field
             name="name@de"
         >Fahrten Wohnung–Betriebsstätte (nicht abziehbarer Teil)</field>
-        <field name="sequence">780</field>
+        <field name="sequence" eval="780" />
         <field name="role">ba</field>
         <field name="erfassung">M</field>
         <field name="confidence">n</field>
@@ -686,7 +686,7 @@
         <field name="code">EXP_COMMUTE_FLAT_RATE</field>
         <field name="name">Distance allowance home to business</field>
         <field name="name@de">Entfernungspauschale Wohnung–Betriebsstätte</field>
-        <field name="sequence">790</field>
+        <field name="sequence" eval="790" />
         <field name="role">ba</field>
         <field name="erfassung">M</field>
         <field name="confidence">n</field>
@@ -695,7 +695,7 @@
         <field name="code">RESERVE_FORMATION</field>
         <field name="name">Formation of reserves</field>
         <field name="name@de">Bildung von Rücklagen</field>
-        <field name="sequence">800</field>
+        <field name="sequence" eval="800" />
         <field name="role">ba</field>
         <field name="erfassung">M</field>
         <field name="scope_reason">reserves</field>
@@ -705,7 +705,7 @@
         <field name="code">RESERVE_FORMATION_COMPENSATION</field>
         <field name="name">Formation of compensating items (§ 4g EStG)</field>
         <field name="name@de">Bildung von Ausgleichsposten (§ 4g EStG)</field>
-        <field name="sequence">810</field>
+        <field name="sequence" eval="810" />
         <field name="role">ba</field>
         <field name="erfassung">M</field>
         <field name="scope_reason">reserves</field>
@@ -715,21 +715,21 @@
         <field name="code">FIXED_ASSET</field>
         <field name="name">Fixed assets (asset register)</field>
         <field name="name@de">Anlagevermögen (Anlagenverzeichnis)</field>
-        <field name="sequence">820</field>
+        <field name="sequence" eval="820" />
         <field name="role">av</field>
     </record>
     <record id="category_current_asset_4_3_4" model="l10n_de_euer.category">
         <field name="code">CURRENT_ASSET_4_3_4</field>
         <field name="name">Current assets under § 4 (3) sentence 4 EStG</field>
         <field name="name@de">Umlaufvermögen nach § 4 Abs. 3 Satz 4 EStG</field>
-        <field name="sequence">830</field>
+        <field name="sequence" eval="830" />
         <field name="role">av</field>
     </record>
     <record id="category_depr_building" model="l10n_de_euer.category">
         <field name="code">DEPR_BUILDING</field>
         <field name="name">Depreciation of buildings</field>
         <field name="name@de">AfA auf Gebäude</field>
-        <field name="sequence">840</field>
+        <field name="sequence" eval="840" />
         <field name="role">afa</field>
         <field name="erfassung">B</field>
     </record>
@@ -737,7 +737,7 @@
         <field name="code">DEPR_INTANGIBLE</field>
         <field name="name">Depreciation of intangible assets</field>
         <field name="name@de">AfA auf immaterielle Wirtschaftsgüter</field>
-        <field name="sequence">850</field>
+        <field name="sequence" eval="850" />
         <field name="role">afa</field>
         <field name="erfassung">B</field>
     </record>
@@ -745,7 +745,7 @@
         <field name="code">DEPR_MOVABLE</field>
         <field name="name">Depreciation of movable assets</field>
         <field name="name@de">AfA auf bewegliche Wirtschaftsgüter</field>
-        <field name="sequence">860</field>
+        <field name="sequence" eval="860" />
         <field name="role">afa</field>
         <field name="erfassung">B</field>
     </record>
@@ -753,7 +753,7 @@
         <field name="code">DEPR_SPECIAL</field>
         <field name="name">Special depreciation</field>
         <field name="name@de">Sonderabschreibungen</field>
-        <field name="sequence">870</field>
+        <field name="sequence" eval="870" />
         <field name="role">afa</field>
         <field name="erfassung">B</field>
     </record>
@@ -761,7 +761,7 @@
         <field name="code">DEPR_7G_REDUCTION</field>
         <field name="name">Reduction of acquisition costs (§ 7g (2) EStG)</field>
         <field name="name@de">Herabsetzungsbeträge nach § 7g Abs. 2 EStG</field>
-        <field name="sequence">880</field>
+        <field name="sequence" eval="880" />
         <field name="role">afa</field>
         <field name="erfassung">B</field>
         <field name="scope_reason">iab</field>
@@ -771,7 +771,7 @@
         <field name="code">DEPR_LOW_VALUE</field>
         <field name="name">Low-value assets</field>
         <field name="name@de">Geringwertige Wirtschaftsgüter</field>
-        <field name="sequence">890</field>
+        <field name="sequence" eval="890" />
         <field name="role">afa</field>
         <field name="erfassung">B</field>
     </record>
@@ -779,7 +779,7 @@
         <field name="code">DEPR_POOL</field>
         <field name="name">Asset pool</field>
         <field name="name@de">Sammelposten</field>
-        <field name="sequence">900</field>
+        <field name="sequence" eval="900" />
         <field name="role">afa</field>
         <field name="erfassung">B</field>
     </record>
@@ -787,7 +787,7 @@
         <field name="code">DEPR_BOOK_VALUE</field>
         <field name="name">Residual book value of disposed assets</field>
         <field name="name@de">Restbuchwert ausgeschiedener Anlagegüter</field>
-        <field name="sequence">910</field>
+        <field name="sequence" eval="910" />
         <field name="role">afa</field>
         <field name="erfassung">B</field>
     </record>
@@ -795,7 +795,7 @@
         <field name="code">DEPR_BOOK_VALUE_PARTIAL_INCOME</field>
         <field name="name">Residual book value under the partial income method</field>
         <field name="name@de">Restbuchwert im Teileinkünfteverfahren</field>
-        <field name="sequence">920</field>
+        <field name="sequence" eval="920" />
         <field name="role">afa</field>
         <field name="erfassung">B</field>
         <field name="confidence">n</field>
@@ -806,7 +806,7 @@
         <field name="code">DEPR_HOME_OFFICE</field>
         <field name="name">Depreciation of the home office</field>
         <field name="name@de">AfA häusliches Arbeitszimmer</field>
-        <field name="sequence">930</field>
+        <field name="sequence" eval="930" />
         <field name="role">afa</field>
         <field name="erfassung">B</field>
         <field name="confidence">m</field>
@@ -816,14 +816,14 @@
         <field name="code">NEUTRAL</field>
         <field name="name">No income or expense</field>
         <field name="name@de">Ohne Gewinnauswirkung</field>
-        <field name="sequence">940</field>
+        <field name="sequence" eval="940" />
         <field name="role">neutral</field>
     </record>
     <record id="category_transit" model="l10n_de_euer.category">
         <field name="code">TRANSIT</field>
         <field name="name">Money in transit and interim accounts</field>
         <field name="name@de">Geldtransit und Interimskonten</field>
-        <field name="sequence">950</field>
+        <field name="sequence" eval="950" />
         <field name="role">neutral</field>
         <field name="interim">True</field>
     </record>
@@ -831,7 +831,7 @@
         <field name="code">WRITEOFF</field>
         <field name="name">Bad debts and write-off of receivables</field>
         <field name="name@de">Forderungsverluste und Ausbuchungen</field>
-        <field name="sequence">960</field>
+        <field name="sequence" eval="960" />
         <field name="role">neutral</field>
         <field name="confidence">m</field>
         <field name="writeoff">True</field>
@@ -840,7 +840,7 @@
         <field name="code">PARTNERSHIP</field>
         <field name="name">Shares in partnerships</field>
         <field name="name@de">Beteiligungen an Personengesellschaften</field>
-        <field name="sequence">970</field>
+        <field name="sequence" eval="970" />
         <field name="role">neutral</field>
         <field name="confidence">n</field>
         <field name="scope_reason">partnership</field>
@@ -850,7 +850,7 @@
         <field name="code">WARN_PROVISION</field>
         <field name="name">Provisions</field>
         <field name="name@de">Rückstellungen</field>
-        <field name="sequence">980</field>
+        <field name="sequence" eval="980" />
         <field name="role">warn</field>
         <field name="warning">provision</field>
     </record>
@@ -858,7 +858,7 @@
         <field name="code">WARN_ACCRUAL</field>
         <field name="name">Accruals and deferrals</field>
         <field name="name@de">Rechnungsabgrenzung</field>
-        <field name="sequence">990</field>
+        <field name="sequence" eval="990" />
         <field name="role">warn</field>
         <field name="warning">accrual</field>
     </record>
@@ -866,7 +866,7 @@
         <field name="code">WARN_VALUATION</field>
         <field name="name">Valuation allowances and write-downs</field>
         <field name="name@de">Wertberichtigungen und Teilwertabschreibungen</field>
-        <field name="sequence">1000</field>
+        <field name="sequence" eval="1000" />
         <field name="role">warn</field>
         <field name="warning">valuation</field>
     </record>
@@ -874,7 +874,7 @@
         <field name="code">WARN_INVENTORY</field>
         <field name="name">Inventories and changes in inventories</field>
         <field name="name@de">Bestände und Bestandsveränderungen</field>
-        <field name="sequence">1010</field>
+        <field name="sequence" eval="1010" />
         <field name="role">warn</field>
         <field name="warning">inventory</field>
     </record>
@@ -882,7 +882,7 @@
         <field name="code">WARN_DATEV</field>
         <field name="name">DATEV auxiliary accounts for the EÜR</field>
         <field name="name@de">DATEV-Hilfskonten für die EÜR</field>
-        <field name="sequence">1020</field>
+        <field name="sequence" eval="1020" />
         <field name="role">warn</field>
         <field name="confidence">m</field>
         <field name="warning">datev</field>
@@ -891,7 +891,7 @@
         <field name="code">WARN_DISPOSAL_BALANCE</field>
         <field name="name">Net gain or loss on disposals</field>
         <field name="name@de">Saldo aus Anlagenabgängen</field>
-        <field name="sequence">1030</field>
+        <field name="sequence" eval="1030" />
         <field name="role">warn</field>
         <field name="confidence">m</field>
         <field name="warning">disposal_balance</field>
@@ -900,7 +900,7 @@
         <field name="code">WARN_IAB</field>
         <field name="name">Investment deduction (§ 7g EStG)</field>
         <field name="name@de">Investitionsabzugsbetrag (§ 7g EStG)</field>
-        <field name="sequence">1040</field>
+        <field name="sequence" eval="1040" />
         <field name="role">warn</field>
         <field name="warning">other</field>
         <field name="scope_reason">iab</field>
@@ -912,7 +912,7 @@
         <field
             name="name@de"
         >Hinzurechnung von Schuldzinsen nach § 4 Abs. 4a EStG</field>
-        <field name="sequence">1050</field>
+        <field name="sequence" eval="1050" />
         <field name="role">warn</field>
         <field name="warning">other</field>
         <field name="scope_reason">interest_limit</field>
@@ -922,7 +922,7 @@
         <field name="code">WARN_OTHER</field>
         <field name="name">Not provided for in the EÜR</field>
         <field name="name@de">In der EÜR nicht vorgesehen</field>
-        <field name="sequence">1060</field>
+        <field name="sequence" eval="1060" />
         <field name="role">warn</field>
         <field name="confidence">m</field>
         <field name="warning">other</field>

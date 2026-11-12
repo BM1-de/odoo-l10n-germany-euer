@@ -7,7 +7,23 @@ The reports only present what the statement prepares
 main output, the PDF is printed from the same template.
 """
 
+from decimal import Decimal
+
 from odoo import api, models
+
+
+def _plain(value):
+    """Values a QWeb template may touch: Odoo 20 warns about every access to
+    an object that is no plain type, and a ``Decimal`` is none. Amounts are
+    handed over as floats; the helpers that format them (``money``) build an
+    exact decimal from them again."""
+    if isinstance(value, Decimal):
+        return float(value)
+    if isinstance(value, dict):
+        return {key: _plain(item) for key, item in value.items()}
+    if isinstance(value, list | tuple):
+        return type(value)(_plain(item) for item in value)
+    return value
 
 
 class _StatementReport(models.AbstractModel):
@@ -21,7 +37,7 @@ class _StatementReport(models.AbstractModel):
     def _get_report_values(self, docids, data=None):
         statements = self.env["l10n_de_euer.statement"].browse(docids)
         outputs = {
-            statement.id: getattr(statement, self._data_method)()
+            statement.id: _plain(getattr(statement, self._data_method)())
             for statement in statements
         }
         return {

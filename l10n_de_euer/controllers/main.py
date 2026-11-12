@@ -4,7 +4,8 @@
 from werkzeug.exceptions import NotFound
 
 from odoo import http
-from odoo.http import content_disposition, request
+from odoo.http import request
+from odoo.http.stream import content_disposition
 
 from ..models.euer_statement_output import EXPORTS
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- Copyright 2026 Baumgärtner Marketing GmbH
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <!-- Reports of a statement (spec 7.5, 7.12, O-11): real tables with caption
@@ -9,7 +9,9 @@
      procedure documentation uses the external layout of the company; the DIN
      5008 layout of l10n_din5008 hides the h1 and the h2 directly in .page and
      shows its own title, so the title is passed as din5008_document_title and
-     the sections are wrapped in a div. The wide tables (evidence, check
+     the sections are wrapped in a div. Since Odoo 20 a template gets values
+     as attributes of its t-call, a t-set inside the call no longer reaches
+     it; so title and information block are set before the call. The wide tables (evidence, check
      protocol) use the internal layout in landscape, without the width of
      the DIN 5008 letter. -->
 <odoo>
@@ -30,7 +32,6 @@
         <field name="model">l10n_de_euer.statement</field>
         <field name="report_type">qweb-html</field>
         <field name="report_name">l10n_de_euer.report_fill_aid</field>
-        <field name="report_file">l10n_de_euer.report_fill_aid</field>
         <field name="binding_model_id" ref="model_l10n_de_euer_statement" />
         <field name="binding_type">report</field>
     </record>
@@ -39,7 +40,6 @@
         <field name="model">l10n_de_euer.statement</field>
         <field name="report_type">qweb-pdf</field>
         <field name="report_name">l10n_de_euer.report_fill_aid</field>
-        <field name="report_file">l10n_de_euer.report_fill_aid</field>
         <field
             name="print_report_name"
         >'EUER_fill_in_aid_%s_v%s' % (object.year, object.version)</field>
@@ -51,7 +51,6 @@
         <field name="model">l10n_de_euer.statement</field>
         <field name="report_type">qweb-pdf</field>
         <field name="report_name">l10n_de_euer.report_evidence</field>
-        <field name="report_file">l10n_de_euer.report_evidence</field>
         <field
             name="print_report_name"
         >'EUER_evidence_%s_v%s' % (object.year, object.version)</field>
@@ -64,7 +63,6 @@
         <field name="model">l10n_de_euer.statement</field>
         <field name="report_type">qweb-pdf</field>
         <field name="report_name">l10n_de_euer.report_check_protocol</field>
-        <field name="report_file">l10n_de_euer.report_check_protocol</field>
         <field
             name="print_report_name"
         >'EUER_check_protocol_%s_v%s' % (object.year, object.version)</field>
@@ -77,7 +75,6 @@
         <field name="model">l10n_de_euer.statement</field>
         <field name="report_type">qweb-html</field>
         <field name="report_name">l10n_de_euer.report_procedure</field>
-        <field name="report_file">l10n_de_euer.report_procedure</field>
         <field name="binding_model_id" ref="model_l10n_de_euer_statement" />
         <field name="binding_type">report</field>
     </record>
@@ -86,7 +83,6 @@
         <field name="model">l10n_de_euer.statement</field>
         <field name="report_type">qweb-pdf</field>
         <field name="report_name">l10n_de_euer.report_procedure</field>
-        <field name="report_file">l10n_de_euer.report_procedure</field>
         <field
             name="print_report_name"
         >'EUER_procedure_documentation_%s' % (object.year)</field>
@@ -406,19 +402,25 @@
     </template>
 
     <template id="report_fill_aid">
-        <t t-call="web.html_container">
-            <t t-set="title">Fill-in aid for Mein ELSTER: <t
-                t-out="', '.join(docs.mapped('name'))"
-            /></t>
+        <t t-set="title">Fill-in aid for Mein ELSTER: <t
+            t-out="', '.join(docs.mapped('name'))"
+        /></t>
+        <t t-call="web.html_container" title="title">
             <t t-foreach="docs" t-as="o">
-                <t t-if="report_type == 'pdf'" t-call="web.external_layout">
+                <t t-if="report_type == 'pdf'">
                     <t t-set="din5008_document_title">
                         Fill-in aid for Mein ELSTER: <t t-out="o.name" />
                     </t>
                     <t t-set="din5008_document_information">
                         <t t-call="l10n_de_euer.report_statement_information" />
                     </t>
-                    <t t-call="l10n_de_euer.report_fill_aid_document" />
+                    <t
+                        t-call="web.external_layout"
+                        din5008_document_title="din5008_document_title"
+                        din5008_document_information="din5008_document_information"
+                    >
+                        <t t-call="l10n_de_euer.report_fill_aid_document" />
+                    </t>
                 </t>
                 <t t-else="" t-call="l10n_de_euer.report_fill_aid_document" />
             </t>
@@ -532,10 +534,10 @@
     </template>
 
     <template id="report_evidence">
-        <t t-call="web.html_container">
-            <t t-set="title">Evidence per Kennzahl: <t
-                t-out="', '.join(docs.mapped('name'))"
-            /></t>
+        <t t-set="title">Evidence per Kennzahl: <t
+            t-out="', '.join(docs.mapped('name'))"
+        /></t>
+        <t t-call="web.html_container" title="title">
             <t t-foreach="docs" t-as="o">
                 <t t-if="report_type == 'pdf'" t-call="web.internal_layout">
                     <t t-call="l10n_de_euer.report_evidence_document" />
@@ -633,10 +635,10 @@
     </template>
 
     <template id="report_check_protocol">
-        <t t-call="web.html_container">
-            <t t-set="title">Check protocol: <t
-                t-out="', '.join(docs.mapped('name'))"
-            /></t>
+        <t t-set="title">Check protocol: <t
+            t-out="', '.join(docs.mapped('name'))"
+        /></t>
+        <t t-call="web.html_container" title="title">
             <t t-foreach="docs" t-as="o">
                 <t t-if="report_type == 'pdf'" t-call="web.internal_layout">
                     <t t-call="l10n_de_euer.report_check_protocol_document" />
@@ -962,12 +964,12 @@
     </template>
 
     <template id="report_procedure">
-        <t t-call="web.html_container">
-            <t t-set="title">Procedure documentation (template): <t
-                t-out="', '.join(docs.mapped('name'))"
-            /></t>
+        <t t-set="title">Procedure documentation (template): <t
+            t-out="', '.join(docs.mapped('name'))"
+        /></t>
+        <t t-call="web.html_container" title="title">
             <t t-foreach="docs" t-as="o">
-                <t t-if="report_type == 'pdf'" t-call="web.external_layout">
+                <t t-if="report_type == 'pdf'">
                     <t t-set="din5008_document_title">
                         Procedure documentation (template): EÜR <t
                         t-out="o.year"
@@ -976,7 +978,13 @@
                     <t t-set="din5008_document_information">
                         <t t-call="l10n_de_euer.report_statement_information" />
                     </t>
-                    <t t-call="l10n_de_euer.report_procedure_document" />
+                    <t
+                        t-call="web.external_layout"
+                        din5008_document_title="din5008_document_title"
+                        din5008_document_information="din5008_document_information"
+                    >
+                        <t t-call="l10n_de_euer.report_procedure_document" />
+                    </t>
                 </t>
                 <t t-else="" t-call="l10n_de_euer.report_procedure_document" />
             </t>

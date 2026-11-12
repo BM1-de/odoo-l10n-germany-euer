@@ -597,7 +597,7 @@ class RuleScenarios(ScenarioCommon):
                             "name": "Mixed use",
                             "account_id": self.acc("office").id,
                             "price_unit": 100,
-                            "deductible_amount": 50,
+                            "deductible_percentage": 0.5,
                             "tax_ids": [Command.set(self.tax("vst19").ids)],
                         }
                     )

@@ -1,7 +1,6 @@
 # Copyright 2026 Baumgärtner Marketing GmbH
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-import base64
 import csv
 import datetime
 import io
@@ -251,7 +250,7 @@ class L10nDeEuerAssetImport(models.TransientModel):
 
     # ------------------------------------------------------------ parsing
     def _read_rows(self):
-        data = base64.b64decode(self.file or b"")
+        data = self.file.content if self.file else b""
         not_csv = self.env._(
             "The file is no CSV file. Save the asset register as CSV in UTF-8 "
             "or Windows-1252 (e.g. not as an Excel workbook)."

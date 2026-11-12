@@ -260,6 +260,10 @@ class Graph:
         (year 1 plus, year 2 minus). A money pair over the turn of the year
         whose money lines Odoo reconciled with each other (reversal wizard,
         ``cancel=True``) is left out like any other pair: no money flowed.
+        Since Odoo 20 the reversal wizard reconciles only lines of
+        reconcilable accounts, no longer the lines of a bank or cash account
+        as such; a reversal over the turn of the year on such an account
+        therefore counts in both years.
         This changes the earlier year, so it is reported (C-48, T19).
         """
         for move in self.sorted_moves():

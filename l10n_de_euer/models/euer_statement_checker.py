@@ -347,7 +347,7 @@ class L10nDeEuerStatementChecker(models.AbstractModel):
                 hard_only.append(company)
         results = []
         if open_companies:
-            records = self.env["res.company"].concat(*open_companies)
+            records = self.env["res.company"].concat(open_companies)
             results.append(
                 self._result(
                     "C-70",
@@ -363,7 +363,7 @@ class L10nDeEuerStatementChecker(models.AbstractModel):
                 )
             )
         if hard_only:
-            records = self.env["res.company"].concat(*hard_only)
+            records = self.env["res.company"].concat(hard_only)
             results.append(
                 self._result(
                     "C-70",

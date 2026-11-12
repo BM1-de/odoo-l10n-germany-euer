@@ -17,7 +17,7 @@ from decimal import Decimal
 
 import xlsxwriter
 
-from odoo import api, fields, models, tools
+from odoo import api, fields, models
 from odoo.exceptions import UserError
 from odoo.fields import Domain
 from odoo.tools import float_repr
@@ -97,7 +97,7 @@ class L10nDeEuerStatement(models.Model):
         return {field.code: field for field in self.form_ids.field_ids}
 
     # ------------------------------------------------------------ payload
-    @tools.ormcache("statement_id", "payload_sha256")
+    @api.ormcache("statement_id", "payload_sha256")
     def _get_payload_parts(self, statement_id, payload_sha256):
         """Account assignment and names of the payload of a finalisation
         (cached per payload, which never changes)."""

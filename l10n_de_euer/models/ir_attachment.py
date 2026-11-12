@@ -1,8 +1,6 @@
 # Copyright 2026 Baumgärtner Marketing GmbH
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-import base64
-
 from odoo import api, models
 from odoo.exceptions import UserError
 from odoo.fields import Domain
@@ -13,7 +11,7 @@ from .euer_statement import CLOSED_STATES
 #: a change: a new access token; the content only unchanged (moving between
 #: database and file store)
 _FREE_FIELDS = frozenset({"access_token"})
-_CONTENT_FIELDS = frozenset({"raw", "datas"})
+_CONTENT_FIELDS = frozenset({"raw"})
 
 
 class IrAttachment(models.Model):
@@ -59,11 +57,12 @@ class IrAttachment(models.Model):
                 if name in _FREE_FIELDS:
                     continue
                 if name in _CONTENT_FIELDS:
-                    content = value or b""
-                    if name == "datas":
-                        content = base64.b64decode(content)
-                    elif isinstance(content, str):
-                        content = content.encode()
+                    # the value as Odoo will store it: bytes, a base64 string
+                    # of an RPC call or a binary value
+                    content = attachment._fields[name].convert_to_cache(
+                        value, attachment
+                    )
+                    content = content.content if content else b""
                     if attachment._compute_checksum(content) == attachment.checksum:
                         continue
                     protected._l10n_de_euer_raise()

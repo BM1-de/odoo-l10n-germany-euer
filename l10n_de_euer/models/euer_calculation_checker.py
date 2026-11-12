@@ -797,12 +797,12 @@ class L10nDeEuerCalculationChecker(models.AbstractModel):
             .search(
                 Domain("company_id", "in", companies.ids)
                 & Domain("move_id", "=", False)
-                & Domain("state", "in", ("in_process", "paid"))
+                & Domain("state", "in", ("paid", "reconciled"))
                 & Domain("date", ">=", datetime.date(year, 1, 1))
                 & Domain("date", "<=", datetime.date(year, 12, 31))
             )
             .filtered(
-                lambda payment: payment.state == "in_process"
+                lambda payment: payment.state == "paid"
                 or any(
                     not invoice.company_currency_id.is_zero(invoice.amount_residual)
                     for invoice in payment.invoice_ids

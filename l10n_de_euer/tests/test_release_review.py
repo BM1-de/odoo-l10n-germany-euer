@@ -269,8 +269,9 @@ class TestReleaseViews(TransactionCase):
                     self.assertIn(
                         "'enable_formatting': false", options, f"{view.xml_id}: {name}"
                     )
-                if field is not None and field.comodel_name:
-                    walk(child, self.env[field.comodel_name], view)
+                comodel_name = getattr(field, "comodel_name", None)
+                if comodel_name:
+                    walk(child, self.env[comodel_name], view)
 
         for view in views:
             walk(etree.fromstring(view.arch_db), self.env[view.model], view)

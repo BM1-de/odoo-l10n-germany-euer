@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- Copyright 2026 Baumgärtner Marketing GmbH
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <!-- Official forms 2024: Anlage EÜR, AVEÜR and SZ.
@@ -62,7 +62,7 @@
         <field name="code">EUER.00.NAME</field>
         <field name="box">00</field>
         <field name="line">1</field>
-        <field name="sequence">10</field>
+        <field name="sequence" eval="10" />
         <field
             name="official_label"
         >Name des Steuerpflichtigen bzw. der Gesellschaft/Gemeinschaft/Körperschaft</field>
@@ -76,7 +76,7 @@
         <field name="code">EUER.00.VORNAME</field>
         <field name="box">00</field>
         <field name="line">2</field>
-        <field name="sequence">20</field>
+        <field name="sequence" eval="20" />
         <field name="official_label">Vorname</field>
         <field name="name">First name</field>
         <field name="name@de">Vorname</field>
@@ -88,7 +88,7 @@
         <field name="code">EUER.00.STNR</field>
         <field name="box">00</field>
         <field name="line">3</field>
-        <field name="sequence">30</field>
+        <field name="sequence" eval="30" />
         <field name="official_label">(Betriebs-)Steuernummer</field>
         <field name="name">Tax number</field>
         <field name="name@de">Steuernummer</field>
@@ -101,7 +101,7 @@
         <field name="box">15</field>
         <field name="kz">131</field>
         <field name="line">4</field>
-        <field name="sequence">40</field>
+        <field name="sequence" eval="40" />
         <field name="official_label">davon abweichender Beginn</field>
         <field name="name">Start of deviating fiscal year</field>
         <field name="name@de">Beginn abweichendes Wj.</field>
@@ -114,7 +114,7 @@
         <field name="box">15</field>
         <field name="kz">132</field>
         <field name="line">4</field>
-        <field name="sequence">50</field>
+        <field name="sequence" eval="50" />
         <field name="official_label">davon abweichendes Ende</field>
         <field name="name">End of deviating fiscal year</field>
         <field name="name@de">Ende abweichendes Wj.</field>
@@ -127,7 +127,7 @@
         <field name="box">15</field>
         <field name="kz">101</field>
         <field name="line">5</field>
-        <field name="sequence">60</field>
+        <field name="sequence" eval="60" />
         <field name="official_label">Wirtschafts-Identifikationsnummer</field>
         <field name="name">Business identification number</field>
         <field name="name@de">Wirtschafts-IdNr.</field>
@@ -140,7 +140,7 @@
         <field name="box">15</field>
         <field name="kz">100</field>
         <field name="line">6</field>
-        <field name="sequence">70</field>
+        <field name="sequence" eval="70" />
         <field name="official_label">Art des Betriebs</field>
         <field name="name">Type of business</field>
         <field name="name@de">Art des Betriebs</field>
@@ -152,7 +152,7 @@
         <field name="code">EUER.15.RECHTSFORM</field>
         <field name="box">15</field>
         <field name="line">7</field>
-        <field name="sequence">80</field>
+        <field name="sequence" eval="80" />
         <field name="official_label">Rechtsform des Betriebs</field>
         <field name="name">Legal form</field>
         <field name="name@de">Rechtsform</field>
@@ -165,7 +165,7 @@
         <field name="box">15</field>
         <field name="kz">103</field>
         <field name="line">8</field>
-        <field name="sequence">90</field>
+        <field name="sequence" eval="90" />
         <field name="official_label">Einkunftsart</field>
         <field name="name">Type of income</field>
         <field name="name@de">Einkunftsart</field>
@@ -178,7 +178,7 @@
         <field name="box">15</field>
         <field name="kz">104</field>
         <field name="line">9</field>
-        <field name="sequence">100</field>
+        <field name="sequence" eval="100" />
         <field name="official_label">Betriebsinhaber</field>
         <field name="name">Business owner</field>
         <field name="name@de">Betriebsinhaber</field>
@@ -191,7 +191,7 @@
         <field name="box">15</field>
         <field name="kz">111</field>
         <field name="line">10</field>
-        <field name="sequence">110</field>
+        <field name="sequence" eval="110" />
         <field
             name="official_label"
         >Wurde im Kalenderjahr/Wirtschaftsjahr der Betrieb beendet?</field>
@@ -206,7 +206,7 @@
         <field name="box">15</field>
         <field name="kz">120</field>
         <field name="line">11</field>
-        <field name="sequence">120</field>
+        <field name="sequence" eval="120" />
         <field
             name="official_label"
         >Grundstücke/grundstücksgleiche Rechte entnommen oder veräußert</field>
@@ -222,7 +222,7 @@
         <field name="box">20</field>
         <field name="kz">111</field>
         <field name="line">12</field>
-        <field name="sequence">130</field>
+        <field name="sequence" eval="130" />
         <field
             name="official_label"
         >Betriebseinnahmen als umsatzsteuerlicher Kleinunternehmer (nach § 19 Abs. 1 UStG)</field>
@@ -238,7 +238,7 @@
         <field name="box">20</field>
         <field name="kz">119</field>
         <field name="line">13</field>
-        <field name="sequence">140</field>
+        <field name="sequence" eval="140" />
         <field
             name="official_label"
         >davon nicht steuerbare Umsätze sowie Umsätze nach § 19 Abs. 3 Satz 1 Nr. 1 und 2 UStG</field>
@@ -256,7 +256,7 @@
         <field name="box">20</field>
         <field name="kz">104</field>
         <field name="line">14</field>
-        <field name="sequence">150</field>
+        <field name="sequence" eval="150" />
         <field
             name="official_label"
         >Betriebseinnahmen als Land- und Forstwirt, soweit die Durchschnittssatzbesteuerung nach § 24 UStG angewandt wird</field>
@@ -272,7 +272,7 @@
         <field name="box">20</field>
         <field name="kz">112</field>
         <field name="line">15</field>
-        <field name="sequence">160</field>
+        <field name="sequence" eval="160" />
         <field
             name="official_label"
         >Umsatzsteuerpflichtige Betriebseinnahmen (ohne solche zum ermäßigten Steuersatz von 0 %)</field>
@@ -288,7 +288,7 @@
         <field name="box">20</field>
         <field name="kz">103</field>
         <field name="line">16</field>
-        <field name="sequence">170</field>
+        <field name="sequence" eval="170" />
         <field
             name="official_label"
         >Betriebseinnahmen, die umsatzsteuerfrei oder nicht umsatzsteuerbar sind oder nach § 12 Abs. 3 UStG dem ermäßigten Steuersatz von 0 % unterliegen oder für die der Leistungsempfänger die Umsatzsteuer nach § 13b UStG schuldet</field>
@@ -304,7 +304,7 @@
         <field name="box">20</field>
         <field name="kz">140</field>
         <field name="line">17</field>
-        <field name="sequence">180</field>
+        <field name="sequence" eval="180" />
         <field
             name="official_label"
         >Vereinnahmte Umsatzsteuer sowie Umsatzsteuer auf unentgeltliche Wertabgaben</field>
@@ -320,7 +320,7 @@
         <field name="box">20</field>
         <field name="kz">141</field>
         <field name="line">18</field>
-        <field name="sequence">190</field>
+        <field name="sequence" eval="190" />
         <field
             name="official_label"
         >Vom Finanzamt erstattete und ggf. verrechnete Umsatzsteuer (Die Regelung zum 10-Tageszeitraum - § 11 Abs. 1 Satz 2 EStG - ist zu beachten.)</field>
@@ -336,7 +336,7 @@
         <field name="box">20</field>
         <field name="kz">102</field>
         <field name="line">19</field>
-        <field name="sequence">200</field>
+        <field name="sequence" eval="200" />
         <field
             name="official_label"
         >Veräußerung oder Entnahme von Anlagevermögen</field>
@@ -352,7 +352,7 @@
         <field name="box">20</field>
         <field name="kz">106</field>
         <field name="line">20</field>
-        <field name="sequence">210</field>
+        <field name="sequence" eval="210" />
         <field name="official_label">Private Kfz-Nutzung</field>
         <field name="name">Private use of vehicles</field>
         <field name="name@de">Private Kfz-Nutzung</field>
@@ -366,7 +366,7 @@
         <field name="box">20</field>
         <field name="kz">108</field>
         <field name="line">21</field>
-        <field name="sequence">220</field>
+        <field name="sequence" eval="220" />
         <field
             name="official_label"
         >Sonstige Sach-, Nutzungs- und Leistungsentnahmen</field>
@@ -382,7 +382,7 @@
         <field name="box">25</field>
         <field name="kz">195</field>
         <field name="line">24</field>
-        <field name="sequence">250</field>
+        <field name="sequence" eval="250" />
         <field
             name="official_label"
         >Betriebsausgabenpauschale für bestimmte Berufsgruppen</field>
@@ -397,7 +397,7 @@
         <field name="code">EUER.25.LUF_WEINBAU</field>
         <field name="box">25</field>
         <field name="line">25</field>
-        <field name="sequence">260</field>
+        <field name="sequence" eval="260" />
         <field
             name="official_label"
         >Sachlicher Bebauungskostenrichtbetrag und Ausbaukostenrichtbeträge für Weinbaubetriebe (Übertrag aus Zeile 13 der Anlage LuF)</field>
@@ -412,7 +412,7 @@
         <field name="code">EUER.25.LUF_FORST</field>
         <field name="box">25</field>
         <field name="line">26</field>
-        <field name="sequence">270</field>
+        <field name="sequence" eval="270" />
         <field
             name="official_label"
         >Betriebsausgabenpauschale für Forstwirte (Übertrag aus Zeile 17 der Anlage LuF)</field>
@@ -428,7 +428,7 @@
         <field name="box">25</field>
         <field name="kz">100</field>
         <field name="line">27</field>
-        <field name="sequence">280</field>
+        <field name="sequence" eval="280" />
         <field
             name="official_label"
         >Waren, Rohstoffe und Hilfsstoffe einschließlich der Nebenkosten</field>
@@ -443,7 +443,7 @@
         <field name="code">EUER.25.UEB1</field>
         <field name="box">25</field>
         <field name="line">28</field>
-        <field name="sequence">290</field>
+        <field name="sequence" eval="290" />
         <field name="official_label">Übertrag (Summe Zeilen 24 bis 27)</field>
         <field name="name">Subtotal 1 of business expenses</field>
         <field name="name@de">Übertrag 1 Betriebsausgaben</field>
@@ -460,7 +460,7 @@
         <field name="box">25</field>
         <field name="kz">110</field>
         <field name="line">29</field>
-        <field name="sequence">300</field>
+        <field name="sequence" eval="300" />
         <field name="official_label">Bezogene Fremdleistungen</field>
         <field name="name">Third-party services</field>
         <field name="name@de">Bezogene Fremdleistungen</field>
@@ -474,7 +474,7 @@
         <field name="box">25</field>
         <field name="kz">120</field>
         <field name="line">30</field>
-        <field name="sequence">310</field>
+        <field name="sequence" eval="310" />
         <field
             name="official_label"
         >Ausgaben für eigenes Personal (z. B. Gehälter, Löhne und Versicherungsbeiträge)</field>
@@ -490,7 +490,7 @@
         <field name="box">25</field>
         <field name="kz">138</field>
         <field name="line">35</field>
-        <field name="sequence">360</field>
+        <field name="sequence" eval="360" />
         <field
             name="official_label"
         >Herabsetzungsbeträge nach § 7g Abs. 2 Satz 3 EStG (Erläuterungen auf gesondertem Blatt)</field>
@@ -506,7 +506,7 @@
         <field name="box">25</field>
         <field name="kz">132</field>
         <field name="line">36</field>
-        <field name="sequence">370</field>
+        <field name="sequence" eval="370" />
         <field
             name="official_label"
         >Aufwendungen für geringwertige Wirtschaftsgüter nach § 6 Abs. 2 EStG</field>
@@ -522,7 +522,7 @@
         <field name="box">25</field>
         <field name="kz">150</field>
         <field name="line">39</field>
-        <field name="sequence">400</field>
+        <field name="sequence" eval="400" />
         <field
             name="official_label"
         >Miete/Pacht für Geschäftsräume und betrieblich genutzte Grundstücke</field>
@@ -538,7 +538,7 @@
         <field name="box">25</field>
         <field name="kz">152</field>
         <field name="line">40</field>
-        <field name="sequence">410</field>
+        <field name="sequence" eval="410" />
         <field
             name="official_label"
         >Aufwendungen für doppelte Haushaltsführung (z. B. Miete)</field>
@@ -554,7 +554,7 @@
         <field name="box">25</field>
         <field name="kz">151</field>
         <field name="line">41</field>
-        <field name="sequence">420</field>
+        <field name="sequence" eval="420" />
         <field
             name="official_label"
         >Sonstige Aufwendungen für betrieblich genutzte Grundstücke (ohne Schuldzinsen und AfA)</field>
@@ -570,7 +570,7 @@
         <field name="box">25</field>
         <field name="kz">153</field>
         <field name="line">42</field>
-        <field name="sequence">430</field>
+        <field name="sequence" eval="430" />
         <field
             name="official_label"
         >in Zeile 41 enthaltene Erhaltungsaufwendungen</field>
@@ -586,7 +586,7 @@
         <field name="box">25</field>
         <field name="kz">280</field>
         <field name="line">43</field>
-        <field name="sequence">440</field>
+        <field name="sequence" eval="440" />
         <field
             name="official_label"
         >Aufwendungen für Telekommunikation (z. B. Telefon, Internet)</field>
@@ -602,7 +602,7 @@
         <field name="box">25</field>
         <field name="kz">221</field>
         <field name="line">44</field>
-        <field name="sequence">450</field>
+        <field name="sequence" eval="450" />
         <field
             name="official_label"
         >Übernachtungs- und Reisenebenkosten bei Geschäftsreisen des Steuerpflichtigen</field>
@@ -618,7 +618,7 @@
         <field name="box">25</field>
         <field name="kz">281</field>
         <field name="line">45</field>
-        <field name="sequence">460</field>
+        <field name="sequence" eval="460" />
         <field name="official_label">Fortbildungskosten (ohne Reisekosten)</field>
         <field name="name">Training costs</field>
         <field name="name@de">Fortbildungskosten</field>
@@ -632,7 +632,7 @@
         <field name="box">25</field>
         <field name="kz">194</field>
         <field name="line">46</field>
-        <field name="sequence">470</field>
+        <field name="sequence" eval="470" />
         <field
             name="official_label"
         >Kosten für Rechts- und Steuerberatung, Buchführung</field>
@@ -648,7 +648,7 @@
         <field name="box">25</field>
         <field name="kz">222</field>
         <field name="line">47</field>
-        <field name="sequence">480</field>
+        <field name="sequence" eval="480" />
         <field
             name="official_label"
         >Miete/Leasing für bewegliche Wirtschaftsgüter (ohne Kfz)</field>
@@ -664,7 +664,7 @@
         <field name="box">25</field>
         <field name="kz">225</field>
         <field name="line">48</field>
-        <field name="sequence">490</field>
+        <field name="sequence" eval="490" />
         <field
             name="official_label"
         >Erhaltungsaufwendungen (z. B. Instandhaltung, Wartung, Reparatur; ohne solche für Gebäude und Kfz)</field>
@@ -680,7 +680,7 @@
         <field name="box">25</field>
         <field name="kz">223</field>
         <field name="line">49</field>
-        <field name="sequence">500</field>
+        <field name="sequence" eval="500" />
         <field
             name="official_label"
         >Beiträge, Gebühren, Abgaben und Versicherungen (ohne solche für Gebäude und Kfz)</field>
@@ -696,7 +696,7 @@
         <field name="box">25</field>
         <field name="kz">228</field>
         <field name="line">50</field>
-        <field name="sequence">510</field>
+        <field name="sequence" eval="510" />
         <field
             name="official_label"
         >Laufende EDV-Kosten (z. B. Beratung, Wartung, Reparatur)</field>
@@ -712,7 +712,7 @@
         <field name="box">25</field>
         <field name="kz">229</field>
         <field name="line">51</field>
-        <field name="sequence">520</field>
+        <field name="sequence" eval="520" />
         <field
             name="official_label"
         >Arbeitsmittel (z. B. Bürobedarf, Porto, Fachliteratur)</field>
@@ -728,7 +728,7 @@
         <field name="box">25</field>
         <field name="kz">226</field>
         <field name="line">52</field>
-        <field name="sequence">530</field>
+        <field name="sequence" eval="530" />
         <field name="official_label">Kosten für Abfallbeseitigung und Entsorgung</field>
         <field name="name">Waste disposal</field>
         <field name="name@de">Abfallbeseitigung</field>
@@ -742,7 +742,7 @@
         <field name="box">25</field>
         <field name="kz">227</field>
         <field name="line">53</field>
-        <field name="sequence">540</field>
+        <field name="sequence" eval="540" />
         <field name="official_label">Kosten für Verpackung und Transport</field>
         <field name="name">Packaging and transport</field>
         <field name="name@de">Verpackung und Transport</field>
@@ -756,7 +756,7 @@
         <field name="box">25</field>
         <field name="kz">224</field>
         <field name="line">54</field>
-        <field name="sequence">550</field>
+        <field name="sequence" eval="550" />
         <field
             name="official_label"
         >Werbekosten (z. B. Inserate, Werbespots, Plakate)</field>
@@ -772,7 +772,7 @@
         <field name="box">25</field>
         <field name="kz">232</field>
         <field name="line">55</field>
-        <field name="sequence">560</field>
+        <field name="sequence" eval="560" />
         <field
             name="official_label"
         >Schuldzinsen zur Finanzierung von Anschaffungs- und Herstellungskosten von Wirtschaftsgütern des Anlagevermögens (ohne häusliches Arbeitszimmer)</field>
@@ -788,7 +788,7 @@
         <field name="box">25</field>
         <field name="kz">234</field>
         <field name="line">56</field>
-        <field name="sequence">570</field>
+        <field name="sequence" eval="570" />
         <field name="official_label">Übrige Schuldzinsen</field>
         <field name="name">Other interest</field>
         <field name="name@de">Übrige Schuldzinsen</field>
@@ -802,7 +802,7 @@
         <field name="box">25</field>
         <field name="kz">185</field>
         <field name="line">57</field>
-        <field name="sequence">580</field>
+        <field name="sequence" eval="580" />
         <field
             name="official_label"
         >Gezahlte und nach § 15 UStG abziehbare Vorsteuerbeträge</field>
@@ -818,7 +818,7 @@
         <field name="box">25</field>
         <field name="kz">186</field>
         <field name="line">58</field>
-        <field name="sequence">590</field>
+        <field name="sequence" eval="590" />
         <field
             name="official_label"
         >An das Finanzamt gezahlte und ggf. verrechnete Umsatzsteuer (Die Regelung zum 10-Tageszeitraum - § 11 Abs. 2 Satz 2 EStG - ist zu beachten.)</field>
@@ -834,7 +834,7 @@
         <field name="box">25</field>
         <field name="kz">183</field>
         <field name="line">60</field>
-        <field name="sequence">610</field>
+        <field name="sequence" eval="610" />
         <field
             name="official_label"
         >Übrige unbeschränkt abziehbare Betriebsausgaben (auch zurückgezahlte Hilfen/Zuschüsse aufgrund der Corona-Pandemie)</field>
@@ -850,7 +850,7 @@
         <field name="box">25</field>
         <field name="kz">164</field>
         <field name="line">62</field>
-        <field name="sequence">630</field>
+        <field name="sequence" eval="630" />
         <field name="official_label">Geschenke</field>
         <field name="name">Gifts, non-deductible</field>
         <field name="name@de">Geschenke, nicht abziehbar</field>
@@ -864,7 +864,7 @@
         <field name="box">25</field>
         <field name="kz">174</field>
         <field name="line">62</field>
-        <field name="sequence">640</field>
+        <field name="sequence" eval="640" />
         <field name="official_label">Geschenke</field>
         <field name="name">Gifts, deductible</field>
         <field name="name@de">Geschenke, abziehbar</field>
@@ -878,7 +878,7 @@
         <field name="box">25</field>
         <field name="kz">165</field>
         <field name="line">63</field>
-        <field name="sequence">650</field>
+        <field name="sequence" eval="650" />
         <field name="official_label">Bewirtungsaufwendungen</field>
         <field name="name">Entertainment, non-deductible</field>
         <field name="name@de">Bewirtung, nicht abziehbar</field>
@@ -892,7 +892,7 @@
         <field name="box">25</field>
         <field name="kz">175</field>
         <field name="line">63</field>
-        <field name="sequence">660</field>
+        <field name="sequence" eval="660" />
         <field name="official_label">Bewirtungsaufwendungen</field>
         <field name="name">Entertainment, deductible</field>
         <field name="name@de">Bewirtung, abziehbar</field>
@@ -906,7 +906,7 @@
         <field name="box">25</field>
         <field name="kz">171</field>
         <field name="line">64</field>
-        <field name="sequence">670</field>
+        <field name="sequence" eval="670" />
         <field name="official_label">Verpflegungsmehraufwendungen</field>
         <field name="name">Additional meal expenses</field>
         <field name="name@de">Verpflegungsmehraufwendungen</field>
@@ -920,7 +920,7 @@
         <field name="box">25</field>
         <field name="kz">162</field>
         <field name="line">65</field>
-        <field name="sequence">680</field>
+        <field name="sequence" eval="680" />
         <field
             name="official_label"
         >Aufwendungen für ein häusliches Arbeitszimmer (siehe Anleitung)</field>
@@ -936,7 +936,7 @@
         <field name="box">25</field>
         <field name="kz">172</field>
         <field name="line">65</field>
-        <field name="sequence">690</field>
+        <field name="sequence" eval="690" />
         <field
             name="official_label"
         >Aufwendungen für ein häusliches Arbeitszimmer (siehe Anleitung)</field>
@@ -952,7 +952,7 @@
         <field name="box">25</field>
         <field name="kz">163</field>
         <field name="line">66</field>
-        <field name="sequence">700</field>
+        <field name="sequence" eval="700" />
         <field
             name="official_label"
         >Tagespauschale für die Tätigkeit in der häuslichen Wohnung (siehe Anleitung)</field>
@@ -968,7 +968,7 @@
         <field name="box">25</field>
         <field name="kz">168</field>
         <field name="line">67</field>
-        <field name="sequence">710</field>
+        <field name="sequence" eval="710" />
         <field
             name="official_label"
         >Sonstige beschränkt abziehbare Betriebsausgaben</field>
@@ -984,7 +984,7 @@
         <field name="box">25</field>
         <field name="kz">177</field>
         <field name="line">67</field>
-        <field name="sequence">720</field>
+        <field name="sequence" eval="720" />
         <field
             name="official_label"
         >Sonstige beschränkt abziehbare Betriebsausgaben</field>
@@ -1000,7 +1000,7 @@
         <field name="box">25</field>
         <field name="kz">144</field>
         <field name="line">68</field>
-        <field name="sequence">730</field>
+        <field name="sequence" eval="730" />
         <field name="official_label">Leasingkosten</field>
         <field name="name">Vehicle leasing</field>
         <field name="name@de">Kfz-Leasing</field>
@@ -1014,7 +1014,7 @@
         <field name="box">25</field>
         <field name="kz">145</field>
         <field name="line">69</field>
-        <field name="sequence">740</field>
+        <field name="sequence" eval="740" />
         <field name="official_label">Steuern, Versicherungen und Maut</field>
         <field name="name">Vehicle taxes, insurance and tolls</field>
         <field name="name@de">Kfz-Steuer, Versicherung und Maut</field>
@@ -1028,7 +1028,7 @@
         <field name="box">25</field>
         <field name="kz">146</field>
         <field name="line">70</field>
-        <field name="sequence">750</field>
+        <field name="sequence" eval="750" />
         <field
             name="official_label"
         >Sonstige tatsächliche Fahrtkosten ohne AfA und Zinsen (z. B. Reparaturen, Wartungen, Treibstoff, Kosten für Flugstrecken, Kosten für öffentliche Verkehrsmittel)</field>
@@ -1044,7 +1044,7 @@
         <field name="box">25</field>
         <field name="kz">147</field>
         <field name="line">71</field>
-        <field name="sequence">760</field>
+        <field name="sequence" eval="760" />
         <field
             name="official_label"
         >Fahrtkosten für nicht zum Betriebsvermögen gehörende Fahrzeuge (Nutzungseinlage)</field>
@@ -1060,7 +1060,7 @@
         <field name="box">25</field>
         <field name="kz">142</field>
         <field name="line">72</field>
-        <field name="sequence">770</field>
+        <field name="sequence" eval="770" />
         <field
             name="official_label"
         >Fahrtkosten für Wege zwischen Wohnung und erster Betriebsstätte; Familienheimfahrten (pauschaliert oder tatsächlich)</field>
@@ -1076,7 +1076,7 @@
         <field name="box">25</field>
         <field name="kz">176</field>
         <field name="line">73</field>
-        <field name="sequence">780</field>
+        <field name="sequence" eval="780" />
         <field
             name="official_label"
         >Mindestens abziehbare Fahrtkosten für Wege zwischen Wohnung und erster Betriebsstätte (Entfernungspauschale); Familienheimfahrten</field>
@@ -1092,7 +1092,7 @@
         <field name="box">25</field>
         <field name="kz">139</field>
         <field name="line">74</field>
-        <field name="sequence">790</field>
+        <field name="sequence" eval="790" />
         <field
             name="official_label"
         >Nicht abziehbare Beträge (Beispiele siehe Anleitung)</field>
@@ -1108,7 +1108,7 @@
         <field name="box">G</field>
         <field name="kz">240</field>
         <field name="line">78</field>
-        <field name="sequence">830</field>
+        <field name="sequence" eval="830" />
         <field
             name="official_label"
         >abzüglich steuerfreier Einnahmen nach § 3 Nr. 26, 26a, 26b EStG</field>
@@ -1124,7 +1124,7 @@
         <field name="box">G</field>
         <field name="kz">241</field>
         <field name="line">79</field>
-        <field name="sequence">840</field>
+        <field name="sequence" eval="840" />
         <field
             name="official_label"
         >abzüglich steuerfreier Einnahmen nach § 3 EStG (ohne Nr. 26, 26a, 26b und Teileinkünfteverfahren)</field>
@@ -1140,7 +1140,7 @@
         <field name="box">G</field>
         <field name="kz">242</field>
         <field name="line">80</field>
-        <field name="sequence">850</field>
+        <field name="sequence" eval="850" />
         <field
             name="official_label"
         >abzüglich steuerfreier Einnahmen nach § 3a EStG</field>
@@ -1156,7 +1156,7 @@
         <field name="box">G</field>
         <field name="kz">243</field>
         <field name="line">81</field>
-        <field name="sequence">860</field>
+        <field name="sequence" eval="860" />
         <field
             name="official_label"
         >zuzüglich nicht abziehbarer Betriebsausgaben nach § 3 Nr. 26, 26a, 26b EStG</field>
@@ -1172,7 +1172,7 @@
         <field name="box">G</field>
         <field name="kz">244</field>
         <field name="line">82</field>
-        <field name="sequence">870</field>
+        <field name="sequence" eval="870" />
         <field
             name="official_label"
         >zuzüglich nicht abziehbarer Betriebsausgaben nach § 3c Abs. 1 EStG</field>
@@ -1188,7 +1188,7 @@
         <field name="box">G</field>
         <field name="kz">245</field>
         <field name="line">83</field>
-        <field name="sequence">880</field>
+        <field name="sequence" eval="880" />
         <field
             name="official_label"
         >zuzüglich nicht abziehbarer Betriebsausgaben nach § 3c Abs. 4 EStG</field>
@@ -1204,7 +1204,7 @@
         <field name="box">G</field>
         <field name="kz">180</field>
         <field name="line">84</field>
-        <field name="sequence">890</field>
+        <field name="sequence" eval="890" />
         <field
             name="official_label"
         >zuzüglich Hinzurechnung der Investitionsabzugsbeträge nach § 7g Abs. 2 Satz 1 EStG aus 2021 (Erläuterungen auf gesondertem Blatt)</field>
@@ -1221,7 +1221,7 @@
         <field name="box">G</field>
         <field name="kz">181</field>
         <field name="line">85</field>
-        <field name="sequence">900</field>
+        <field name="sequence" eval="900" />
         <field
             name="official_label"
         >zuzüglich Hinzurechnung der Investitionsabzugsbeträge nach § 7g Abs. 2 Satz 1 EStG aus 2022 (Erläuterungen auf gesondertem Blatt)</field>
@@ -1238,7 +1238,7 @@
         <field name="box">G</field>
         <field name="kz">182</field>
         <field name="line">86</field>
-        <field name="sequence">910</field>
+        <field name="sequence" eval="910" />
         <field
             name="official_label"
         >zuzüglich Hinzurechnung der Investitionsabzugsbeträge nach § 7g Abs. 2 Satz 1 EStG aus 2023 (Erläuterungen auf gesondertem Blatt)</field>
@@ -1255,7 +1255,7 @@
         <field name="box">G</field>
         <field name="kz">123</field>
         <field name="line">87</field>
-        <field name="sequence">920</field>
+        <field name="sequence" eval="920" />
         <field
             name="official_label"
         >zuzüglich Gewinnzuschlag nach § 6c i. V. m. § 6b Abs. 7 und 10 EStG</field>
@@ -1271,7 +1271,7 @@
         <field name="box">G</field>
         <field name="kz">187</field>
         <field name="line">88</field>
-        <field name="sequence">930</field>
+        <field name="sequence" eval="930" />
         <field
             name="official_label"
         >abzüglich Investitionsabzugsbeträge nach § 7g Abs. 1 EStG</field>
@@ -1287,7 +1287,7 @@
         <field name="box">G</field>
         <field name="kz">250</field>
         <field name="line">89</field>
-        <field name="sequence">940</field>
+        <field name="sequence" eval="940" />
         <field
             name="official_label"
         >Hinzurechnungen und Abrechnungen bei Wechsel der Gewinnermittlungsart (Erläuterungen auf gesondertem Blatt)</field>
@@ -1304,7 +1304,7 @@
         <field name="box">G</field>
         <field name="kz">255</field>
         <field name="line">91</field>
-        <field name="sequence">960</field>
+        <field name="sequence" eval="960" />
         <field
             name="official_label"
         >Ergebnisanteile aus Beteiligungen an Personengesellschaften (auch Kostenträgergemeinschaften)</field>
@@ -1321,7 +1321,7 @@
         <field name="box">G</field>
         <field name="kz">263</field>
         <field name="line">93</field>
-        <field name="sequence">980</field>
+        <field name="sequence" eval="980" />
         <field
             name="official_label"
         >Bereits berücksichtigte Beträge, für die Steuerbefreiungen nach InvStG gelten (ohne Beträge laut Zeile 94; Erläuterungen auf gesondertem Blatt)</field>
@@ -1338,7 +1338,7 @@
         <field name="box">G</field>
         <field name="kz">264</field>
         <field name="line">93</field>
-        <field name="sequence">990</field>
+        <field name="sequence" eval="990" />
         <field
             name="official_label"
         >Bereits berücksichtigte Beträge, für die Steuerbefreiungen nach InvStG gelten (ohne Beträge laut Zeile 94; Erläuterungen auf gesondertem Blatt)</field>
@@ -1355,7 +1355,7 @@
         <field name="box">G</field>
         <field name="kz">261</field>
         <field name="line">94</field>
-        <field name="sequence">1000</field>
+        <field name="sequence" eval="1000" />
         <field
             name="official_label"
         >Bereits berücksichtigte Beträge, für die das Teileinkünfteverfahren bzw. § 8b KStG gilt</field>
@@ -1372,7 +1372,7 @@
         <field name="box">G</field>
         <field name="kz">262</field>
         <field name="line">94</field>
-        <field name="sequence">1010</field>
+        <field name="sequence" eval="1010" />
         <field
             name="official_label"
         >Bereits berücksichtigte Beträge, für die das Teileinkünfteverfahren bzw. § 8b KStG gilt</field>
@@ -1388,7 +1388,7 @@
         <field name="code">EUER.G.PERSGES</field>
         <field name="box">G</field>
         <field name="line">98</field>
-        <field name="sequence">1050</field>
+        <field name="sequence" eval="1050" />
         <field
             name="official_label"
         >Anzusetzender steuerpflichtiger Gewinn/Verlust nach Anwendung des § 4 Abs. 4a EStG ohne Berücksichtigung des InvStG, des Teileinkünfteverfahrens bzw. § 8b KStG (Betrag laut Zeile 92 zuzüglich Betrag laut Zeile 96)</field>
@@ -1405,7 +1405,7 @@
         <field name="box">27</field>
         <field name="kz">187</field>
         <field name="line">99</field>
-        <field name="sequence">1060</field>
+        <field name="sequence" eval="1060" />
         <field
             name="official_label"
         >Rücklagen nach § 6c i. V. m. § 6b EStG, R 6.6 EStR</field>
@@ -1421,7 +1421,7 @@
         <field name="box">27</field>
         <field name="kz">170</field>
         <field name="line">100</field>
-        <field name="sequence">1070</field>
+        <field name="sequence" eval="1070" />
         <field
             name="official_label"
         >Übertragung von stillen Reserven nach § 6c i. V. m. § 6b EStG, R 6.6 EStR</field>
@@ -1437,7 +1437,7 @@
         <field name="box">27</field>
         <field name="kz">191</field>
         <field name="line">101</field>
-        <field name="sequence">1080</field>
+        <field name="sequence" eval="1080" />
         <field name="official_label">Ausgleichsposten nach § 4g EStG</field>
         <field name="name">Compensating item formed (§ 4g EStG)</field>
         <field name="name@de">Bildung Ausgleichsposten § 4g</field>
@@ -1451,7 +1451,7 @@
         <field name="box">27</field>
         <field name="kz">190</field>
         <field name="line">102</field>
-        <field name="sequence">1090</field>
+        <field name="sequence" eval="1090" />
         <field name="official_label">Gesamtsumme (Übertrag in Zeile 59)</field>
         <field name="name">Total formed or transferred</field>
         <field name="name@de">Summe Bildung/Übertragung</field>
@@ -1465,7 +1465,7 @@
         <field name="code">EUER.25.RUECKL</field>
         <field name="box">25</field>
         <field name="line">59</field>
-        <field name="sequence">600</field>
+        <field name="sequence" eval="600" />
         <field
             name="official_label"
         >Rücklagen, stille Reserven und/oder Ausgleichsposten (Übertrag aus Zeile 102)</field>
@@ -1482,7 +1482,7 @@
         <field name="box">27</field>
         <field name="kz">120</field>
         <field name="line">103</field>
-        <field name="sequence">1100</field>
+        <field name="sequence" eval="1100" />
         <field
             name="official_label"
         >Rücklagen nach § 6c i. V. m. § 6b EStG, R 6.6 EStR</field>
@@ -1498,7 +1498,7 @@
         <field name="box">27</field>
         <field name="kz">125</field>
         <field name="line">104</field>
-        <field name="sequence">1110</field>
+        <field name="sequence" eval="1110" />
         <field name="official_label">Ausgleichsposten nach § 4g EStG</field>
         <field name="name">Compensating item released (§ 4g EStG)</field>
         <field name="name@de">Auflösung Ausgleichsposten § 4g</field>
@@ -1512,7 +1512,7 @@
         <field name="box">27</field>
         <field name="kz">124</field>
         <field name="line">105</field>
-        <field name="sequence">1120</field>
+        <field name="sequence" eval="1120" />
         <field name="official_label">Gesamtsumme (Übertrag in Zeile 22)</field>
         <field name="name">Total released</field>
         <field name="name@de">Summe Auflösung</field>
@@ -1526,7 +1526,7 @@
         <field name="code">EUER.20.Z22_RUECKL</field>
         <field name="box">20</field>
         <field name="line">22</field>
-        <field name="sequence">230</field>
+        <field name="sequence" eval="230" />
         <field
             name="official_label"
         >Auflösung von Rücklagen und/oder Ausgleichsposten (Übertrag aus Zeile 105)</field>
@@ -1543,7 +1543,7 @@
         <field name="box">20</field>
         <field name="kz">159</field>
         <field name="line">23</field>
-        <field name="sequence">240</field>
+        <field name="sequence" eval="240" />
         <field
             name="official_label"
         >Summe Betriebseinnahmen (Übertrag in Zeile 76)</field>
@@ -1561,7 +1561,7 @@
         <field name="code">EUER.G.BE</field>
         <field name="box">G</field>
         <field name="line">76</field>
-        <field name="sequence">810</field>
+        <field name="sequence" eval="810" />
         <field
             name="official_label"
         >Summe der Betriebseinnahmen (Übertrag aus Zeile 23)</field>
@@ -1578,7 +1578,7 @@
         <field name="box">29</field>
         <field name="kz">122</field>
         <field name="line">106</field>
-        <field name="sequence">1130</field>
+        <field name="sequence" eval="1130" />
         <field
             name="official_label"
         >Entnahmen einschließlich Sach-, Leistungs- und Nutzungsentnahmen</field>
@@ -1594,7 +1594,7 @@
         <field name="box">29</field>
         <field name="kz">123</field>
         <field name="line">107</field>
-        <field name="sequence">1140</field>
+        <field name="sequence" eval="1140" />
         <field
             name="official_label"
         >Einlagen einschließlich Sach-, Leistungs- und Nutzungseinlagen</field>
@@ -1609,7 +1609,7 @@
         <field name="code">AVEUER.00.NAME</field>
         <field name="box">00</field>
         <field name="line">1</field>
-        <field name="sequence">10</field>
+        <field name="sequence" eval="10" />
         <field
             name="official_label"
         >Name des Steuerpflichtigen bzw. der Gesellschaft/Gemeinschaft/Körperschaft</field>
@@ -1623,7 +1623,7 @@
         <field name="code">AVEUER.00.STNR</field>
         <field name="box">00</field>
         <field name="line">2</field>
-        <field name="sequence">20</field>
+        <field name="sequence" eval="20" />
         <field name="official_label">(Betriebs-)Steuernummer</field>
         <field name="name">Tax number</field>
         <field name="name@de">Steuernummer</field>
@@ -1635,7 +1635,7 @@
         <field name="code">AVEUER.00.WIDNR</field>
         <field name="box">00</field>
         <field name="line">3</field>
-        <field name="sequence">30</field>
+        <field name="sequence" eval="30" />
         <field name="official_label">Wirtschafts-Identifikationsnummer</field>
         <field name="name">Business identification number</field>
         <field name="name@de">Wirtschafts-IdNr.</field>
@@ -1648,7 +1648,7 @@
         <field name="box">40</field>
         <field name="kz">100</field>
         <field name="line">4</field>
-        <field name="sequence">40</field>
+        <field name="sequence" eval="40" />
         <field
             name="official_label"
         >Summe Anschaffungs-/Herstellungskosten/Einlagewerte</field>
@@ -1664,7 +1664,7 @@
         <field name="box">40</field>
         <field name="kz">101</field>
         <field name="line">5</field>
-        <field name="sequence">50</field>
+        <field name="sequence" eval="50" />
         <field
             name="official_label"
         >Summe Buchwerte zu Beginn des Gewinnermittlungszeitraums</field>
@@ -1680,7 +1680,7 @@
         <field name="box">40</field>
         <field name="kz">102</field>
         <field name="line">6</field>
-        <field name="sequence">60</field>
+        <field name="sequence" eval="60" />
         <field name="official_label">Summe Zugänge</field>
         <field name="name">Land: additions</field>
         <field name="name@de">Grund und Boden: Zugänge</field>
@@ -1695,7 +1695,7 @@
         <field name="box">40</field>
         <field name="kz">105</field>
         <field name="line">7</field>
-        <field name="sequence">70</field>
+        <field name="sequence" eval="70" />
         <field
             name="official_label"
         >Summe Abgänge (zu erfassen in Zeile 38 der Anlage EÜR)</field>
@@ -1711,7 +1711,7 @@
         <field name="box">40</field>
         <field name="kz">106</field>
         <field name="line">8</field>
-        <field name="sequence">80</field>
+        <field name="sequence" eval="80" />
         <field
             name="official_label"
         >Summe Buchwerte am Ende des Gewinnermittlungszeitraums</field>
@@ -1728,7 +1728,7 @@
         <field name="box">40</field>
         <field name="kz">110</field>
         <field name="line">9</field>
-        <field name="sequence">90</field>
+        <field name="sequence" eval="90" />
         <field
             name="official_label"
         >Summe Anschaffungs-/Herstellungskosten/Einlagewerte</field>
@@ -1744,7 +1744,7 @@
         <field name="box">40</field>
         <field name="kz">111</field>
         <field name="line">10</field>
-        <field name="sequence">100</field>
+        <field name="sequence" eval="100" />
         <field
             name="official_label"
         >Summe Buchwerte zu Beginn des Gewinnermittlungszeitraums</field>
@@ -1760,7 +1760,7 @@
         <field name="box">40</field>
         <field name="kz">112</field>
         <field name="line">11</field>
-        <field name="sequence">110</field>
+        <field name="sequence" eval="110" />
         <field name="official_label">Summe Zugänge</field>
         <field name="name">Buildings: additions</field>
         <field name="name@de">Gebäude: Zugänge</field>
@@ -1775,7 +1775,7 @@
         <field name="box">40</field>
         <field name="kz">113</field>
         <field name="line">12</field>
-        <field name="sequence">120</field>
+        <field name="sequence" eval="120" />
         <field
             name="official_label"
         >Summe Sonderabschreibungen nach § 7b EStG (zu erfassen in Zeile 34 der Anlage EÜR)</field>
@@ -1791,7 +1791,7 @@
         <field name="box">40</field>
         <field name="kz">114</field>
         <field name="line">13</field>
-        <field name="sequence">130</field>
+        <field name="sequence" eval="130" />
         <field name="official_label">Summe AfA</field>
         <field name="name">Buildings: depreciation</field>
         <field name="name@de">Gebäude: AfA</field>
@@ -1805,7 +1805,7 @@
         <field name="box">40</field>
         <field name="kz">115</field>
         <field name="line">14</field>
-        <field name="sequence">140</field>
+        <field name="sequence" eval="140" />
         <field
             name="official_label"
         >Summe Abgänge (zu erfassen in Zeile 38 der Anlage EÜR)</field>
@@ -1821,7 +1821,7 @@
         <field name="box">40</field>
         <field name="kz">116</field>
         <field name="line">15</field>
-        <field name="sequence">150</field>
+        <field name="sequence" eval="150" />
         <field
             name="official_label"
         >Summe Buchwerte am Ende des Gewinnermittlungszeitraums</field>
@@ -1840,7 +1840,7 @@
         <field name="box">40</field>
         <field name="kz">120</field>
         <field name="line">16</field>
-        <field name="sequence">160</field>
+        <field name="sequence" eval="160" />
         <field
             name="official_label"
         >Summe Anschaffungs-/Herstellungskosten/Einlagewerte</field>
@@ -1856,7 +1856,7 @@
         <field name="box">40</field>
         <field name="kz">121</field>
         <field name="line">17</field>
-        <field name="sequence">170</field>
+        <field name="sequence" eval="170" />
         <field
             name="official_label"
         >Summe Buchwerte zu Beginn des Gewinnermittlungszeitraums</field>
@@ -1872,7 +1872,7 @@
         <field name="box">40</field>
         <field name="kz">122</field>
         <field name="line">18</field>
-        <field name="sequence">180</field>
+        <field name="sequence" eval="180" />
         <field name="official_label">Summe Zugänge</field>
         <field name="name">Other real estate: additions</field>
         <field name="name@de">Andere Grundstücke: Zugänge</field>
@@ -1887,7 +1887,7 @@
         <field name="box">40</field>
         <field name="kz">124</field>
         <field name="line">19</field>
-        <field name="sequence">190</field>
+        <field name="sequence" eval="190" />
         <field name="official_label">Summe AfA</field>
         <field name="name">Other real estate: depreciation</field>
         <field name="name@de">Andere Grundstücke: AfA</field>
@@ -1901,7 +1901,7 @@
         <field name="box">40</field>
         <field name="kz">125</field>
         <field name="line">20</field>
-        <field name="sequence">200</field>
+        <field name="sequence" eval="200" />
         <field
             name="official_label"
         >Summe Abgänge (zu erfassen in Zeile 38 der Anlage EÜR)</field>
@@ -1917,7 +1917,7 @@
         <field name="box">40</field>
         <field name="kz">126</field>
         <field name="line">21</field>
-        <field name="sequence">210</field>
+        <field name="sequence" eval="210" />
         <field
             name="official_label"
         >Summe Buchwerte am Ende des Gewinnermittlungszeitraums</field>
@@ -1936,7 +1936,7 @@
         <field name="box">40</field>
         <field name="kz">190</field>
         <field name="line">22</field>
-        <field name="sequence">220</field>
+        <field name="sequence" eval="220" />
         <field
             name="official_label"
         >Summe AfA aller Grundstücke/grundstücksgleichen Rechte (Summe der Zeilen 13 und 19; Übertrag in Zeile 31 der Anlage EÜR)</field>
@@ -1953,7 +1953,7 @@
         <field name="box">25</field>
         <field name="kz">136</field>
         <field name="line">31</field>
-        <field name="sequence">320</field>
+        <field name="sequence" eval="320" />
         <field
             name="official_label"
         >AfA auf Grundstücke/grundstücksgleiche Rechte (Übertrag aus Zeile 22 der Anlage AVEÜR)</field>
@@ -1970,7 +1970,7 @@
         <field name="box">40</field>
         <field name="kz">200</field>
         <field name="line">23</field>
-        <field name="sequence">230</field>
+        <field name="sequence" eval="230" />
         <field
             name="official_label"
         >Summe Anschaffungs-/Herstellungskosten/Einlagewerte</field>
@@ -1986,7 +1986,7 @@
         <field name="box">40</field>
         <field name="kz">201</field>
         <field name="line">24</field>
-        <field name="sequence">240</field>
+        <field name="sequence" eval="240" />
         <field
             name="official_label"
         >Summe Buchwerte zu Beginn des Gewinnermittlungszeitraums</field>
@@ -2002,7 +2002,7 @@
         <field name="box">40</field>
         <field name="kz">202</field>
         <field name="line">25</field>
-        <field name="sequence">250</field>
+        <field name="sequence" eval="250" />
         <field name="official_label">Summe Zugänge</field>
         <field name="name">Home office, land: additions</field>
         <field name="name@de">Arbeitszimmer Grund und Boden: Zugänge</field>
@@ -2017,7 +2017,7 @@
         <field name="box">40</field>
         <field name="kz">205</field>
         <field name="line">26</field>
-        <field name="sequence">260</field>
+        <field name="sequence" eval="260" />
         <field
             name="official_label"
         >Summe Abgänge (zu erfassen in Zeile 38 der Anlage EÜR)</field>
@@ -2033,7 +2033,7 @@
         <field name="box">40</field>
         <field name="kz">206</field>
         <field name="line">27</field>
-        <field name="sequence">270</field>
+        <field name="sequence" eval="270" />
         <field
             name="official_label"
         >Summe Buchwerte am Ende des Gewinnermittlungszeitraums</field>
@@ -2050,7 +2050,7 @@
         <field name="box">40</field>
         <field name="kz">210</field>
         <field name="line">28</field>
-        <field name="sequence">280</field>
+        <field name="sequence" eval="280" />
         <field
             name="official_label"
         >Summe Anschaffungs-/Herstellungskosten/Einlagewerte</field>
@@ -2066,7 +2066,7 @@
         <field name="box">40</field>
         <field name="kz">211</field>
         <field name="line">29</field>
-        <field name="sequence">290</field>
+        <field name="sequence" eval="290" />
         <field
             name="official_label"
         >Summe Buchwerte zu Beginn des Gewinnermittlungszeitraums</field>
@@ -2082,7 +2082,7 @@
         <field name="box">40</field>
         <field name="kz">212</field>
         <field name="line">30</field>
-        <field name="sequence">300</field>
+        <field name="sequence" eval="300" />
         <field name="official_label">Summe Zugänge</field>
         <field name="name">Home office, building: additions</field>
         <field name="name@de">Arbeitszimmer Gebäudeteil: Zugänge</field>
@@ -2097,7 +2097,7 @@
         <field name="box">40</field>
         <field name="kz">214</field>
         <field name="line">31</field>
-        <field name="sequence">310</field>
+        <field name="sequence" eval="310" />
         <field
             name="official_label"
         >Summe AfA (zu erfassen in Zeile 65 der Anlage EÜR)</field>
@@ -2113,7 +2113,7 @@
         <field name="box">40</field>
         <field name="kz">215</field>
         <field name="line">32</field>
-        <field name="sequence">320</field>
+        <field name="sequence" eval="320" />
         <field
             name="official_label"
         >Summe Abgänge (zu erfassen in Zeile 38 der Anlage EÜR)</field>
@@ -2129,7 +2129,7 @@
         <field name="box">40</field>
         <field name="kz">216</field>
         <field name="line">33</field>
-        <field name="sequence">330</field>
+        <field name="sequence" eval="330" />
         <field
             name="official_label"
         >Summe Buchwerte am Ende des Gewinnermittlungszeitraums</field>
@@ -2148,7 +2148,7 @@
         <field name="box">40</field>
         <field name="kz">320</field>
         <field name="line">34</field>
-        <field name="sequence">340</field>
+        <field name="sequence" eval="340" />
         <field
             name="official_label"
         >Summe Anschaffungs-/Herstellungskosten/Einlagewerte</field>
@@ -2164,7 +2164,7 @@
         <field name="box">40</field>
         <field name="kz">321</field>
         <field name="line">35</field>
-        <field name="sequence">350</field>
+        <field name="sequence" eval="350" />
         <field
             name="official_label"
         >Summe Buchwerte zu Beginn des Gewinnermittlungszeitraums</field>
@@ -2180,7 +2180,7 @@
         <field name="box">40</field>
         <field name="kz">322</field>
         <field name="line">36</field>
-        <field name="sequence">360</field>
+        <field name="sequence" eval="360" />
         <field name="official_label">Summe Zugänge</field>
         <field name="name">Intangible assets: additions</field>
         <field name="name@de">Immaterielle WG: Zugänge</field>
@@ -2195,7 +2195,7 @@
         <field name="box">40</field>
         <field name="kz">324</field>
         <field name="line">37</field>
-        <field name="sequence">370</field>
+        <field name="sequence" eval="370" />
         <field
             name="official_label"
         >Summe AfA (Übertrag in Zeile 32 der Anlage EÜR)</field>
@@ -2211,7 +2211,7 @@
         <field name="box">25</field>
         <field name="kz">131</field>
         <field name="line">32</field>
-        <field name="sequence">330</field>
+        <field name="sequence" eval="330" />
         <field
             name="official_label"
         >AfA auf immaterielle Wirtschaftsgüter (Übertrag aus Zeile 37 der Anlage AVEÜR)</field>
@@ -2228,7 +2228,7 @@
         <field name="box">40</field>
         <field name="kz">325</field>
         <field name="line">38</field>
-        <field name="sequence">380</field>
+        <field name="sequence" eval="380" />
         <field
             name="official_label"
         >Summe Abgänge (zu erfassen in Zeile 38 der Anlage EÜR)</field>
@@ -2244,7 +2244,7 @@
         <field name="box">40</field>
         <field name="kz">326</field>
         <field name="line">39</field>
-        <field name="sequence">390</field>
+        <field name="sequence" eval="390" />
         <field
             name="official_label"
         >Summe Buchwerte am Ende des Gewinnermittlungszeitraums</field>
@@ -2263,7 +2263,7 @@
         <field name="box">40</field>
         <field name="kz">400</field>
         <field name="line">40</field>
-        <field name="sequence">400</field>
+        <field name="sequence" eval="400" />
         <field
             name="official_label"
         >Summe Anschaffungs-/Herstellungskosten/Einlagewerte</field>
@@ -2279,7 +2279,7 @@
         <field name="box">40</field>
         <field name="kz">401</field>
         <field name="line">41</field>
-        <field name="sequence">410</field>
+        <field name="sequence" eval="410" />
         <field
             name="official_label"
         >Summe Buchwerte zu Beginn des Gewinnermittlungszeitraums</field>
@@ -2295,7 +2295,7 @@
         <field name="box">40</field>
         <field name="kz">402</field>
         <field name="line">42</field>
-        <field name="sequence">420</field>
+        <field name="sequence" eval="420" />
         <field name="official_label">Summe Zugänge</field>
         <field name="name">Vehicles: additions</field>
         <field name="name@de">Kfz: Zugänge</field>
@@ -2310,7 +2310,7 @@
         <field name="box">40</field>
         <field name="kz">403</field>
         <field name="line">43</field>
-        <field name="sequence">430</field>
+        <field name="sequence" eval="430" />
         <field
             name="official_label"
         >Summe Sonderabschreibungen nach § 7g Abs. 5 und 6 EStG</field>
@@ -2326,7 +2326,7 @@
         <field name="box">40</field>
         <field name="kz">404</field>
         <field name="line">44</field>
-        <field name="sequence">440</field>
+        <field name="sequence" eval="440" />
         <field name="official_label">Summe AfA</field>
         <field name="name">Vehicles: depreciation</field>
         <field name="name@de">Kfz: AfA</field>
@@ -2340,7 +2340,7 @@
         <field name="box">40</field>
         <field name="kz">405</field>
         <field name="line">45</field>
-        <field name="sequence">450</field>
+        <field name="sequence" eval="450" />
         <field
             name="official_label"
         >Summe Abgänge (zu erfassen in Zeile 38 der Anlage EÜR)</field>
@@ -2356,7 +2356,7 @@
         <field name="box">40</field>
         <field name="kz">406</field>
         <field name="line">46</field>
-        <field name="sequence">460</field>
+        <field name="sequence" eval="460" />
         <field
             name="official_label"
         >Summe Buchwerte am Ende des Gewinnermittlungszeitraums</field>
@@ -2375,7 +2375,7 @@
         <field name="box">40</field>
         <field name="kz">410</field>
         <field name="line">47</field>
-        <field name="sequence">470</field>
+        <field name="sequence" eval="470" />
         <field
             name="official_label"
         >Summe Anschaffungs-/Herstellungskosten/Einlagewerte</field>
@@ -2391,7 +2391,7 @@
         <field name="box">40</field>
         <field name="kz">411</field>
         <field name="line">48</field>
-        <field name="sequence">480</field>
+        <field name="sequence" eval="480" />
         <field
             name="official_label"
         >Summe Buchwerte zu Beginn des Gewinnermittlungszeitraums</field>
@@ -2407,7 +2407,7 @@
         <field name="box">40</field>
         <field name="kz">412</field>
         <field name="line">49</field>
-        <field name="sequence">490</field>
+        <field name="sequence" eval="490" />
         <field name="official_label">Summe Zugänge</field>
         <field name="name">Office equipment: additions</field>
         <field name="name@de">Büroausstattung: Zugänge</field>
@@ -2422,7 +2422,7 @@
         <field name="box">40</field>
         <field name="kz">413</field>
         <field name="line">50</field>
-        <field name="sequence">500</field>
+        <field name="sequence" eval="500" />
         <field
             name="official_label"
         >Summe Sonderabschreibungen nach § 7g Abs. 5 und 6 EStG</field>
@@ -2438,7 +2438,7 @@
         <field name="box">40</field>
         <field name="kz">414</field>
         <field name="line">51</field>
-        <field name="sequence">510</field>
+        <field name="sequence" eval="510" />
         <field name="official_label">Summe AfA</field>
         <field name="name">Office equipment: depreciation</field>
         <field name="name@de">Büroausstattung: AfA</field>
@@ -2452,7 +2452,7 @@
         <field name="box">40</field>
         <field name="kz">415</field>
         <field name="line">52</field>
-        <field name="sequence">520</field>
+        <field name="sequence" eval="520" />
         <field
             name="official_label"
         >Summe Abgänge (zu erfassen in Zeile 38 der Anlage EÜR)</field>
@@ -2468,7 +2468,7 @@
         <field name="box">40</field>
         <field name="kz">416</field>
         <field name="line">53</field>
-        <field name="sequence">530</field>
+        <field name="sequence" eval="530" />
         <field
             name="official_label"
         >Summe Buchwerte am Ende des Gewinnermittlungszeitraums</field>
@@ -2487,7 +2487,7 @@
         <field name="box">40</field>
         <field name="kz">420</field>
         <field name="line">54</field>
-        <field name="sequence">540</field>
+        <field name="sequence" eval="540" />
         <field
             name="official_label"
         >Summe Anschaffungs-/Herstellungskosten/Einlagewerte</field>
@@ -2503,7 +2503,7 @@
         <field name="box">40</field>
         <field name="kz">421</field>
         <field name="line">55</field>
-        <field name="sequence">550</field>
+        <field name="sequence" eval="550" />
         <field
             name="official_label"
         >Summe Buchwerte zu Beginn des Gewinnermittlungszeitraums</field>
@@ -2519,7 +2519,7 @@
         <field name="box">40</field>
         <field name="kz">422</field>
         <field name="line">56</field>
-        <field name="sequence">560</field>
+        <field name="sequence" eval="560" />
         <field name="official_label">Summe Zugänge</field>
         <field name="name">Other movable assets: additions</field>
         <field name="name@de">Andere bewegliche WG: Zugänge</field>
@@ -2534,7 +2534,7 @@
         <field name="box">40</field>
         <field name="kz">423</field>
         <field name="line">57</field>
-        <field name="sequence">570</field>
+        <field name="sequence" eval="570" />
         <field
             name="official_label"
         >Summe Sonderabschreibungen nach § 7g Abs. 5 und 6 EStG</field>
@@ -2550,7 +2550,7 @@
         <field name="box">40</field>
         <field name="kz">424</field>
         <field name="line">58</field>
-        <field name="sequence">580</field>
+        <field name="sequence" eval="580" />
         <field name="official_label">Summe AfA</field>
         <field name="name">Other movable assets: depreciation</field>
         <field name="name@de">Andere bewegliche WG: AfA</field>
@@ -2564,7 +2564,7 @@
         <field name="box">40</field>
         <field name="kz">425</field>
         <field name="line">59</field>
-        <field name="sequence">590</field>
+        <field name="sequence" eval="590" />
         <field
             name="official_label"
         >Summe Abgänge (zu erfassen in Zeile 38 der Anlage EÜR)</field>
@@ -2580,7 +2580,7 @@
         <field name="box">40</field>
         <field name="kz">426</field>
         <field name="line">60</field>
-        <field name="sequence">600</field>
+        <field name="sequence" eval="600" />
         <field
             name="official_label"
         >Summe Buchwerte am Ende des Gewinnermittlungszeitraums</field>
@@ -2599,7 +2599,7 @@
         <field name="box">40</field>
         <field name="kz">480</field>
         <field name="line">61</field>
-        <field name="sequence">610</field>
+        <field name="sequence" eval="610" />
         <field
             name="official_label"
         >Summe Sonderabschreibungen nach § 7g Abs. 5 und 6 EStG aller beweglichen Wirtschaftsgüter (Summe der Zeilen 43, 50 und 57; zu erfassen in Zeile 34 der Anlage EÜR)</field>
@@ -2616,7 +2616,7 @@
         <field name="box">25</field>
         <field name="kz">134</field>
         <field name="line">34</field>
-        <field name="sequence">350</field>
+        <field name="sequence" eval="350" />
         <field
             name="official_label"
         >Sonderabschreibungen nach § 7b EStG und § 7g Abs. 5 und 6 EStG (Übertrag der Summe der Zeilen 12 und 61 der Anlage AVEÜR)</field>
@@ -2633,7 +2633,7 @@
         <field name="box">40</field>
         <field name="kz">490</field>
         <field name="line">62</field>
-        <field name="sequence">620</field>
+        <field name="sequence" eval="620" />
         <field
             name="official_label"
         >Summe AfA aller beweglichen Wirtschaftsgüter (Summe der Zeilen 44, 51 und 58; Übertrag in Zeile 33 der Anlage EÜR)</field>
@@ -2650,7 +2650,7 @@
         <field name="box">25</field>
         <field name="kz">130</field>
         <field name="line">33</field>
-        <field name="sequence">340</field>
+        <field name="sequence" eval="340" />
         <field
             name="official_label"
         >AfA auf bewegliche Wirtschaftsgüter (Übertrag aus Zeile 62 der Anlage AVEÜR)</field>
@@ -2667,7 +2667,7 @@
         <field name="box">40</field>
         <field name="kz">432</field>
         <field name="line">63</field>
-        <field name="sequence">630</field>
+        <field name="sequence" eval="630" />
         <field name="official_label">Bildung</field>
         <field name="name">Asset pool of the year: formation</field>
         <field name="name@de">Sammelposten lfd. Jahr: Bildung</field>
@@ -2681,7 +2681,7 @@
         <field name="box">40</field>
         <field name="kz">434</field>
         <field name="line">64</field>
-        <field name="sequence">640</field>
+        <field name="sequence" eval="640" />
         <field name="official_label">Auflösungsbetrag</field>
         <field name="name">Asset pool of the year: release</field>
         <field name="name@de">Sammelposten lfd. Jahr: Auflösung</field>
@@ -2695,7 +2695,7 @@
         <field name="box">40</field>
         <field name="kz">436</field>
         <field name="line">65</field>
-        <field name="sequence">650</field>
+        <field name="sequence" eval="650" />
         <field
             name="official_label"
         >Buchwert am Ende des Gewinnermittlungszeitraums</field>
@@ -2712,7 +2712,7 @@
         <field name="box">40</field>
         <field name="kz">440</field>
         <field name="line">66</field>
-        <field name="sequence">660</field>
+        <field name="sequence" eval="660" />
         <field
             name="official_label"
         >Anschaffungs-/Herstellungskosten/Einlagewert</field>
@@ -2729,7 +2729,7 @@
         <field name="box">40</field>
         <field name="kz">441</field>
         <field name="line">67</field>
-        <field name="sequence">670</field>
+        <field name="sequence" eval="670" />
         <field
             name="official_label"
         >Buchwert zu Beginn des Gewinnermittlungszeitraums</field>
@@ -2746,7 +2746,7 @@
         <field name="box">40</field>
         <field name="kz">444</field>
         <field name="line">68</field>
-        <field name="sequence">680</field>
+        <field name="sequence" eval="680" />
         <field name="official_label">Auflösungsbetrag</field>
         <field name="name">Asset pool year -1: release</field>
         <field name="name@de">Sammelposten Jahr -1: Auflösung</field>
@@ -2761,7 +2761,7 @@
         <field name="box">40</field>
         <field name="kz">446</field>
         <field name="line">69</field>
-        <field name="sequence">690</field>
+        <field name="sequence" eval="690" />
         <field
             name="official_label"
         >Buchwert am Ende des Gewinnermittlungszeitraums</field>
@@ -2779,7 +2779,7 @@
         <field name="box">40</field>
         <field name="kz">450</field>
         <field name="line">70</field>
-        <field name="sequence">700</field>
+        <field name="sequence" eval="700" />
         <field
             name="official_label"
         >Anschaffungs-/Herstellungskosten/Einlagewert</field>
@@ -2796,7 +2796,7 @@
         <field name="box">40</field>
         <field name="kz">451</field>
         <field name="line">71</field>
-        <field name="sequence">710</field>
+        <field name="sequence" eval="710" />
         <field
             name="official_label"
         >Buchwert zu Beginn des Gewinnermittlungszeitraums</field>
@@ -2813,7 +2813,7 @@
         <field name="box">40</field>
         <field name="kz">454</field>
         <field name="line">72</field>
-        <field name="sequence">720</field>
+        <field name="sequence" eval="720" />
         <field name="official_label">Auflösungsbetrag</field>
         <field name="name">Asset pool year -2: release</field>
         <field name="name@de">Sammelposten Jahr -2: Auflösung</field>
@@ -2828,7 +2828,7 @@
         <field name="box">40</field>
         <field name="kz">456</field>
         <field name="line">73</field>
-        <field name="sequence">730</field>
+        <field name="sequence" eval="730" />
         <field
             name="official_label"
         >Buchwert am Ende des Gewinnermittlungszeitraums</field>
@@ -2846,7 +2846,7 @@
         <field name="box">40</field>
         <field name="kz">460</field>
         <field name="line">74</field>
-        <field name="sequence">740</field>
+        <field name="sequence" eval="740" />
         <field
             name="official_label"
         >Anschaffungs-/Herstellungskosten/Einlagewert</field>
@@ -2863,7 +2863,7 @@
         <field name="box">40</field>
         <field name="kz">461</field>
         <field name="line">75</field>
-        <field name="sequence">750</field>
+        <field name="sequence" eval="750" />
         <field
             name="official_label"
         >Buchwert zu Beginn des Gewinnermittlungszeitraums</field>
@@ -2880,7 +2880,7 @@
         <field name="box">40</field>
         <field name="kz">464</field>
         <field name="line">76</field>
-        <field name="sequence">760</field>
+        <field name="sequence" eval="760" />
         <field name="official_label">Auflösungsbetrag</field>
         <field name="name">Asset pool year -3: release</field>
         <field name="name@de">Sammelposten Jahr -3: Auflösung</field>
@@ -2895,7 +2895,7 @@
         <field name="box">40</field>
         <field name="kz">466</field>
         <field name="line">77</field>
-        <field name="sequence">770</field>
+        <field name="sequence" eval="770" />
         <field
             name="official_label"
         >Buchwert am Ende des Gewinnermittlungszeitraums</field>
@@ -2913,7 +2913,7 @@
         <field name="box">40</field>
         <field name="kz">470</field>
         <field name="line">78</field>
-        <field name="sequence">780</field>
+        <field name="sequence" eval="780" />
         <field
             name="official_label"
         >Anschaffungs-/Herstellungskosten/Einlagewert</field>
@@ -2930,7 +2930,7 @@
         <field name="box">40</field>
         <field name="kz">471</field>
         <field name="line">79</field>
-        <field name="sequence">790</field>
+        <field name="sequence" eval="790" />
         <field
             name="official_label"
         >Buchwert zu Beginn des Gewinnermittlungszeitraums</field>
@@ -2947,7 +2947,7 @@
         <field name="box">40</field>
         <field name="kz">474</field>
         <field name="line">80</field>
-        <field name="sequence">800</field>
+        <field name="sequence" eval="800" />
         <field name="official_label">Auflösungsbetrag</field>
         <field name="name">Asset pool year -4: release</field>
         <field name="name@de">Sammelposten Jahr -4: Auflösung</field>
@@ -2962,7 +2962,7 @@
         <field name="box">40</field>
         <field name="kz">499</field>
         <field name="line">81</field>
-        <field name="sequence">810</field>
+        <field name="sequence" eval="810" />
         <field
             name="official_label"
         >Summe Auflösungsbeträge (Summe der Zeilen 64, 68, 72, 76, 80; Übertrag in Zeile 37 der Anlage EÜR)</field>
@@ -2981,7 +2981,7 @@
         <field name="box">25</field>
         <field name="kz">137</field>
         <field name="line">37</field>
-        <field name="sequence">380</field>
+        <field name="sequence" eval="380" />
         <field
             name="official_label"
         >Auflösung Sammelposten nach § 6 Abs. 2a EStG (Übertrag aus Zeile 81 der Anlage AVEÜR)</field>
@@ -2998,7 +2998,7 @@
         <field name="box">40</field>
         <field name="kz">500</field>
         <field name="line">82</field>
-        <field name="sequence">820</field>
+        <field name="sequence" eval="820" />
         <field
             name="official_label"
         >Summe Anschaffungs-/Herstellungskosten/Einlagewerte</field>
@@ -3014,7 +3014,7 @@
         <field name="box">40</field>
         <field name="kz">501</field>
         <field name="line">83</field>
-        <field name="sequence">830</field>
+        <field name="sequence" eval="830" />
         <field
             name="official_label"
         >Summe Buchwerte zu Beginn des Gewinnermittlungszeitraums</field>
@@ -3030,7 +3030,7 @@
         <field name="box">40</field>
         <field name="kz">502</field>
         <field name="line">84</field>
-        <field name="sequence">840</field>
+        <field name="sequence" eval="840" />
         <field name="official_label">Summe Zugänge</field>
         <field name="name">Shares: additions</field>
         <field name="name@de">Anteile: Zugänge</field>
@@ -3045,7 +3045,7 @@
         <field name="box">40</field>
         <field name="kz">505</field>
         <field name="line">85</field>
-        <field name="sequence">850</field>
+        <field name="sequence" eval="850" />
         <field
             name="official_label"
         >Summe Abgänge (zu erfassen in Zeile 38 der Anlage EÜR)</field>
@@ -3061,7 +3061,7 @@
         <field name="box">40</field>
         <field name="kz">506</field>
         <field name="line">86</field>
-        <field name="sequence">860</field>
+        <field name="sequence" eval="860" />
         <field
             name="official_label"
         >Summe Buchwerte am Ende des Gewinnermittlungszeitraums</field>
@@ -3078,7 +3078,7 @@
         <field name="box">40</field>
         <field name="kz">510</field>
         <field name="line">87</field>
-        <field name="sequence">870</field>
+        <field name="sequence" eval="870" />
         <field
             name="official_label"
         >Summe Anschaffungs-/Herstellungskosten/Einlagewerte</field>
@@ -3094,7 +3094,7 @@
         <field name="box">40</field>
         <field name="kz">511</field>
         <field name="line">88</field>
-        <field name="sequence">880</field>
+        <field name="sequence" eval="880" />
         <field
             name="official_label"
         >Summe Buchwerte zu Beginn des Gewinnermittlungszeitraums</field>
@@ -3110,7 +3110,7 @@
         <field name="box">40</field>
         <field name="kz">512</field>
         <field name="line">89</field>
-        <field name="sequence">890</field>
+        <field name="sequence" eval="890" />
         <field name="official_label">Summe Zugänge</field>
         <field name="name">Other financial assets: additions</field>
         <field name="name@de">Andere Finanzanlagen: Zugänge</field>
@@ -3125,7 +3125,7 @@
         <field name="box">40</field>
         <field name="kz">515</field>
         <field name="line">90</field>
-        <field name="sequence">900</field>
+        <field name="sequence" eval="900" />
         <field
             name="official_label"
         >Summe Abgänge (zu erfassen in Zeile 38 der Anlage EÜR)</field>
@@ -3141,7 +3141,7 @@
         <field name="box">25</field>
         <field name="kz">135</field>
         <field name="line">38</field>
-        <field name="sequence">390</field>
+        <field name="sequence" eval="390" />
         <field
             name="official_label"
         >Restbuchwerte der ausgeschiedenen Anlagegüter (Übertrag der Summe der Beträge aus Zeilen 7, 14, 20, 26, 32, 38, 45, 52, 59, 85, 90 der Anlage AVEÜR)</field>
@@ -3159,7 +3159,7 @@
         <field name="code">EUER.25.UEB2</field>
         <field name="box">25</field>
         <field name="line">61</field>
-        <field name="sequence">620</field>
+        <field name="sequence" eval="620" />
         <field
             name="official_label"
         >Übertrag (Summe Zeilen 24 bis 27 und Zeilen 29 bis 60)</field>
@@ -3178,7 +3178,7 @@
         <field name="box">25</field>
         <field name="kz">199</field>
         <field name="line">75</field>
-        <field name="sequence">800</field>
+        <field name="sequence" eval="800" />
         <field
             name="official_label"
         >Summe Betriebsausgaben (Übertrag in Zeile 77)</field>
@@ -3196,7 +3196,7 @@
         <field name="code">EUER.G.BA</field>
         <field name="box">G</field>
         <field name="line">77</field>
-        <field name="sequence">820</field>
+        <field name="sequence" eval="820" />
         <field
             name="official_label"
         >abzüglich Summe der Betriebsausgaben (Übertrag aus Zeile 75)</field>
@@ -3212,7 +3212,7 @@
         <field name="code">EUER.G.UEB</field>
         <field name="box">G</field>
         <field name="line">90</field>
-        <field name="sequence">950</field>
+        <field name="sequence" eval="950" />
         <field name="official_label">Übertrag (Summe/Differenz Zeilen 76 bis 89)</field>
         <field name="name">Subtotal of profit determination</field>
         <field name="name@de">Übertrag Gewinnermittlung</field>
@@ -3230,7 +3230,7 @@
         <field name="box">G</field>
         <field name="kz">290</field>
         <field name="line">92</field>
-        <field name="sequence">970</field>
+        <field name="sequence" eval="970" />
         <field name="official_label">Korrigierter Gewinn/Verlust</field>
         <field name="name">Adjusted profit or loss</field>
         <field name="name@de">Korrigierter Gewinn/Verlust</field>
@@ -3246,7 +3246,7 @@
         <field name="box">G</field>
         <field name="kz">293</field>
         <field name="line">95</field>
-        <field name="sequence">1020</field>
+        <field name="sequence" eval="1020" />
         <field
             name="official_label"
         >Steuerpflichtiger Gewinn/Verlust vor Anwendung des § 4 Abs. 4a EStG</field>
@@ -3264,7 +3264,7 @@
         <field name="box">40</field>
         <field name="kz">516</field>
         <field name="line">91</field>
-        <field name="sequence">910</field>
+        <field name="sequence" eval="910" />
         <field
             name="official_label"
         >Summe Buchwerte am Ende des Gewinnermittlungszeitraums</field>
@@ -3281,7 +3281,7 @@
         <field name="box">40</field>
         <field name="kz">600</field>
         <field name="line">92</field>
-        <field name="sequence">920</field>
+        <field name="sequence" eval="920" />
         <field
             name="official_label"
         >Summe Anschaffungs-/Herstellungskosten/Einlagewerte</field>
@@ -3297,7 +3297,7 @@
         <field name="box">40</field>
         <field name="kz">602</field>
         <field name="line">93</field>
-        <field name="sequence">930</field>
+        <field name="sequence" eval="930" />
         <field name="official_label">Summe Zugänge</field>
         <field name="name">Current assets (§ 4 (3) EStG): additions</field>
         <field name="name@de">Umlaufvermögen: Zugänge</field>
@@ -3312,7 +3312,7 @@
         <field name="box">40</field>
         <field name="kz">605</field>
         <field name="line">94</field>
-        <field name="sequence">940</field>
+        <field name="sequence" eval="940" />
         <field
             name="official_label"
         >Summe Abgänge (zu erfassen in Zeile 27 der Anlage EÜR)</field>
@@ -3328,7 +3328,7 @@
         <field name="box">40</field>
         <field name="kz">606</field>
         <field name="line">95</field>
-        <field name="sequence">950</field>
+        <field name="sequence" eval="950" />
         <field
             name="official_label"
         >Summe Buchwerte am Ende des Gewinnermittlungszeitraums</field>
@@ -3344,7 +3344,7 @@
         <field name="code">SZ.00.NAME</field>
         <field name="box">00</field>
         <field name="line">1</field>
-        <field name="sequence">10</field>
+        <field name="sequence" eval="10" />
         <field name="official_label">Name des Steuerpflichtigen</field>
         <field name="name">Name</field>
         <field name="name@de">Name</field>
@@ -3356,7 +3356,7 @@
         <field name="code">SZ.00.VORNAME</field>
         <field name="box">00</field>
         <field name="line">2</field>
-        <field name="sequence">20</field>
+        <field name="sequence" eval="20" />
         <field name="official_label">Vorname</field>
         <field name="name">First name</field>
         <field name="name@de">Vorname</field>
@@ -3368,7 +3368,7 @@
         <field name="code">SZ.00.STNR</field>
         <field name="box">00</field>
         <field name="line">3</field>
-        <field name="sequence">30</field>
+        <field name="sequence" eval="30" />
         <field name="official_label">(Betriebs-)Steuernummer</field>
         <field name="name">Tax number</field>
         <field name="name@de">Steuernummer</field>
@@ -3380,7 +3380,7 @@
         <field name="code">SZ.00.WIDNR</field>
         <field name="box">00</field>
         <field name="line">4</field>
-        <field name="sequence">40</field>
+        <field name="sequence" eval="40" />
         <field name="official_label">Wirtschafts-Identifikationsnummer</field>
         <field name="name">Business identification number</field>
         <field name="name@de">Wirtschafts-IdNr.</field>
@@ -3392,7 +3392,7 @@
         <field name="code">SZ.43.BE</field>
         <field name="box">43</field>
         <field name="line">5</field>
-        <field name="sequence">50</field>
+        <field name="sequence" eval="50" />
         <field
             name="official_label"
         >Betriebseinnahmen (Übertrag aus Zeile 23 der Anlage EÜR)</field>
@@ -3408,7 +3408,7 @@
         <field name="code">SZ.43.BA</field>
         <field name="box">43</field>
         <field name="line">6</field>
-        <field name="sequence">60</field>
+        <field name="sequence" eval="60" />
         <field
             name="official_label"
         >abzüglich Betriebsausgaben (Übertrag aus Zeile 75 der Anlage EÜR)</field>
@@ -3425,7 +3425,7 @@
         <field name="box">43</field>
         <field name="kz">151</field>
         <field name="line">7</field>
-        <field name="sequence">70</field>
+        <field name="sequence" eval="70" />
         <field
             name="official_label"
         >zuzüglich steuerfreie Gewinne, die nicht in der Anlage EÜR enthalten sind</field>
@@ -3441,7 +3441,7 @@
         <field name="box">43</field>
         <field name="kz">152</field>
         <field name="line">8</field>
-        <field name="sequence">80</field>
+        <field name="sequence" eval="80" />
         <field name="official_label">abzüglich nicht abziehbare Betriebsausgaben</field>
         <field name="name">Non-deductible business expenses</field>
         <field name="name@de">Nicht abziehbare Betriebsausgaben</field>
@@ -3455,7 +3455,7 @@
         <field name="box">43</field>
         <field name="kz">153</field>
         <field name="line">9</field>
-        <field name="sequence">90</field>
+        <field name="sequence" eval="90" />
         <field
             name="official_label"
         >zuzüglich Gewinne bzw. abzüglich Verluste aus Beteiligungen an vermögensverwaltenden Personengesellschaften und abzüglich Ergebnisanteile aus Kostenträgergemeinschaften (in Zeile 91 der Anlage EÜR enthalten)</field>
@@ -3472,7 +3472,7 @@
         <field name="box">43</field>
         <field name="kz">154</field>
         <field name="line">10</field>
-        <field name="sequence">100</field>
+        <field name="sequence" eval="100" />
         <field
             name="official_label"
         >zuzüglich Veräußerungs-/Aufgabegewinn bzw. abzüglich Veräußerungs-/Aufgabeverlust und zuzüglich Hinzu- bzw. abzüglich Abrechnungen beim Wechsel der Gewinnermittlungsart</field>
@@ -3488,7 +3488,7 @@
         <field name="code">SZ.43.GEWINN</field>
         <field name="box">43</field>
         <field name="line">11</field>
-        <field name="sequence">110</field>
+        <field name="sequence" eval="110" />
         <field
             name="official_label"
         >Maßgeblicher Gewinn/Verlust für Zwecke des § 4 Abs. 4a EStG (in Zeile 13 eintragen)</field>
@@ -3508,7 +3508,7 @@
         <field name="box">43</field>
         <field name="kz">100</field>
         <field name="line">12</field>
-        <field name="sequence">120</field>
+        <field name="sequence" eval="120" />
         <field
             name="official_label"
         >Entnahmen (Übertrag aus Zeile 106 der Anlage EÜR)</field>
@@ -3524,7 +3524,7 @@
         <field name="code">SZ.43.GEWINN_ABZ</field>
         <field name="box">43</field>
         <field name="line">13</field>
-        <field name="sequence">130</field>
+        <field name="sequence" eval="130" />
         <field
             name="official_label"
         >abzüglich Gewinn/zuzüglich Verlust (Betrag aus Zeile 11)</field>
@@ -3542,7 +3542,7 @@
         <field name="box">43</field>
         <field name="kz">210</field>
         <field name="line">14</field>
-        <field name="sequence">140</field>
+        <field name="sequence" eval="140" />
         <field
             name="official_label"
         >Einlagen (Übertrag aus Zeile 107 der Anlage EÜR)</field>
@@ -3558,7 +3558,7 @@
         <field name="code">SZ.43.UEBERENTN</field>
         <field name="box">43</field>
         <field name="line">15</field>
-        <field name="sequence">150</field>
+        <field name="sequence" eval="150" />
         <field
             name="official_label"
         >Über-/Unterentnahme des laufenden Wirtschaftsjahres</field>
@@ -3576,7 +3576,7 @@
         <field name="box">43</field>
         <field name="kz">315</field>
         <field name="line">16</field>
-        <field name="sequence">160</field>
+        <field name="sequence" eval="160" />
         <field
             name="official_label"
         >zuzüglich Über-/abzüglich Unterentnahmen der vorangegangenen Wirtschaftsjahre (Betrag aus Zeile 16 der Anlage SZ des Vorjahres)</field>
@@ -3592,7 +3592,7 @@
         <field name="code">SZ.43.UEBERENTN_KUM</field>
         <field name="box">43</field>
         <field name="line">17</field>
-        <field name="sequence">170</field>
+        <field name="sequence" eval="170" />
         <field name="official_label">Kumulierte Über-/Unterentnahmen</field>
         <field name="name">Cumulated over- or under-withdrawals</field>
         <field name="name@de">Kumulierte Über-/Unterentnahmen</field>
@@ -3607,7 +3607,7 @@
         <field name="code">SZ.43.ENTN_LFD</field>
         <field name="box">43</field>
         <field name="line">18</field>
-        <field name="sequence">180</field>
+        <field name="sequence" eval="180" />
         <field
             name="official_label"
         >Entnahmen des laufenden Wirtschaftsjahres (Betrag aus Zeile 12)</field>
@@ -3624,7 +3624,7 @@
         <field name="box">43</field>
         <field name="kz">325</field>
         <field name="line">19</field>
-        <field name="sequence">190</field>
+        <field name="sequence" eval="190" />
         <field
             name="official_label"
         >Entnahmen der vorangegangenen Wirtschaftsjahre (Betrag aus Zeile 19 der Anlage SZ des Vorjahres)</field>
@@ -3639,7 +3639,7 @@
         <field name="code">SZ.43.ENTN_KUM</field>
         <field name="box">43</field>
         <field name="line">20</field>
-        <field name="sequence">200</field>
+        <field name="sequence" eval="200" />
         <field name="official_label">Kumulierte Entnahmen</field>
         <field name="name">Cumulated withdrawals</field>
         <field name="name@de">Kumulierte Entnahmen</field>
@@ -3653,7 +3653,7 @@
         <field name="code">SZ.43.EINL_LFD</field>
         <field name="box">43</field>
         <field name="line">21</field>
-        <field name="sequence">210</field>
+        <field name="sequence" eval="210" />
         <field
             name="official_label"
         >Einlagen des laufenden Wirtschaftsjahres (Betrag aus Zeile 14)</field>
@@ -3670,7 +3670,7 @@
         <field name="box">43</field>
         <field name="kz">335</field>
         <field name="line">22</field>
-        <field name="sequence">220</field>
+        <field name="sequence" eval="220" />
         <field
             name="official_label"
         >Einlagen der vorangegangenen Wirtschaftsjahre (Betrag aus Zeile 22 der Anlage SZ des Vorjahres)</field>
@@ -3685,7 +3685,7 @@
         <field name="code">SZ.43.EINL_KUM</field>
         <field name="box">43</field>
         <field name="line">23</field>
-        <field name="sequence">230</field>
+        <field name="sequence" eval="230" />
         <field name="official_label">Kumulierte Einlagen</field>
         <field name="name">Cumulated contributions</field>
         <field name="name@de">Kumulierte Einlagen</field>
@@ -3699,7 +3699,7 @@
         <field name="code">SZ.43.ENTN_UEBERSCHUSS</field>
         <field name="box">43</field>
         <field name="line">24</field>
-        <field name="sequence">240</field>
+        <field name="sequence" eval="240" />
         <field name="official_label">Kumulierter Entnahmenüberschuss</field>
         <field name="name">Cumulated excess of withdrawals</field>
         <field name="name@de">Kumulierter Entnahmenüberschuss</field>
@@ -3714,7 +3714,7 @@
         <field name="code">SZ.43.ZINS_6PROZ</field>
         <field name="box">43</field>
         <field name="line">25</field>
-        <field name="sequence">250</field>
+        <field name="sequence" eval="250" />
         <field
             name="official_label"
         >6 % des niedrigeren Betrags aus Zeile 17 oder 24 (Ergibt sich in Zeile 17 oder 24 ein negativer Betrag, ist hier der Wert „0“ einzutragen.)</field>
@@ -3732,7 +3732,7 @@
         <field name="code">SZ.43.ZINS_UEBRIG</field>
         <field name="box">43</field>
         <field name="line">26</field>
-        <field name="sequence">260</field>
+        <field name="sequence" eval="260" />
         <field
             name="official_label"
         >Übrige Schuldzinsen (Übertrag aus Zeile 56 der Anlage EÜR)</field>
@@ -3749,7 +3749,7 @@
         <field name="box">43</field>
         <field name="kz">405</field>
         <field name="line">27</field>
-        <field name="sequence">270</field>
+        <field name="sequence" eval="270" />
         <field
             name="official_label"
         >Korrekturbetrag zu den übrigen Schuldzinsen (siehe Anleitung zur Anlage EÜR)</field>
@@ -3765,7 +3765,7 @@
         <field name="code">SZ.43.SOCKEL</field>
         <field name="box">43</field>
         <field name="line">28</field>
-        <field name="sequence">280</field>
+        <field name="sequence" eval="280" />
         <field name="official_label">Kürzungsbetrag gem. § 4 Abs. 4a Satz 4 EStG</field>
         <field name="name">Deductible base amount</field>
         <field name="name@de">Kürzungsbetrag</field>
@@ -3779,7 +3779,7 @@
         <field name="code">SZ.43.HOECHSTBETRAG</field>
         <field name="box">43</field>
         <field name="line">29</field>
-        <field name="sequence">290</field>
+        <field name="sequence" eval="290" />
         <field
             name="official_label"
         >Höchstbetrag der nicht abziehbaren Schuldzinsen (Ergibt sich ein negativer Betrag, ist hier der Wert „0“ einzutragen.)</field>
@@ -3797,7 +3797,7 @@
         <field name="code">SZ.43.HINZURECHNUNG</field>
         <field name="box">43</field>
         <field name="line">30</field>
-        <field name="sequence">300</field>
+        <field name="sequence" eval="300" />
         <field
             name="official_label"
         >Niedrigerer Betrag aus Zeile 25 oder 29 (Übertrag in Zeile 96 der Anlage EÜR)</field>
@@ -3814,7 +3814,7 @@
         <field name="box">G</field>
         <field name="kz">271</field>
         <field name="line">96</field>
-        <field name="sequence">1030</field>
+        <field name="sequence" eval="1030" />
         <field name="official_label">Hinzurechnungsbetrag nach § 4 Abs. 4a EStG</field>
         <field name="name">Addition (§ 4 (4a) EStG)</field>
         <field name="name@de">Hinzurechnungsbetrag § 4 Abs. 4a</field>
@@ -3829,7 +3829,7 @@
         <field name="box">G</field>
         <field name="kz">219</field>
         <field name="line">97</field>
-        <field name="sequence">1040</field>
+        <field name="sequence" eval="1040" />
         <field name="official_label">Steuerpflichtiger Gewinn/Verlust</field>
         <field name="name">Taxable profit or loss</field>
         <field name="name@de">Steuerpflichtiger Gewinn/Verlust</field>

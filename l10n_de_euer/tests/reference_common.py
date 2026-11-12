@@ -225,7 +225,7 @@ class ReferenceCase(StatementCommon):
                 "tax_ids": [Command.set([self.tax(key).id for key in spec["taxes"]])],
             }
             if spec.get("deductible") is not None:
-                values["deductible_amount"] = spec["deductible"]
+                values["deductible_percentage"] = spec["deductible"] / 100
             lines.append(Command.create(values))
         values = {
             "move_type": event["move_type"],

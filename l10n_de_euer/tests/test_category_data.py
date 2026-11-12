@@ -198,7 +198,7 @@ class TestCategoryData(TransactionCase):
 
     def test_default_files(self):
         """Default categories exist; range rules cover all codes (K-03)."""
-        for chart, expected in (("de_skr03", 1274), ("de_skr04", 1192)):
+        for chart, expected in (("de_skr03", 1304), ("de_skr04", 1222)):
             rows = default_rows(chart)
             template_rows = [row for row in rows if row["code"] and row["xml_id"]]
             self.assertEqual(len(template_rows), expected)

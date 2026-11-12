@@ -1,0 +1,111 @@
+id,name,model_id,group_id/id,operation,domain
+access_l10n_de_euer_form_readonly,l10n_de_euer.form readonly,l10n_de_euer.form,account.group_account_readonly,r,
+access_l10n_de_euer_form_manager,l10n_de_euer.form manager,l10n_de_euer.form,account.group_account_manager,r,
+access_l10n_de_euer_form_system,l10n_de_euer.form system,l10n_de_euer.form,base.group_system,crud,
+access_l10n_de_euer_field_readonly,l10n_de_euer.field readonly,l10n_de_euer.field,account.group_account_readonly,r,
+access_l10n_de_euer_field_manager,l10n_de_euer.field manager,l10n_de_euer.field,account.group_account_manager,r,
+access_l10n_de_euer_field_system,l10n_de_euer.field system,l10n_de_euer.field,base.group_system,crud,
+access_l10n_de_euer_parameter_readonly,l10n_de_euer.parameter readonly,l10n_de_euer.parameter,account.group_account_readonly,r,
+access_l10n_de_euer_parameter_manager,l10n_de_euer.parameter manager,l10n_de_euer.parameter,account.group_account_manager,r,
+access_l10n_de_euer_parameter_system,l10n_de_euer.parameter system,l10n_de_euer.parameter,base.group_system,crud,
+access_l10n_de_euer_category_readonly,l10n_de_euer.category readonly,l10n_de_euer.category,account.group_account_readonly,r,
+access_l10n_de_euer_category_manager,l10n_de_euer.category manager,l10n_de_euer.category,account.group_account_manager,r,
+access_l10n_de_euer_category_system,l10n_de_euer.category system,l10n_de_euer.category,base.group_system,crud,
+access_l10n_de_euer_category_mapping_readonly,l10n_de_euer.category.mapping readonly,l10n_de_euer.category.mapping,account.group_account_readonly,r,
+access_l10n_de_euer_category_mapping_manager,l10n_de_euer.category.mapping manager,l10n_de_euer.category.mapping,account.group_account_manager,r,
+access_l10n_de_euer_category_mapping_system,l10n_de_euer.category.mapping system,l10n_de_euer.category.mapping,base.group_system,crud,
+access_l10n_de_euer_account_assignment_readonly,l10n_de_euer.account.assignment readonly,l10n_de_euer.account.assignment,account.group_account_readonly,r,
+access_l10n_de_euer_account_assignment_manager,l10n_de_euer.account.assignment manager,l10n_de_euer.account.assignment,account.group_account_manager,crud,
+access_l10n_de_euer_vat_period_readonly,l10n_de_euer.vat.period readonly,l10n_de_euer.vat.period,account.group_account_readonly,r,
+access_l10n_de_euer_vat_period_manager,l10n_de_euer.vat.period manager,l10n_de_euer.vat.period,account.group_account_manager,crud,
+access_l10n_de_euer_check_readonly,l10n_de_euer.check readonly,l10n_de_euer.check,account.group_account_readonly,r,
+access_l10n_de_euer_check_user,l10n_de_euer.check user,l10n_de_euer.check,account.group_account_user,ru,
+access_l10n_de_euer_check_manager,l10n_de_euer.check manager,l10n_de_euer.check,account.group_account_manager,ru,
+access_l10n_de_euer_account_review_readonly,l10n_de_euer.account.review readonly,l10n_de_euer.account.review,account.group_account_readonly,crud,
+access_l10n_de_euer_account_review_manager,l10n_de_euer.account.review manager,l10n_de_euer.account.review,account.group_account_manager,crud,
+access_l10n_de_euer_account_review_line_readonly,l10n_de_euer.account.review.line readonly,l10n_de_euer.account.review.line,account.group_account_readonly,crud,
+access_l10n_de_euer_account_review_line_manager,l10n_de_euer.account.review.line manager,l10n_de_euer.account.review.line,account.group_account_manager,crud,
+access_l10n_de_euer_move_info_readonly,l10n_de_euer.move.info readonly,l10n_de_euer.move.info,account.group_account_readonly,r,
+access_l10n_de_euer_move_info_user,l10n_de_euer.move.info user,l10n_de_euer.move.info,account.group_account_user,cru,
+access_l10n_de_euer_move_info_manager,l10n_de_euer.move.info manager,l10n_de_euer.move.info,account.group_account_manager,crud,
+access_l10n_de_euer_gift_line_readonly,l10n_de_euer.gift.line readonly,l10n_de_euer.gift.line,account.group_account_readonly,r,
+access_l10n_de_euer_gift_line_user,l10n_de_euer.gift.line user,l10n_de_euer.gift.line,account.group_account_user,crud,
+access_l10n_de_euer_gift_line_manager,l10n_de_euer.gift.line manager,l10n_de_euer.gift.line,account.group_account_manager,crud,
+access_l10n_de_euer_run_readonly,l10n_de_euer.run readonly,l10n_de_euer.run,account.group_account_readonly,r,
+access_l10n_de_euer_run_user,l10n_de_euer.run user,l10n_de_euer.run,account.group_account_user,cr,
+access_l10n_de_euer_run_manager,l10n_de_euer.run manager,l10n_de_euer.run,account.group_account_manager,cr,
+access_l10n_de_euer_cash_slice_readonly,l10n_de_euer.cash.slice readonly,l10n_de_euer.cash.slice,account.group_account_readonly,r,
+access_l10n_de_euer_cash_slice_user,l10n_de_euer.cash.slice user,l10n_de_euer.cash.slice,account.group_account_user,r,
+access_l10n_de_euer_cash_slice_manager,l10n_de_euer.cash.slice manager,l10n_de_euer.cash.slice,account.group_account_manager,r,
+access_l10n_de_euer_residual_classification_readonly,l10n_de_euer.residual.classification readonly,l10n_de_euer.residual.classification,account.group_account_readonly,r,
+access_l10n_de_euer_residual_classification_user,l10n_de_euer.residual.classification user,l10n_de_euer.residual.classification,account.group_account_user,crud,
+access_l10n_de_euer_residual_classification_manager,l10n_de_euer.residual.classification manager,l10n_de_euer.residual.classification,account.group_account_manager,crud,
+access_l10n_de_euer_opening_item_readonly,l10n_de_euer.opening.item readonly,l10n_de_euer.opening.item,account.group_account_readonly,r,
+access_l10n_de_euer_opening_item_user,l10n_de_euer.opening.item user,l10n_de_euer.opening.item,account.group_account_user,r,
+access_l10n_de_euer_opening_item_manager,l10n_de_euer.opening.item manager,l10n_de_euer.opening.item,account.group_account_manager,crud,
+access_l10n_de_euer_ten_day_item_readonly,l10n_de_euer.ten_day.item readonly,l10n_de_euer.ten_day.item,account.group_account_readonly,r,
+access_l10n_de_euer_ten_day_item_user,l10n_de_euer.ten_day.item user,l10n_de_euer.ten_day.item,account.group_account_user,ru,
+access_l10n_de_euer_ten_day_item_manager,l10n_de_euer.ten_day.item manager,l10n_de_euer.ten_day.item,account.group_account_manager,ru,
+access_l10n_de_euer_compute_year_user,l10n_de_euer.compute.year user,l10n_de_euer.compute.year,account.group_account_user,crud,
+access_l10n_de_euer_compute_year_manager,l10n_de_euer.compute.year manager,l10n_de_euer.compute.year,account.group_account_manager,crud,
+access_l10n_de_euer_asset_readonly,l10n_de_euer.asset readonly,l10n_de_euer.asset,account.group_account_readonly,r,
+access_l10n_de_euer_asset_user,l10n_de_euer.asset user,l10n_de_euer.asset,account.group_account_user,crud,
+access_l10n_de_euer_asset_manager,l10n_de_euer.asset manager,l10n_de_euer.asset,account.group_account_manager,crud,
+access_l10n_de_euer_asset_event_readonly,l10n_de_euer.asset.event readonly,l10n_de_euer.asset.event,account.group_account_readonly,r,
+access_l10n_de_euer_asset_event_user,l10n_de_euer.asset.event user,l10n_de_euer.asset.event,account.group_account_user,crud,
+access_l10n_de_euer_asset_event_manager,l10n_de_euer.asset.event manager,l10n_de_euer.asset.event,account.group_account_manager,crud,
+access_l10n_de_euer_asset_year_readonly,l10n_de_euer.asset.year readonly,l10n_de_euer.asset.year,account.group_account_readonly,r,
+access_l10n_de_euer_asset_year_user,l10n_de_euer.asset.year user,l10n_de_euer.asset.year,account.group_account_user,ru,
+access_l10n_de_euer_asset_year_manager,l10n_de_euer.asset.year manager,l10n_de_euer.asset.year,account.group_account_manager,ru,
+access_l10n_de_euer_asset_pool_readonly,l10n_de_euer.asset.pool readonly,l10n_de_euer.asset.pool,account.group_account_readonly,r,
+access_l10n_de_euer_asset_pool_user,l10n_de_euer.asset.pool user,l10n_de_euer.asset.pool,account.group_account_user,r,
+access_l10n_de_euer_asset_pool_manager,l10n_de_euer.asset.pool manager,l10n_de_euer.asset.pool,account.group_account_manager,r,
+access_l10n_de_euer_asset_from_move_line_user,l10n_de_euer.asset.from.move.line user,l10n_de_euer.asset.from.move.line,account.group_account_user,crud,
+access_l10n_de_euer_asset_from_move_line_manager,l10n_de_euer.asset.from.move.line manager,l10n_de_euer.asset.from.move.line,account.group_account_manager,crud,
+access_l10n_de_euer_asset_import_manager,l10n_de_euer.asset.import manager,l10n_de_euer.asset.import,account.group_account_manager,crud,
+access_l10n_de_euer_asset_import_line_manager,l10n_de_euer.asset.import.line manager,l10n_de_euer.asset.import.line,account.group_account_manager,crud,
+access_l10n_de_euer_asset_check_wizard_user,l10n_de_euer.asset.check.wizard user,l10n_de_euer.asset.check.wizard,account.group_account_user,crud,
+access_l10n_de_euer_asset_check_wizard_manager,l10n_de_euer.asset.check.wizard manager,l10n_de_euer.asset.check.wizard,account.group_account_manager,crud,
+access_l10n_de_euer_asset_import_total_manager,l10n_de_euer.asset.import.total manager,l10n_de_euer.asset.import.total,account.group_account_manager,crud,
+access_l10n_de_euer_asset_opening_total_readonly,l10n_de_euer.asset.opening.total readonly,l10n_de_euer.asset.opening.total,account.group_account_readonly,r,
+access_l10n_de_euer_asset_opening_total_user,l10n_de_euer.asset.opening.total user,l10n_de_euer.asset.opening.total,account.group_account_user,r,
+access_l10n_de_euer_asset_opening_total_manager,l10n_de_euer.asset.opening.total manager,l10n_de_euer.asset.opening.total,account.group_account_manager,crud,
+access_l10n_de_euer_statement_readonly,l10n_de_euer.statement readonly,l10n_de_euer.statement,account.group_account_readonly,r,
+access_l10n_de_euer_statement_user,l10n_de_euer.statement user,l10n_de_euer.statement,account.group_account_user,crud,
+access_l10n_de_euer_statement_manager,l10n_de_euer.statement manager,l10n_de_euer.statement,account.group_account_manager,crud,
+access_l10n_de_euer_statement_line_readonly,l10n_de_euer.statement.line readonly,l10n_de_euer.statement.line,account.group_account_readonly,r,
+access_l10n_de_euer_statement_line_user,l10n_de_euer.statement.line user,l10n_de_euer.statement.line,account.group_account_user,ru,
+access_l10n_de_euer_statement_line_manager,l10n_de_euer.statement.line manager,l10n_de_euer.statement.line,account.group_account_manager,ru,
+access_l10n_de_euer_scope_answer_readonly,l10n_de_euer.scope.answer readonly,l10n_de_euer.scope.answer,account.group_account_readonly,r,
+access_l10n_de_euer_scope_answer_user,l10n_de_euer.scope.answer user,l10n_de_euer.scope.answer,account.group_account_user,ru,
+access_l10n_de_euer_scope_answer_manager,l10n_de_euer.scope.answer manager,l10n_de_euer.scope.answer,account.group_account_manager,ru,
+access_l10n_de_euer_cash_balance_readonly,l10n_de_euer.cash.balance readonly,l10n_de_euer.cash.balance,account.group_account_readonly,r,
+access_l10n_de_euer_cash_balance_user,l10n_de_euer.cash.balance user,l10n_de_euer.cash.balance,account.group_account_user,crud,
+access_l10n_de_euer_cash_balance_manager,l10n_de_euer.cash.balance manager,l10n_de_euer.cash.balance,account.group_account_manager,crud,
+access_l10n_de_euer_adjustment_readonly,l10n_de_euer.adjustment readonly,l10n_de_euer.adjustment,account.group_account_readonly,r,
+access_l10n_de_euer_adjustment_user,l10n_de_euer.adjustment user,l10n_de_euer.adjustment,account.group_account_user,crud,
+access_l10n_de_euer_adjustment_manager,l10n_de_euer.adjustment manager,l10n_de_euer.adjustment,account.group_account_manager,crud,
+access_l10n_de_euer_statement_correction_manager,l10n_de_euer.statement.correction manager,l10n_de_euer.statement.correction,account.group_account_manager,crud,
+access_l10n_de_euer_setup_wizard_manager,l10n_de_euer.setup.wizard manager,l10n_de_euer.setup.wizard,account.group_account_manager,crud,
+access_l10n_de_euer_opening_wizard_manager,l10n_de_euer.opening.wizard manager,l10n_de_euer.opening.wizard,account.group_account_manager,crud,
+access_l10n_de_euer_opening_wizard_line_manager,l10n_de_euer.opening.wizard.line manager,l10n_de_euer.opening.wizard.line,account.group_account_manager,crud,
+l10n_de_euer_account_assignment_company_rule,EÜR account assignment: multi-company,l10n_de_euer.account.assignment,,crud,"[('company_id', 'parent_of', company_ids)]"
+l10n_de_euer_vat_period_company_rule,EÜR VAT status period: multi-company,l10n_de_euer.vat.period,,crud,"[('company_id', 'parent_of', company_ids)]"
+l10n_de_euer_check_company_rule,EÜR check result: multi-company,l10n_de_euer.check,,crud,"['|', ('company_id', 'in', company_ids), '&', ('origin', '=', 'assignment'), ('company_id', 'parent_of', company_ids)]"
+l10n_de_euer_move_info_company_rule,EÜR entry information: multi-company,l10n_de_euer.move.info,,crud,"[('company_id', 'in', company_ids)]"
+l10n_de_euer_gift_line_company_rule,EÜR recipient of gifts per line: multi-company,l10n_de_euer.gift.line,,crud,"[('company_id', 'in', company_ids)]"
+l10n_de_euer_run_company_rule,EÜR calculation run: multi-company,l10n_de_euer.run,,crud,"[('company_id', 'in', company_ids)]"
+l10n_de_euer_cash_slice_company_rule,EÜR slice: multi-company,l10n_de_euer.cash.slice,,crud,"[('company_id', 'in', company_ids)]"
+l10n_de_euer_residual_classification_company_rule,EÜR classification of rests: multi-company,l10n_de_euer.residual.classification,,crud,"[('company_id', 'in', company_ids)]"
+l10n_de_euer_opening_item_company_rule,EÜR open item taken over: multi-company,l10n_de_euer.opening.item,,crud,"[('company_id', 'in', company_ids)]"
+l10n_de_euer_ten_day_item_company_rule,EÜR review of the turn of the year: multi-company,l10n_de_euer.ten_day.item,,crud,"[('company_id', 'in', company_ids)]"
+l10n_de_euer_asset_company_rule,EÜR asset: multi-company,l10n_de_euer.asset,,crud,"['|', ('company_id', 'in', company_ids), ('company_id.l10n_de_euer_member_ids', 'in', company_ids)]"
+l10n_de_euer_asset_event_company_rule,EÜR asset event: multi-company,l10n_de_euer.asset.event,,crud,"['|', ('company_id', 'in', company_ids), ('company_id.l10n_de_euer_member_ids', 'in', company_ids)]"
+l10n_de_euer_asset_year_company_rule,EÜR asset year: multi-company,l10n_de_euer.asset.year,,crud,"['|', ('company_id', 'in', company_ids), ('company_id.l10n_de_euer_member_ids', 'in', company_ids)]"
+l10n_de_euer_asset_opening_total_company_rule,EÜR filed AVEÜR book value: multi-company,l10n_de_euer.asset.opening.total,,crud,"['|', ('company_id', 'in', company_ids), ('company_id.l10n_de_euer_member_ids', 'in', company_ids)]"
+l10n_de_euer_asset_pool_company_rule,EÜR asset pool: multi-company,l10n_de_euer.asset.pool,,crud,"['|', ('company_id', 'in', company_ids), ('company_id.l10n_de_euer_member_ids', 'in', company_ids)]"
+l10n_de_euer_statement_company_rule,EÜR statement: multi-company,l10n_de_euer.statement,,crud,"[('company_id', 'in', company_ids)]"
+l10n_de_euer_statement_line_company_rule,EÜR statement value: multi-company,l10n_de_euer.statement.line,,crud,"[('company_id', 'in', company_ids)]"
+l10n_de_euer_scope_answer_company_rule,EÜR questionnaire answer: multi-company,l10n_de_euer.scope.answer,,crud,"[('company_id', 'in', company_ids)]"
+l10n_de_euer_cash_balance_company_rule,EÜR bank reconciliation: multi-company,l10n_de_euer.cash.balance,,crud,"[('company_id', 'in', company_ids)]"
+l10n_de_euer_adjustment_company_rule,EÜR profit correction: multi-company,l10n_de_euer.adjustment,,crud,"[('company_id', 'in', company_ids)]"

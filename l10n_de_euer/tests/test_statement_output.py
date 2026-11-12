@@ -653,7 +653,7 @@ class OutputScenarios(StatementCommon):
         self.assertIn(revenue.code, codes)
         self.assertEqual(codes[revenue.code]["category_code"], "REV_KU")
         self.assertIn("Kz 111", codes[revenue.code]["fields"])
-        self.assertEqual(procedure["status"]["module_version"], "19.0.1.0.0")
+        self.assertEqual(procedure["status"]["module_version"], "20.0.1.0.0")
         self.assertEqual(
             procedure["status"]["ruleset_version"], statement._get_ruleset_version()
         )
@@ -674,7 +674,7 @@ class OutputScenarios(StatementCommon):
             "Lock concept",
             "database administrators",
             "Versions",
-            "19.0.1.0.0",
+            "20.0.1.0.0",
             statement._get_ruleset_version(),
             revenue.code,
         ):

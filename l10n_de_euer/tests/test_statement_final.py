@@ -92,7 +92,7 @@ class FinalScenarios(StatementCommon):
         return self.finalize(statement)
 
     def payload(self, statement):
-        return json.loads(statement.payload_attachment_id.raw)
+        return json.loads(statement.payload_attachment_id.raw.content)
 
     def c60(self, statement):
         return self.results(statement, "C-60").filtered(
@@ -110,7 +110,7 @@ class FinalScenarios(StatementCommon):
         self.assertEqual(statement.state, "final")
         self.assertEqual(statement.finalized_by_id, self.env.user)
         self.assertTrue(statement.finalized_on)
-        raw = statement.payload_attachment_id.raw
+        raw = statement.payload_attachment_id.raw.content
         self.assertEqual(statement.payload_attachment_id.mimetype, "application/json")
         self.assertEqual(hashlib.sha256(raw).hexdigest(), statement.payload_sha256)
         self.assertEqual(statement.chain_index, 1)
@@ -187,7 +187,7 @@ class FinalScenarios(StatementCommon):
         warnings = [row for row in payload["checks"] if row["severity"] == "warning"]
         self.assertTrue(all(row["acknowledged_on"] for row in warnings))
         # versions of the forms, the rule set and the module
-        self.assertEqual(statement.module_version, "19.0.1.0.0")
+        self.assertEqual(statement.module_version, "20.0.1.0.0")
         self.assertEqual(statement.ruleset_version, statement._get_ruleset_version())
         self.assertIn("2026", statement.form_versions)
         self.assertEqual({row["year"] for row in payload["forms"]}, {2026})
@@ -366,7 +366,7 @@ class FinalScenarios(StatementCommon):
         # moving the payload between database and file store does not change it
         payload._migrate()
         self.assertEqual(
-            hashlib.sha256(payload.raw).hexdigest(), statement.payload_sha256
+            hashlib.sha256(payload.raw.content).hexdigest(), statement.payload_sha256
         )
         # a new calculation of the year leaves the finalised run alone
         self.Run._compute_year(self.company, 2026)

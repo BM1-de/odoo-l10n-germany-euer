@@ -65,11 +65,12 @@ class TestFinalisedStatementProtection(ReviewCommon, AccountTestInvoicingCommon)
         database and file store), never with another content or name."""
         final = self.finalized()
         attachment = final.payload_attachment_id
-        raw = attachment.raw
+        raw = attachment.raw.content
         attachment.write({"access_token": "e5-coverage"})
         attachment.write({"raw": raw})
-        attachment.write({"datas": base64.b64encode(raw).decode()})
-        self.assertEqual(attachment.raw, raw)
+        # a base64 string, as an RPC call sends the content
+        attachment.write({"raw": base64.b64encode(raw).decode()})
+        self.assertEqual(attachment.raw.content, raw)
         with self.assertRaises(UserError):
             attachment.write({"raw": raw + b" "})
         with self.assertRaises(UserError):

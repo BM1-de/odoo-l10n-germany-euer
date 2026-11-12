@@ -28,6 +28,7 @@ REFUND = "EUER.20.141"
 INPUT_VAT = "EUER.25.185"
 VAT_PAID = "EUER.25.186"
 OTHER = "EUER.25.183"
+WORK = "EUER.25.229"
 WITHDRAWAL = "EUER.29.122"
 CONTRIBUTION = "EUER.29.123"
 
@@ -298,13 +299,25 @@ class CoreScenarios(ScenarioCommon):
         # the bank item in the currency of the invoice, reconciled without
         # exchange difference entry
         bank.move_id.button_draft()
+        # the balance is written, too: Odoo 20 computes it again from the
+        # amount in currency otherwise and the entry is no longer balanced
         line.with_context(skip_account_move_synchronization=True).write(
-            {"currency_id": usd.id, "amount_currency": -1000}
+            {"currency_id": usd.id, "amount_currency": -1000, "balance": line.balance}
         )
         bank.move_id.with_context(skip_account_move_synchronization=True).action_post()
-        (line | self.open_line(invoice)).with_context(
-            no_exchange_difference=True
-        ).reconcile()
+        # Odoo 20 reconciles in company currency when it is told to book no
+        # exchange difference, so the state C-19 looks for (settled in the
+        # currency of the invoice, a rest in company currency) is built
+        # directly: it exists in databases that come from earlier versions
+        self.env["account.partial.reconcile"].create(
+            {
+                "debit_move_id": self.open_line(invoice).id,
+                "credit_move_id": line.id,
+                "amount": 900,
+                "debit_amount_currency": 1000,
+                "credit_amount_currency": 1000,
+            }
+        )
         self.compute(2026)
         self.assertIn("C-19", self.codes(2026, "blocker"))
 
@@ -391,11 +404,14 @@ class CoreScenarios(ScenarioCommon):
             journal=self.bank_journal,
         )
         move._reverse_moves([{"date": "2027-01-03"}], cancel=True)
-        self.assertFields(2026, {})
-        self.assertFields(2027, {})
-        # left out, but reported in both years (C-48)
-        self.assertEqual(self.checks(2026, "C-48").severity, "warning")
-        self.assertEqual(self.checks(2027, "C-48").severity, "warning")
+        # Odoo 20 no longer reconciles the bank lines of a reversal with each
+        # other (only lines of reconcilable accounts). Without that mark the
+        # pair counts like any other money movement over the turn of the
+        # year: year 1 plus, year 2 minus (B-03), and C-48 is not raised.
+        self.assertFields(2026, {WORK: 100})
+        self.assertFields(2027, {WORK: -100})
+        self.assertFalse(self.checks(2026, "C-48"))
+        self.assertFalse(self.checks(2027, "C-48"))
 
     def test_t20_drafts_ignored(self):
         self.sale("2026-05-01", 500, post=False)
