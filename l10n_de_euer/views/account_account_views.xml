@@ -12,7 +12,7 @@
                     class="oe_stat_button"
                     name="action_l10n_de_euer_assignments"
                     type="object"
-                    icon="fa-link"
+                    icon="link"
                     string="EÜR"
                     groups="account.group_account_manager"
                 />

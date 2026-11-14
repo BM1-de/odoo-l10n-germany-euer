@@ -85,13 +85,13 @@
                 <button
                     name="action_open_move_lines"
                     type="object"
-                    icon="fa-list"
+                    icon="format_list_bulleted"
                     title="Journal items"
                 />
                 <button
                     name="action_open_assignment"
                     type="object"
-                    icon="fa-link"
+                    icon="link"
                     title="Assignments"
                 />
             </list>

@@ -35,7 +35,7 @@
                 <button
                     name="action_resolve"
                     type="object"
-                    icon="fa-wrench"
+                    icon="build"
                     title="Resolve"
                     invisible="not resolvable"
                     groups="account.group_account_user,account.group_account_manager"
@@ -43,7 +43,7 @@
                 <button
                     name="action_open_records"
                     type="object"
-                    icon="fa-external-link"
+                    icon="open_in_new"
                     title="Show records"
                     invisible="record_count == 0"
                 />
@@ -81,7 +81,7 @@
                             name="action_open_records"
                             type="object"
                             class="oe_stat_button"
-                            icon="fa-external-link"
+                            icon="open_in_new"
                             invisible="record_count == 0"
                         >
                             <field

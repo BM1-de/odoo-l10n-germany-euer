@@ -42,7 +42,7 @@
                             name="action_open_fields"
                             type="object"
                             class="oe_stat_button"
-                            icon="fa-list"
+                            icon="format_list_bulleted"
                         >
                             <field
                                 name="field_count"

@@ -106,7 +106,7 @@
                             name="action_open_slices"
                             type="object"
                             class="oe_stat_button"
-                            icon="fa-list"
+                            icon="format_list_bulleted"
                             invisible="not run_id"
                         >
                             <field
@@ -119,7 +119,7 @@
                             name="action_open_checks"
                             type="object"
                             class="oe_stat_button"
-                            icon="fa-exclamation-triangle"
+                            icon="warning"
                         >
                             <field
                                 name="blocker_count"
@@ -131,7 +131,7 @@
                             name="action_open_comparison_run"
                             type="object"
                             class="oe_stat_button"
-                            icon="fa-balance-scale"
+                            icon="balance"
                             string="Comparison Run"
                             invisible="not comparison_run_id"
                         />
@@ -139,14 +139,14 @@
                             name="action_open_assets"
                             type="object"
                             class="oe_stat_button"
-                            icon="fa-cubes"
+                            icon="inventory_2"
                             string="Assets"
                         />
                         <button
                             name="action_open_assignments"
                             type="object"
                             class="oe_stat_button"
-                            icon="fa-sitemap"
+                            icon="account_tree"
                             string="Account Assignment"
                         />
                     </div>
@@ -321,21 +321,22 @@
                                     <button
                                         name="action_open_slices"
                                         type="object"
-                                        icon="fa-search"
+                                        icon="search"
                                         title="Show records"
                                         invisible="not slice_count"
                                     />
                                     <button
                                         name="action_open_assets"
                                         type="object"
-                                        icon="fa-cubes"
+                                        icon="inventory_2"
                                         title="Show assets"
                                         invisible="not has_register_source"
                                     />
                                     <button
                                         name="action_override"
                                         type="object"
-                                        icon="fa-pencil"
+                                        icon="edit"
+                                        icon_class="oi-filled"
                                         title="Override Value"
                                         invisible="field_type in ('text', 'key', 'date')"
                                         groups="account.group_account_user,account.group_account_manager"
@@ -380,14 +381,14 @@
                                     <button
                                         name="action_open_slices"
                                         type="object"
-                                        icon="fa-search"
+                                        icon="search"
                                         title="Show records"
                                         invisible="not slice_count"
                                     />
                                     <button
                                         name="action_open_assets"
                                         type="object"
-                                        icon="fa-cubes"
+                                        icon="inventory_2"
                                         title="Show assets"
                                         invisible="not has_register_source"
                                     />
@@ -425,7 +426,7 @@
                                     <button
                                         name="action_resolve"
                                         type="object"
-                                        icon="fa-wrench"
+                                        icon="build"
                                         title="Resolve"
                                         invisible="not resolvable"
                                         groups="account.group_account_user,account.group_account_manager"
@@ -433,7 +434,7 @@
                                     <button
                                         name="action_open_records"
                                         type="object"
-                                        icon="fa-external-link"
+                                        icon="open_in_new"
                                         title="Show records"
                                         invisible="record_count == 0"
                                     />
@@ -580,35 +581,35 @@
                                         name="action_view_fill_aid"
                                         type="object"
                                         string="Fill-In Aid Mein ELSTER (HTML)"
-                                        icon="fa-eye"
+                                        icon="visibility"
                                         class="btn-link"
                                     />
                                     <button
                                         name="action_print_fill_aid"
                                         type="object"
                                         string="Fill-In Aid Mein ELSTER (PDF)"
-                                        icon="fa-file-pdf-o"
+                                        icon="picture_as_pdf"
                                         class="btn-link"
                                     />
                                     <button
                                         name="action_print_evidence"
                                         type="object"
                                         string="Evidence per Kennzahl (PDF)"
-                                        icon="fa-file-pdf-o"
+                                        icon="picture_as_pdf"
                                         class="btn-link"
                                     />
                                     <button
                                         name="action_export_evidence"
                                         type="object"
                                         string="Evidence per Kennzahl (XLSX)"
-                                        icon="fa-file-excel-o"
+                                        icon="table_chart"
                                         class="btn-link"
                                     />
                                     <button
                                         name="action_export_workbook"
                                         type="object"
                                         string="Workbook (XLSX)"
-                                        icon="fa-file-excel-o"
+                                        icon="table_chart"
                                         class="btn-link"
                                     />
                                 </group>
@@ -617,49 +618,49 @@
                                         name="action_export_elster"
                                         type="object"
                                         string="List of the Kennzahlen for ELSTER (CSV)"
-                                        icon="fa-file-text-o"
+                                        icon="article"
                                         class="btn-link"
                                     />
                                     <button
                                         name="action_export_json"
                                         type="object"
                                         string="Data Set (JSON)"
-                                        icon="fa-file-code-o"
+                                        icon="code"
                                         class="btn-link"
                                     />
                                     <button
                                         name="action_export_z3"
                                         type="object"
                                         string="Data Access Z3 (ZIP)"
-                                        icon="fa-file-archive-o"
+                                        icon="folder_zip"
                                         class="btn-link"
                                     />
                                     <button
                                         name="action_print_checks"
                                         type="object"
                                         string="Check Protocol (PDF)"
-                                        icon="fa-file-pdf-o"
+                                        icon="picture_as_pdf"
                                         class="btn-link"
                                     />
                                     <button
                                         name="action_export_checks"
                                         type="object"
                                         string="Check Protocol (XLSX)"
-                                        icon="fa-file-excel-o"
+                                        icon="table_chart"
                                         class="btn-link"
                                     />
                                     <button
                                         name="action_view_procedure"
                                         type="object"
                                         string="Procedure Documentation (HTML)"
-                                        icon="fa-eye"
+                                        icon="visibility"
                                         class="btn-link"
                                     />
                                     <button
                                         name="action_print_procedure"
                                         type="object"
                                         string="Procedure Documentation (PDF)"
-                                        icon="fa-file-pdf-o"
+                                        icon="picture_as_pdf"
                                         class="btn-link"
                                     />
                                 </group>
@@ -812,7 +813,7 @@
                             name="action_open_receipts"
                             type="object"
                             class="oe_stat_button"
-                            icon="fa-paperclip"
+                            icon="attach_file"
                             string="Own Receipt"
                             invisible="not attachment_ids"
                         />
@@ -820,7 +821,7 @@
                             name="action_open_slices"
                             type="object"
                             class="oe_stat_button"
-                            icon="fa-list"
+                            icon="format_list_bulleted"
                             string="Slices"
                             invisible="not id"
                         />

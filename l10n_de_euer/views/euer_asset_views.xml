@@ -88,7 +88,7 @@
                             name="action_open_years"
                             type="object"
                             class="oe_stat_button"
-                            icon="fa-table"
+                            icon="table_chart"
                             string="Yearly Values"
                             invisible="state == 'draft'"
                         />
@@ -96,7 +96,7 @@
                             name="action_open_move_lines"
                             type="object"
                             class="oe_stat_button"
-                            icon="fa-list"
+                            icon="format_list_bulleted"
                             string="Journal Items"
                         />
                     </div>
@@ -472,7 +472,7 @@
                 <button
                     name="action_open_move_lines"
                     type="object"
-                    icon="fa-list"
+                    icon="format_list_bulleted"
                     title="Journal Items"
                 />
             </list>
@@ -505,7 +505,7 @@
                             name="action_open_move_lines"
                             type="object"
                             class="oe_stat_button"
-                            icon="fa-list"
+                            icon="format_list_bulleted"
                             string="Journal Items"
                         />
                     </div>

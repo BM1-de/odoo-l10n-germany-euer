@@ -36,7 +36,7 @@
                             name="action_open_move"
                             type="object"
                             class="oe_stat_button"
-                            icon="fa-file-text-o"
+                            icon="article"
                             string="Journal Entry"
                         />
                     </div>
@@ -149,7 +149,7 @@
                     name="action_l10n_de_euer_slices"
                     type="object"
                     class="oe_stat_button"
-                    icon="fa-calculator"
+                    icon="calculate"
                     invisible="not l10n_de_euer_enabled or not l10n_de_euer_slice_count"
                     groups="account.group_account_readonly,account.group_account_user,account.group_account_manager"
                 >
@@ -209,7 +209,7 @@
                         type="object"
                         string="All EÜR Information"
                         class="btn-link"
-                        icon="fa-arrow-right"
+                        icon="arrow_forward"
                     />
                 </page>
             </page>

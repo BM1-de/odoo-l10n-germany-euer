@@ -47,7 +47,7 @@
                             name="action_open_source"
                             type="object"
                             class="oe_stat_button"
-                            icon="fa-university"
+                            icon="account_balance"
                             string="Money Entry"
                             invisible="not source_move_id"
                         />
@@ -55,7 +55,7 @@
                             name="action_open_origin"
                             type="object"
                             class="oe_stat_button"
-                            icon="fa-file-text-o"
+                            icon="article"
                             string="Document"
                             invisible="not origin_move_id"
                         />
@@ -63,7 +63,7 @@
                             name="action_open_attachments"
                             type="object"
                             class="oe_stat_button"
-                            icon="fa-paperclip"
+                            icon="attach_file"
                             invisible="not attachment_count"
                         >
                             <field
@@ -76,7 +76,7 @@
                             name="action_open_path"
                             type="object"
                             class="oe_stat_button"
-                            icon="fa-exchange"
+                            icon="swap_horiz"
                             string="Path"
                             invisible="not partial_ids"
                         />
@@ -84,7 +84,7 @@
                             name="action_open_adjustment"
                             type="object"
                             class="oe_stat_button"
-                            icon="fa-pencil-square-o"
+                            icon="edit_square"
                             string="Profit Correction"
                             invisible="not adjustment_id"
                         />
@@ -92,7 +92,7 @@
                             name="action_open_assets"
                             type="object"
                             class="oe_stat_button"
-                            icon="fa-cubes"
+                            icon="inventory_2"
                             string="Assets"
                             invisible="rule != 'asset'"
                         />
@@ -307,7 +307,7 @@
                             name="action_open_slices"
                             type="object"
                             class="oe_stat_button"
-                            icon="fa-list"
+                            icon="format_list_bulleted"
                         >
                             <field
                                 name="slice_count"
