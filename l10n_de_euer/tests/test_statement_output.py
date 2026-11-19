@@ -25,6 +25,7 @@ from lxml import html
 
 from odoo import Command
 from odoo.exceptions import AccessError, UserError
+from odoo.modules.module import get_manifest
 from odoo.tests import new_test_user, tagged
 from odoo.tools import mute_logger
 
@@ -653,7 +654,10 @@ class OutputScenarios(StatementCommon):
         self.assertIn(revenue.code, codes)
         self.assertEqual(codes[revenue.code]["category_code"], "REV_KU")
         self.assertIn("Kz 111", codes[revenue.code]["fields"])
-        self.assertEqual(procedure["status"]["module_version"], "20.0.1.0.0")
+        self.assertEqual(
+            procedure["status"]["module_version"],
+            get_manifest("l10n_de_euer")["version"],
+        )
         self.assertEqual(
             procedure["status"]["ruleset_version"], statement._get_ruleset_version()
         )
@@ -674,7 +678,7 @@ class OutputScenarios(StatementCommon):
             "Lock concept",
             "database administrators",
             "Versions",
-            "20.0.1.0.0",
+            get_manifest("l10n_de_euer")["version"],
             statement._get_ruleset_version(),
             revenue.code,
         ):

@@ -16,6 +16,7 @@ import json
 
 from odoo import Command
 from odoo.exceptions import AccessError, UserError
+from odoo.modules.module import get_manifest
 from odoo.tests import new_test_user, tagged
 
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
@@ -187,7 +188,9 @@ class FinalScenarios(StatementCommon):
         warnings = [row for row in payload["checks"] if row["severity"] == "warning"]
         self.assertTrue(all(row["acknowledged_on"] for row in warnings))
         # versions of the forms, the rule set and the module
-        self.assertEqual(statement.module_version, "20.0.1.0.0")
+        self.assertEqual(
+            statement.module_version, get_manifest("l10n_de_euer")["version"]
+        )
         self.assertEqual(statement.ruleset_version, statement._get_ruleset_version())
         self.assertIn("2026", statement.form_versions)
         self.assertEqual({row["year"] for row in payload["forms"]}, {2026})
