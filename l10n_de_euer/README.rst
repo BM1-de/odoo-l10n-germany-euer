@@ -789,6 +789,8 @@ Changelog
   button icons of the views use the Material Symbols names of Odoo 20
   (renamed with Odoo's own rewrite script). Without this change the
   buttons showed no icon.
+- The module name and summary in the Apps list are translated into
+  German (template of the translations exported again from Odoo 20).
 
 20.0.1.0.0 (2026-11-12)
 -----------------------
