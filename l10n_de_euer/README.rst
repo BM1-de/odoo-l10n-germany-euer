@@ -782,6 +782,14 @@ module. A blocked case is released only together with its tests.
 Changelog
 =========
 
+20.0.1.0.1 (2026-11-19)
+-----------------------
+
+- Icons of Odoo 20: Odoo 20 no longer ships FontAwesome, so the 48
+  button icons of the views use the Material Symbols names of Odoo 20
+  (renamed with Odoo's own rewrite script). Without this change the
+  buttons showed no icon.
+
 20.0.1.0.0 (2026-11-12)
 -----------------------
 

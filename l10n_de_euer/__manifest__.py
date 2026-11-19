@@ -4,7 +4,7 @@
     "name": "Germany EÜR",
     "summary": "Cash-basis profit statement (Anlage EÜR, AVEÜR) "
     "according to § 4 (3) EStG",
-    "version": "20.0.1.0.0",
+    "version": "20.0.1.0.1",
     "development_status": "Alpha",
     "category": "Accounting/Localizations",
     "website": "https://github.com/BM1-de/odoo-l10n-germany-euer",
