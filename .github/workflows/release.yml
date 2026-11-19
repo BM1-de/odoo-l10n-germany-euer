@@ -44,8 +44,12 @@ jobs:
       # the same version as in _dev/werkzeuge/test_protocol.sh
       COVERAGE_VERSION: "7.16.2"
       # second run with the OCA reconciliation modules (spec 9.9 "Matrix
-      # OCA-Abgleich"), as in the job "test with OCA reconciliation modules"
-      EXTRA_MODULES: "account_reconcile_oca,account_in_payment,account_payment_order"
+      # OCA-Abgleich"), as in the job "test with OCA reconciliation modules".
+      # Empty on 20.0: the modules have no release for Odoo 20 yet (open pull
+      # requests OCA/account-reconcile#1049 and OCA/bank-payment#1636), the
+      # job is switched off in test.yml. Set it again with the job:
+      # "account_reconcile_oca,account_in_payment,account_payment_order"
+      EXTRA_MODULES: ""
       EXTRA_LABEL: "with OCA reconciliation modules"
     steps:
       - uses: actions/checkout@v4

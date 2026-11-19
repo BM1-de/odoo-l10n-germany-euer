@@ -22,7 +22,9 @@ documented). The protocol names results, never amounts or other data of a real b
      reconciliation modules `account_reconcile_oca`, `account_in_payment` and
      `account_payment_order` (spec 9.9 "Matrix OCA-Abgleich"). The coverage is the
      combined one of both runs; a test counts as skipped only if both runs skipped it.
-     The workflow `release` does the same.
+     The workflow `release` does the same. On `20.0` the second run is switched off
+     until the OCA modules have a release for Odoo 20 (`EXTRA` in `test_protocol.sh`,
+     `EXTRA_MODULES` in the workflow `release`, job `test-oca` in the workflow `tests`).
    - `pytest` runs the tests without Odoo and without a database (spec 9.9, fast
      feedback): the calculation engine and the tools of the test protocol
      (`pytest.ini`); the engine tests also run inside the protocol above.

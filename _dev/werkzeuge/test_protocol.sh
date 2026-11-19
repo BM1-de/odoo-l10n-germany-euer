@@ -49,8 +49,11 @@ OUT=""
 KEEP=0
 COVERAGE_VERSION="7.16.2"
 # second run with the OCA reconciliation modules (spec 9.9 "Matrix
-# OCA-Abgleich"), as in the job "test with OCA reconciliation modules"
-EXTRA="account_reconcile_oca,account_in_payment,account_payment_order"
+# OCA-Abgleich"), as in the job "test with OCA reconciliation modules".
+# Empty on 20.0 until the modules have a release for Odoo 20 (see
+# .github/workflows/test.yml); then set it again to
+# "account_reconcile_oca,account_in_payment,account_payment_order"
+EXTRA=""
 EXTRA_LABEL="with OCA reconciliation modules"
 
 while getopts "d:o:m:x:kh" option; do
