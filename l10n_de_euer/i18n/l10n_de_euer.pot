@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Project-Id-Version: Odoo Server 20.0-20261110\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-22 04:00+0000\n"
-"PO-Revision-Date: 2026-10-22 04:00+0000\n"
+"POT-Creation-Date: 2026-11-19 17:17+0000\n"
+"PO-Revision-Date: 2026-11-19 17:17+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -2615,6 +2615,12 @@ msgid "Cash date, or the booking date of a booked entry."
 msgstr ""
 
 #. module: l10n_de_euer
+#: model:ir.module.module,summary:base.module_l10n_de_euer
+msgid ""
+"Cash-basis profit statement (Anlage EÜR, AVEÜR) according to § 4 (3) EStG"
+msgstr ""
+
+#. module: l10n_de_euer
 #: model:ir.model.fields,field_description:l10n_de_euer.field_l10n_de_euer_account_assignment__category_id
 #: model:ir.model.fields,field_description:l10n_de_euer.field_l10n_de_euer_account_review_line__category_id
 #: model:ir.model.fields,field_description:l10n_de_euer.field_l10n_de_euer_cash_slice__category_id
@@ -3003,11 +3009,6 @@ msgid "Commuting with an own or provided vehicle: no limit of 4,500 €."
 msgstr ""
 
 #. module: l10n_de_euer
-#: model:ir.model,name:l10n_de_euer.model_res_company
-msgid "Companies"
-msgstr ""
-
-#. module: l10n_de_euer
 #: model:ir.model.fields,field_description:l10n_de_euer.field_res_company__l10n_de_euer_member_ids
 msgid "Companies of the EÜR Business"
 msgstr ""
@@ -3018,6 +3019,7 @@ msgid "Companies whose business this company is (record rules)."
 msgstr ""
 
 #. module: l10n_de_euer
+#: model:ir.model,name:l10n_de_euer.model_res_company
 #: model:ir.model.fields,field_description:l10n_de_euer.field_l10n_de_euer_account_assignment__company_id
 #: model:ir.model.fields,field_description:l10n_de_euer.field_l10n_de_euer_account_review__company_id
 #: model:ir.model.fields,field_description:l10n_de_euer.field_l10n_de_euer_account_review_line__company_id
@@ -5542,6 +5544,11 @@ msgstr ""
 #. module: l10n_de_euer
 #: model:ir.model.fields,field_description:l10n_de_euer.field_l10n_de_euer_statement_line__has_register_source
 msgid "From the Asset Register"
+msgstr ""
+
+#. module: l10n_de_euer
+#: model:ir.module.module,shortdesc:base.module_l10n_de_euer
+msgid "Germany EÜR"
 msgstr ""
 
 #. module: l10n_de_euer
@@ -12377,38 +12384,6 @@ msgstr ""
 #. module: l10n_de_euer
 #: model_terms:ir.ui.view,arch_db:l10n_de_euer.report_check_protocol_document
 msgid "Warnings not acknowledged"
-msgstr ""
-
-#. module: l10n_de_euer
-#: model:ir.model.fields,field_description:l10n_de_euer.field_l10n_de_euer_account_assignment__website_message_ids
-#: model:ir.model.fields,field_description:l10n_de_euer.field_l10n_de_euer_adjustment__website_message_ids
-#: model:ir.model.fields,field_description:l10n_de_euer.field_l10n_de_euer_asset__website_message_ids
-#: model:ir.model.fields,field_description:l10n_de_euer.field_l10n_de_euer_cash_balance__website_message_ids
-#: model:ir.model.fields,field_description:l10n_de_euer.field_l10n_de_euer_check__website_message_ids
-#: model:ir.model.fields,field_description:l10n_de_euer.field_l10n_de_euer_move_info__website_message_ids
-#: model:ir.model.fields,field_description:l10n_de_euer.field_l10n_de_euer_opening_item__website_message_ids
-#: model:ir.model.fields,field_description:l10n_de_euer.field_l10n_de_euer_residual_classification__website_message_ids
-#: model:ir.model.fields,field_description:l10n_de_euer.field_l10n_de_euer_scope_answer__website_message_ids
-#: model:ir.model.fields,field_description:l10n_de_euer.field_l10n_de_euer_statement__website_message_ids
-#: model:ir.model.fields,field_description:l10n_de_euer.field_l10n_de_euer_ten_day_item__website_message_ids
-#: model:ir.model.fields,field_description:l10n_de_euer.field_l10n_de_euer_vat_period__website_message_ids
-msgid "Website Messages"
-msgstr ""
-
-#. module: l10n_de_euer
-#: model:ir.model.fields,help:l10n_de_euer.field_l10n_de_euer_account_assignment__website_message_ids
-#: model:ir.model.fields,help:l10n_de_euer.field_l10n_de_euer_adjustment__website_message_ids
-#: model:ir.model.fields,help:l10n_de_euer.field_l10n_de_euer_asset__website_message_ids
-#: model:ir.model.fields,help:l10n_de_euer.field_l10n_de_euer_cash_balance__website_message_ids
-#: model:ir.model.fields,help:l10n_de_euer.field_l10n_de_euer_check__website_message_ids
-#: model:ir.model.fields,help:l10n_de_euer.field_l10n_de_euer_move_info__website_message_ids
-#: model:ir.model.fields,help:l10n_de_euer.field_l10n_de_euer_opening_item__website_message_ids
-#: model:ir.model.fields,help:l10n_de_euer.field_l10n_de_euer_residual_classification__website_message_ids
-#: model:ir.model.fields,help:l10n_de_euer.field_l10n_de_euer_scope_answer__website_message_ids
-#: model:ir.model.fields,help:l10n_de_euer.field_l10n_de_euer_statement__website_message_ids
-#: model:ir.model.fields,help:l10n_de_euer.field_l10n_de_euer_ten_day_item__website_message_ids
-#: model:ir.model.fields,help:l10n_de_euer.field_l10n_de_euer_vat_period__website_message_ids
-msgid "Website communication history"
 msgstr ""
 
 #. module: l10n_de_euer
