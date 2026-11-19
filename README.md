@@ -2,14 +2,14 @@
 
 # Deutsche EÜR für Odoo
 <!-- /!\ Non OCA Context : Set here the badge of your runbot / runboat instance. -->
-[![Pre-commit Status](https://github.com/BM1-de/odoo-l10n-germany-euer/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/BM1-de/odoo-l10n-germany-euer/actions/workflows/pre-commit.yml?query=branch%3A19.0)
-[![Build Status](https://github.com/BM1-de/odoo-l10n-germany-euer/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/BM1-de/odoo-l10n-germany-euer/actions/workflows/test.yml?query=branch%3A19.0)
+[![Pre-commit Status](https://github.com/BM1-de/odoo-l10n-germany-euer/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/BM1-de/odoo-l10n-germany-euer/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/BM1-de/odoo-l10n-germany-euer/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/BM1-de/odoo-l10n-germany-euer/actions/workflows/test.yml?query=branch%3A20.0)
 [![codecov](https://codecov.io/gh/BM1-de/odoo-l10n-germany-euer/branch/20.0/graph/badge.svg)](https://codecov.io/gh/BM1-de/odoo-l10n-germany-euer)
 <!-- /!\ Non OCA Context : Set here the badge of your translation instance. -->
 
 <!-- /!\ do not modify above this line -->
 
-Einnahmenüberschussrechnung (EÜR) nach § 4 Abs. 3 EStG für Odoo 19: die amtlichen
+Einnahmenüberschussrechnung (EÜR) nach § 4 Abs. 3 EStG für Odoo 20: die amtlichen
 Vordrucke Anlage EÜR, AVEÜR und SZ, ein Anlagenverzeichnis mit Abschreibungen und eine
 Ausfüllhilfe für Mein ELSTER – berechnet aus den Buchungen, die ohnehin in Odoo stehen.
 
@@ -38,7 +38,7 @@ Ausfüllhilfe für Mein ELSTER – berechnet aus den Buchungen, die ohnehin in O
 
 ## Schnellstart
 
-1. **Installieren:** Odoo 19 (Community oder Enterprise) mit deutschem Kontenrahmen SKR03
+1. **Installieren:** Odoo 20 (Community oder Enterprise) mit deutschem Kontenrahmen SKR03
    oder SKR04 (`l10n_de`). Den Ordner `l10n_de_euer` in den Addons-Pfad legen und unter
    *Apps* das Modul „Deutsche EÜR“ installieren.
 2. **Einrichten:** *Rechnungsstellung → Konfiguration → EÜR → EÜR einrichten*: EÜR für die
@@ -74,7 +74,9 @@ Wirtschaftsgut im Anlagenverzeichnis mit Abschreibung und Übernahme aus dem Vor
 
 ![Anlagenverzeichnis](docs/screenshots/anlagenverzeichnis.png)
 
-Die Screenshots zeigen das erfundene „Fotostudio Muster“ (Kleinunternehmer). Es lässt
+Die Screenshots zeigen das erfundene „Fotostudio Muster“ (Kleinunternehmer); sie
+stammen noch aus der Fassung für Odoo 19, in Odoo 20 sieht die Oberfläche etwas anders
+aus. Es lässt
 sich mit dem Beispielexport aus
 [odoo-papierkram-import](https://github.com/BM1-de/odoo-papierkram-import) selbst
 nachbauen.
@@ -93,7 +95,7 @@ in [l10n_de_euer/README.rst](l10n_de_euer/README.rst); den Ablauf einer Veröffe
 beschreibt [RELEASE.md](RELEASE.md), Sicherheitsmeldungen [SECURITY.md](SECURITY.md).
 
 *English: German cash-basis profit statement (Einnahmenüberschussrechnung, § 4 (3) EStG)
-for Odoo 19 with the official forms Anlage EÜR, AVEÜR and SZ 2024–2026, an asset register
+for Odoo 20 with the official forms Anlage EÜR, AVEÜR and SZ 2024–2026, an asset register
 and a fill-in aid for Mein ELSTER. Alpha, not independently checked: form years ship as
 drafts. No tax advice, no warranty.*
 
@@ -107,7 +109,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[l10n_de_euer](l10n_de_euer/) | 19.0.1.0.0 | <a href='https://github.com/bm1-phillip'><img src='https://github.com/bm1-phillip.png' width='32' height='32' style='border-radius:50%;' alt='bm1-phillip'/></a> | Cash-basis profit statement (Anlage EÜR, AVEÜR) according to § 4 (3) EStG
+[l10n_de_euer](l10n_de_euer/) | 20.0.1.0.1 | <a href='https://github.com/bm1-phillip'><img src='https://github.com/bm1-phillip.png' width='32' height='32' style='border-radius:50%;' alt='bm1-phillip'/></a> | Cash-basis profit statement (Anlage EÜR, AVEÜR) according to § 4 (3) EStG
 
 [//]: # (end addons)
 

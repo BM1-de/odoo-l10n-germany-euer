@@ -64,7 +64,7 @@ def banner():
         ("German cash-basis profit statement (§ 4 (3) EStG)", REGULAR, 38, LIGHT, 240),
         ("by payment date · traceable down to the document", REGULAR, 38, LIGHT, 300),
         (
-            "Odoo 19 · small business and regular VAT · SKR03 and SKR04",
+            "Odoo 20 · small business and regular VAT · SKR03 and SKR04",
             REGULAR,
             30,
             WHITE,
